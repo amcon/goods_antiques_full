@@ -1,0 +1,44 @@
+{
+  "name": "goods_antiques_full",
+  "version": "1.0.0",
+  "description": "goods-antiques.com with full admin authority",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "webpack",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amcon/goods_antiques_full.git"
+  },
+  "keywords": [],
+  "author": "Aaron Conklin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amcon/goods_antiques_full/issues"
+  },
+  "homepage": "https://github.com/amcon/goods_antiques_full#readme",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-runtime": "^6.26.0",
+    "express": "^4.15.4",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-router-dom": "^4.2.2",
+    "webpack": "^3.5.5",
+    "webpack-dev-middleware": "^1.12.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "css-loader": "^0.28.5",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.5.5"
+  }
+}

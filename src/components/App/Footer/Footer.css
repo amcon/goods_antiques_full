@@ -1,0 +1,27 @@
+footer {
+  display: flex;
+  padding: 10px 50px 25px 50px;
+}
+
+.footer-section {
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.footer-section h3 {
+  font-size: .75em;
+}
+
+.footer-section p {
+  margin: 3px 0;
+  font-size: .75em;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: black;
+  margin: 3px 0;
+  font-size: .75em;
+}

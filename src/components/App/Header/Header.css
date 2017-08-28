@@ -1,0 +1,16 @@
+header {
+  padding: 0 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  margin-left: 75px;
+  color: grey;
+}
+
+nav a:hover {
+  color: black;
+}
