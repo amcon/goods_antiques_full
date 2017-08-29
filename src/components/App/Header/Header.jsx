@@ -4,9 +4,10 @@ import styles from './Header.css';
 
 const Header = () => (
   <header>
-    <h1>Good's Antiques</h1>
+    <Link to='/'>
+      <h1>Good's Antiques</h1>
+    </Link>
     <nav>
-      <Link to='/'>Home</Link>
       <Link to='/about'>About</Link>
     </nav>
   </header>

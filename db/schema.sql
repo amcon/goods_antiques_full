@@ -1,0 +1,38 @@
+BEGIN;
+
+DROP TABLE IF EXISTS "user";
+DROP TABLE IF EXISTS product;
+DROP TABLE IF EXISTS image;
+DROP TABLE IF EXISTS image_product_ref;
+
+COMMIT;
+
+BEGIN;
+
+CREATE TABLE "user" (
+  user_id SERIAL UNIQUE PRIMARY KEY,
+  email VARCHAR(100) UNIQUE NOT NULL,
+  password VARCHAR(30) NOT NULL
+);
+
+CREATE TABLE product (
+  product_id SERIAL UNIQUE PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  description TEXT NOT NULL,
+  price VARCHAR(10) NOT NULL,
+  sku VARCHAR(30) NOT NULL,
+  category VARCHAR(100) NOT NULL,
+  sold BOOLEAN
+);
+
+CREATE TABLE image (
+  image_id SERIAL UNIQUE PRIMARY KEY,
+  url VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE image_product_ref (
+  product_id INT NOT NULL,
+  image_id INT NOT NULL
+);
+
+COMMIT;
