@@ -1,0 +1,20 @@
+.store {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.store nav {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.store nav a{
+  margin: 0;
+}
