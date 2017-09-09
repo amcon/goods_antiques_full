@@ -1,0 +1,7 @@
+.product {
+  width: 30%;
+}
+
+.product h1, p {
+  font-size: 1em;
+}

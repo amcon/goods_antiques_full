@@ -11,15 +11,16 @@ class Primitive extends React.Component {
   // }
 
   renderPrimitiveProducts() {
-    return this.props.allProducts.map(function(product, i) {
-      if (product.category === 'primitive') {
+    return this.props.allProducts.map((product, i) => {
+      if (product.category === 'primitive' && product.sold == false ) {
         return (
           <Product
             key={i}
             name={product.name}
             price={product.price}
             description={product.description}
-            mainImage={product.images[0].url}
+            mainImage={product.main_img}
+            loggedIn={this.props.loggedIn}
           />
         );
       }
@@ -27,15 +28,16 @@ class Primitive extends React.Component {
   }
 
   renderPrimitiveSold() {
-    return this.props.allProducts.map(function(product, i) {
-      if (product.sold == true) {
+    return this.props.allProducts.map((product, i) => {
+      if (product.sold == true && product.category === 'primitive') {
         return (
           <Sold
             key={i}
             name={product.name}
             price={product.price}
             description={product.description}
-            mainImage={product.images[0].url}
+            mainImage={product.main_img}
+            loggedIn={this.props.loggedIn}
           />
         );
       }
@@ -44,10 +46,15 @@ class Primitive extends React.Component {
 
   render() {
     return(
-      <div className="primitive">
-        <h1>PRIMITIVE</h1>
-        {this.renderPrimitiveProducts()}
-        {this.renderPrimitiveSold()}
+      <div className="category">
+        <h1 className="category-title">PRIMITIVE</h1>
+        <div className="available">
+          {this.renderPrimitiveProducts()}
+        </div>
+        <h2>Recently Sold</h2>
+        <div className="sold">
+          {this.renderPrimitiveSold()}
+        </div>
       </div>
     )
   }

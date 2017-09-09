@@ -1,7 +1,56 @@
 .home {
-  background-color: white;
+  background-image: url('./../../../../../public/images/home-page.jpg');
+  background-size: 100%;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.home-info {
+  width: 400px;
+  height: 400px;
+  background-color: rgba(50, 50, 50, .5);
+  color: white;
+  border-radius: 2em;
+  box-sizing: border-box;
+  padding: 25px 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-info h1, p, a {
+  margin: 0;
+}
+
+.home-info h1 {
+  font-size: 2.5em;
+}
+
+.home-info p {
+  font-size: 1.5em;
+}
+
+.home-info a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid white;
+  padding: 10px;
+  width: 50%;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+}
+
+.home-info a:hover {
+  background-color: white;
+  color: black;
 }

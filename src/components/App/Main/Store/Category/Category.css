@@ -1,0 +1,34 @@
+.category h1 {
+  text-transform: uppercase;
+}
+
+.category {
+  width: 100%;
+}
+
+.available, .sold {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.category img {
+  height: 330px;
+  width: 330px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.category h1, .category h2 {
+  text-transform: uppercase;
+}
+
+.category-title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.category h2 {
+  margin-bottom: 25px;
+}

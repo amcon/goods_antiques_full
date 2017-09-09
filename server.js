@@ -14,9 +14,12 @@ const app = express();
 
 const compiler = webpack(webpackConfig);
 
-app.use(bodyParser.urlencoded({ extended: false }))
-
+app.use(logger('dev'));
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
+// app.use(history({ logger: logger }));
+
 
 app.use(express.static(__dirname + '/dist'));
 
@@ -35,5 +38,5 @@ app.use(webpackDevMiddleware(compiler, {
 const server = app.listen(3000, function() {
   const host = server.address().address;
   const port = server.address().port;
-  console.log('Example app listening at http://%s:%s', host, port);
+  console.log('Goods Antiques App listening at http://%s:%s', host, port);
 });

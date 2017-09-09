@@ -1,10 +1,13 @@
 footer {
   display: flex;
-  padding: 10px 50px 25px 50px;
+  padding: 25px;
+  width: 1100px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .footer-section {
-  margin-right: 50px;
+  margin-right: 75px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -12,6 +15,7 @@ footer {
 
 .footer-section h3 {
   font-size: .75em;
+  margin: 0;
 }
 
 .footer-section p {

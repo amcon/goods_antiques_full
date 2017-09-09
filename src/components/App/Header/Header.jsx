@@ -5,10 +5,14 @@ import styles from './Header.css';
 const Header = () => (
   <header>
     <Link to='/'>
-      <h1>Good's Antiques</h1>
+      <div className="logo"></div>
     </Link>
     <nav>
       <Link to='/about'>About</Link>
+      <Link to='/store'>Store</Link>
+      <Link to='/shows'>Shows</Link>
+      <Link to='/map'>Map</Link>
+      <Link to='/admin'>Admin</Link>
     </nav>
   </header>
 )
