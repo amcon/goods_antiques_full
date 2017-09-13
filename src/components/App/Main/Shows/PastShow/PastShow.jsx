@@ -9,7 +9,7 @@ class PastShow extends React.Component {
 
     if (loggedIn) {
       return(
-        <Link to='/editshow'><button>Edit</button></Link>
+        <Link to={`/show/${this.props.show_id}`}><button onClick={() => this.props.handleGetShow(this.props.show_id)}>Edit</button></Link>
       );
     }
   }

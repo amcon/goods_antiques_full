@@ -8,6 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 100px 0;
 }
 
 .home-info {
@@ -31,6 +32,7 @@
 
 .home-info h1 {
   font-size: 2.5em;
+  font-weight: lighter;
 }
 
 .home-info p {

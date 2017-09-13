@@ -12,11 +12,13 @@ class App extends React.Component {
     this.state = {
       allProducts: [],
       allShows: [],
+      clickedProduct: [],
       user: {},
       email: '',
       password: '',
       userCreated: false,
       loggedIn: false,
+      productSelected: false,
       errors: [],
       showName: '',
       showDate: '',
@@ -25,6 +27,7 @@ class App extends React.Component {
       showVenue: '',
       showCurrent: '',
       showCreated: false,
+      showEdited: false,
       productName: '',
       productDescription: '',
       productPrice: '',
@@ -32,7 +35,13 @@ class App extends React.Component {
       productCategory: '',
       productSold: '',
       productCreated: false,
+      productEdited: false,
       imageMain: '',
+      imageSupOne: '',
+      imageSupTwo: '',
+      imageSupThree: '',
+      productId: 0,
+      showId: 0,
     };
   }
 
@@ -43,6 +52,7 @@ class App extends React.Component {
       this.setState({
         allProducts: data,
         productCreated: false,
+        productEdited: false,
         productCategory: '',
       });
       // console.log(this.state.allProducts);
@@ -56,6 +66,7 @@ class App extends React.Component {
     .then((data) => {
       this.setState({
         allShows: data,
+        showEdited: false,
         showCreated: false,
       });
       // console.log(this.state.allShows);
@@ -241,6 +252,24 @@ class App extends React.Component {
     })
   }
 
+  updateImageSupOne(e) {
+    this.setState({
+      imageSupOne: e.target.value,
+    })
+  }
+
+  updateImageSupTwo(e) {
+    this.setState({
+      imageSupTwo: e.target.value,
+    })
+  }
+
+  updateImageSupThree(e) {
+    this.setState({
+      imageSupThree: e.target.value,
+    })
+  }
+
   handleCreateProduct() {
     fetch('/api/products', {
       headers: {
@@ -255,6 +284,9 @@ class App extends React.Component {
         category: this.state.productCategory,
         sold: this.state.productSold,
         main_img: this.state.imageMain,
+        sup_img_1: this.state.imageSupOne,
+        sup_img_2: this.state.imageSupTwo,
+        sup_img_3: this.state.imageSupThree,
       })
     })
     .then(this.setState({
@@ -264,8 +296,10 @@ class App extends React.Component {
       productSku: '',
       productSold: '',
       imageMain: '',
+      imageSupOne: '',
+      imageSupTwo: '',
+      imageSupThree: '',
     }))
-    // .then(() => this.handleCreateImageMain())
     .then(() => {
       this.getAllProducts()
       this.setState({
@@ -275,11 +309,174 @@ class App extends React.Component {
     .catch(err => console.log(err))
   }
 
+  handleGetProduct(id) {
+    this.setState({
+      productId: id,
+      productSelected: true,
+    }, () => this.getOneProduct());
+    // this.getOneProduct();
+  }
 
+  handleGetShow(show_id) {
+    this.setState({
+      showId: show_id,
+    }, () => this.getOneShow());
+  }
+
+  getOneShow() {
+    fetch(`/api/shows/${this.state.showId}`)
+    .then(r => r.json())
+    .then((data) => {
+      this.setState({
+        clickedShow: data,
+      })
+    })
+    .then(() => {
+      this.setState({
+        showName: this.state.clickedShow.name,
+        showDate: this.state.clickedShow.show_date,
+        showLocation: this.state.clickedShow.location,
+        showWebsite: this.state.clickedShow.website,
+        showVenue: this.state.clickedShow.venue,
+        showCurrent: this.state.clickedShow.current,
+      })
+      // console.log(this.state.clickedShow)
+    })
+    .catch(err => console.log(err));
+  }
+
+  getOneProduct() {
+    fetch(`/api/products/${this.state.productId}`)
+    .then(r => r.json())
+    .then((data) => {
+      this.setState({
+        clickedProduct: data,
+        productSelected: false,
+      })
+    })
+    .then(() => {
+      this.setState({
+        productName: this.state.clickedProduct.name,
+        productDescription: this.state.clickedProduct.description,
+        productPrice: this.state.clickedProduct.price,
+        productSku: this.state.clickedProduct.sku,
+        productCategory: this.state.clickedProduct.category,
+        productSold: this.state.clickedProduct.sold,
+        imageMain: this.state.clickedProduct.main_img,
+        imageSupOne: this.state.clickedProduct.sup_img_1,
+        imageSupTwo: this.state.clickedProduct.sup_img_2,
+        imageSupThree: this.state.clickedProduct.sup_img_3,
+      })
+      // console.log(this.state.clickedProduct)
+    })
+    .catch(err => console.log(err));
+  }
+
+  handleShowEditSubmit() {
+    fetch(`/api/shows/${this.state.showId}`, {
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      method: 'PUT',
+      body: JSON.stringify({
+        name: this.state.showName,
+        show_date: this.state.showDate,
+        venue: this.state.showVenue,
+        location: this.state.showLocation,
+        website: this.state.showWebsite,
+        current: this.state.showCurrent,
+      })
+    })
+    .then(this.setState({
+      showName: '',
+      showDate: '',
+      showVenue: '',
+      showLocation: '',
+      showWebsite: '',
+      showCurrent: '',
+    }))
+    .then(() => {
+      this.getAllShows()
+      this.setState({
+        showEdited: true,
+        showId: 0,
+      })
+    })
+    .catch(err => console.log(err))
+  }
+
+  handleProductEditSubmit() {
+    fetch(`/api/products/${this.state.productId}`, {
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      method: 'PUT',
+      body: JSON.stringify({
+        name: this.state.productName,
+        description: this.state.productDescription,
+        price: this.state.productPrice,
+        sku: this.state.productSku,
+        category: this.state.productCategory,
+        sold: this.state.productSold,
+        main_img: this.state.imageMain,
+        sup_img_1: this.state.imageSupOne,
+        sup_img_2: this.state.imageSupTwo,
+        sup_img_3: this.state.imageSupThree,
+      })
+    })
+    .then(this.setState({
+      productName: '',
+      productDescription: '',
+      productPrice: '',
+      productSku: '',
+      productCategory: '',
+      productSold: '',
+      imageMain: '',
+      imageSupOne: '',
+      imageSupTwo: '',
+      imageSupThree: '',
+    }))
+    .then(() => {
+      this.getAllProducts()
+      this.setState({
+        productEdited: true,
+        productId: 0,
+      })
+    })
+    .catch(err => console.log(err))
+  }
+
+  handleProductDeleteSubmit() {
+    fetch(`/api/products/${this.state.productId}`, {
+      method: 'delete'
+    })
+    .then(() => {
+      this.getAllProducts()
+      this.setState({
+        productEdited: true,
+        productId: 0,
+      })
+    })
+    .catch(err => console.log(err))
+  }
 
   componentWillMount() {
     this.getAllProducts();
     this.getAllShows();
+  }
+
+  handleShowDeleteSubmit() {
+    fetch(`/api/shows/${this.state.showId}`, {
+      method: 'delete'
+    })
+    .then(() => {
+      this.getAllShows()
+      this.setState({
+        showEdited: true,
+        showId: 0,
+      })
+    })
+    .catch(err => console.log(err))
   }
 
   render() {
@@ -294,6 +491,7 @@ class App extends React.Component {
           allShows={this.state.allShows}
           loggedIn={this.state.loggedIn}
           userCreated={this.state.userCreated}
+          productSelected={this.state.productSelected}
           errors={this.state.errors}
           showName={this.state.showName}
           showDate={this.state.showDate}
@@ -302,6 +500,7 @@ class App extends React.Component {
           showVenue={this.state.showVenue}
           showCurrent={this.state.showCurrent}
           showCreated={this.state.showCreated}
+          showEdited={this.state.showEdited}
           productName={this.state.productName}
           productDescription={this.state.productDescription}
           productPrice={this.state.productPrice}
@@ -309,8 +508,17 @@ class App extends React.Component {
           productCategory={this.state.productCategory}
           productSold={this.state.productSold}
           productCreated={this.state.productCreated}
+          productEdited={this.state.productEdited}
+          productId={this.state.productId}
           imageMain={this.state.imageMain}
+          imageSupOne={this.state.imageSupOne}
+          imageSupTwo={this.state.imageSupTwo}
+          imageSupThree={this.state.imageSupThree}
+          clickedProduct={this.state.clickedProduct}
           updateImageMain={this.updateImageMain.bind(this)}
+          updateImageSupOne={this.updateImageSupOne.bind(this)}
+          updateImageSupTwo={this.updateImageSupTwo.bind(this)}
+          updateImageSupThree={this.updateImageSupThree.bind(this)}
           updateFormEmail={this.updateFormEmail.bind(this)}
           updateFormPassword={this.updateFormPassword.bind(this)}
           handleCreateUser={this.handleCreateUser.bind(this)}
@@ -322,6 +530,8 @@ class App extends React.Component {
           updateShowVenue={this.updateShowVenue.bind(this)}
           updateShowCurrent={this.updateShowCurrent.bind(this)}
           handleCreateShow={this.handleCreateShow.bind(this)}
+          handleShowEditSubmit={this.handleShowEditSubmit.bind(this)}
+          handleShowDeleteSubmit={this.handleShowDeleteSubmit.bind(this)}
           updateProductName={this.updateProductName.bind(this)}
           updateProductDescription={this.updateProductDescription.bind(this)}
           updateProductPrice={this.updateProductPrice.bind(this)}
@@ -329,6 +539,10 @@ class App extends React.Component {
           updateProductCategory={this.updateProductCategory.bind(this)}
           updateProductSold={this.updateProductSold.bind(this)}
           handleCreateProduct={this.handleCreateProduct.bind(this)}
+          handleGetProduct={this.handleGetProduct.bind(this)}
+          handleProductEditSubmit={this.handleProductEditSubmit.bind(this)}
+          handleProductDeleteSubmit={this.handleProductDeleteSubmit.bind(this)}
+          handleGetShow={this.handleGetShow.bind(this)}
         />
         <Footer />
       </div>

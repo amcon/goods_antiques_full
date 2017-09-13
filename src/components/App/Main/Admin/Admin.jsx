@@ -37,14 +37,14 @@ class Admin extends React.Component {
           <p>*name:</p>
           <input
             type="text"
-            placeholder="Primitive Cabinet"
+            placeholder="ex. Primitive Cabinet"
             value={this.props.productName}
             onChange={this.props.updateProductName}
           />
           <p>*description:</p>
           <input
             type="text"
-            placeholder="This Primitive cabinet is from..."
+            placeholder="ex. This Primitive cabinet is from..."
             value={this.props.productDescription}
             onChange={this.props.updateProductDescription}
           />
@@ -58,7 +58,7 @@ class Admin extends React.Component {
           <p>*sku:</p>
           <input
             type="text"
-            placeholder="PRIM-0001"
+            placeholder="ex. PRIM-0001"
             value={this.props.productSku}
             onChange={this.props.updateProductSku}
           />
@@ -77,9 +77,30 @@ class Admin extends React.Component {
           <p>*main image:</p>
           <input
             type="text"
-            placeholder="this should just be a url to picture"
+            placeholder="for now just be a url to picture"
             value={this.props.imageMain}
             onChange={this.props.updateImageMain}
+          />
+          <p>first suplemental image:</p>
+          <input
+            type="text"
+            placeholder="for now just be a url to picture"
+            value={this.props.imageSupOne || ""}
+            onChange={this.props.updateImageSupOne}
+          />
+          <p>second suplemental image:</p>
+          <input
+            type="text"
+            placeholder="for now just be a url to picture"
+            value={this.props.imageSupTwo || ""}
+            onChange={this.props.updateImageSupTwo}
+          />
+          <p>third suplemental image:</p>
+          <input
+            type="text"
+            placeholder="for now just be a url to picture"
+            value={this.props.imageSupThree || ""}
+            onChange={this.props.updateImageSupThree}
           />
           <p>sold:</p>
           <select value={this.props.productSold} onChange={this.props.updateProductSold}>
@@ -87,42 +108,42 @@ class Admin extends React.Component {
             <option value="false">Available</option>
             <option value="true">Sold</option>
           </select>
+          <button onClick={this.props.handleCreateProduct}>create product</button>
         </div>
-        <button onClick={this.props.handleCreateProduct}>create product</button>
         <h1>Create a new show:</h1>
         <div className="create-show">
           <p>*name:</p>
           <input
             type="text"
-            placeholder=""
+            placeholder="ex. ELKHORN ANTIQUE SHOW"
             value={this.props.showName}
             onChange={this.props.updateShowName}
           />
           <p>*date:</p>
           <input
             type="text"
-            placeholder=""
+            placeholder="ex. SUNDAY, Aug 13 -or- MON, Sep 25 - SAT, Sep 30"
             value={this.props.showDate}
             onChange={this.props.updateShowDate}
           />
           <p>*venue:</p>
           <input
             type="text"
-            placeholder=""
+            placeholder="ex. Elkhorn Convention Center"
             value={this.props.showVenue}
             onChange={this.props.updateShowVenue}
           />
           <p>*location:</p>
           <input
             type="text"
-            placeholder=""
+            placeholder="ex. Elkhorn, WI"
             value={this.props.showLocation}
             onChange={this.props.updateShowLocation}
           />
           <p>*website:</p>
           <input
             type="text"
-            placeholder="must have: http://www.example.com"
+            placeholder="ex. http://www.elkhornantique.com *must have: http://*"
             value={this.props.showWebsite}
             onChange={this.props.updateShowWebsite}
           />
@@ -132,8 +153,8 @@ class Admin extends React.Component {
             <option value="true">Upcoming</option>
             <option value="false">Past</option>
           </select>
+          <button onClick={this.props.handleCreateShow}>create show</button>
         </div>
-        <button onClick={this.props.handleCreateShow}>create show</button>
       </div>
     );
   }

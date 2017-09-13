@@ -781,6 +781,65 @@ module.exports = ExecutionEnvironment;
 
 /***/ }),
 /* 8 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__ = __webpack_require__(207);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "BrowserRouter", function() { return __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__HashRouter__ = __webpack_require__(210);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "HashRouter", function() { return __WEBPACK_IMPORTED_MODULE_1__HashRouter__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Link__ = __webpack_require__(99);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Link", function() { return __WEBPACK_IMPORTED_MODULE_2__Link__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__ = __webpack_require__(212);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "MemoryRouter", function() { return __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__NavLink__ = __webpack_require__(215);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "NavLink", function() { return __WEBPACK_IMPORTED_MODULE_4__NavLink__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Prompt__ = __webpack_require__(217);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Prompt", function() { return __WEBPACK_IMPORTED_MODULE_5__Prompt__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Redirect__ = __webpack_require__(219);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Redirect", function() { return __WEBPACK_IMPORTED_MODULE_6__Redirect__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Route__ = __webpack_require__(100);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Route", function() { return __WEBPACK_IMPORTED_MODULE_7__Route__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Router__ = __webpack_require__(60);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Router", function() { return __WEBPACK_IMPORTED_MODULE_8__Router__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__StaticRouter__ = __webpack_require__(225);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "StaticRouter", function() { return __WEBPACK_IMPORTED_MODULE_9__StaticRouter__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__Switch__ = __webpack_require__(227);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Switch", function() { return __WEBPACK_IMPORTED_MODULE_10__Switch__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__matchPath__ = __webpack_require__(229);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "matchPath", function() { return __WEBPACK_IMPORTED_MODULE_11__matchPath__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__withRouter__ = __webpack_require__(230);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "withRouter", function() { return __WEBPACK_IMPORTED_MODULE_12__withRouter__["a"]; });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***/ }),
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -846,65 +905,6 @@ if (process.env.NODE_ENV !== 'production') {
 module.exports = warning;
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-/* 9 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__ = __webpack_require__(207);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "BrowserRouter", function() { return __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__HashRouter__ = __webpack_require__(210);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "HashRouter", function() { return __WEBPACK_IMPORTED_MODULE_1__HashRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Link__ = __webpack_require__(99);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Link", function() { return __WEBPACK_IMPORTED_MODULE_2__Link__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__ = __webpack_require__(212);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "MemoryRouter", function() { return __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__NavLink__ = __webpack_require__(215);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "NavLink", function() { return __WEBPACK_IMPORTED_MODULE_4__NavLink__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Prompt__ = __webpack_require__(217);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Prompt", function() { return __WEBPACK_IMPORTED_MODULE_5__Prompt__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Redirect__ = __webpack_require__(219);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Redirect", function() { return __WEBPACK_IMPORTED_MODULE_6__Redirect__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Route__ = __webpack_require__(100);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Route", function() { return __WEBPACK_IMPORTED_MODULE_7__Route__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Router__ = __webpack_require__(60);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Router", function() { return __WEBPACK_IMPORTED_MODULE_8__Router__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__StaticRouter__ = __webpack_require__(225);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "StaticRouter", function() { return __WEBPACK_IMPORTED_MODULE_9__StaticRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__Switch__ = __webpack_require__(227);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Switch", function() { return __WEBPACK_IMPORTED_MODULE_10__Switch__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__matchPath__ = __webpack_require__(229);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "matchPath", function() { return __WEBPACK_IMPORTED_MODULE_11__matchPath__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__withRouter__ = __webpack_require__(230);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "withRouter", function() { return __WEBPACK_IMPORTED_MODULE_12__withRouter__["a"]; });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /***/ }),
 /* 10 */
@@ -7113,7 +7113,7 @@ var locationsAreEqual = exports.locationsAreEqual = function locationsAreEqual(a
 
 exports.__esModule = true;
 
-var _warning = __webpack_require__(8);
+var _warning = __webpack_require__(9);
 
 var _warning2 = _interopRequireDefault(_warning);
 
@@ -7211,7 +7211,7 @@ exports.default = createTransitionManager;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
@@ -7407,7 +7407,7 @@ var matchPath = function matchPath(pathname) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 
 
@@ -11476,7 +11476,7 @@ Link.contextTypes = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
@@ -11707,7 +11707,7 @@ var _Product = __webpack_require__(245);
 
 var _Product2 = _interopRequireDefault(_Product);
 
-var _reactRouterDom = __webpack_require__(9);
+var _reactRouterDom = __webpack_require__(8);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -11727,28 +11727,15 @@ var Product = function (_React$Component) {
   }
 
   _createClass(Product, [{
-    key: 'renderProductEdit',
-    value: function renderProductEdit() {
-      var loggedIn = this.props.loggedIn;
-
-      if (loggedIn) {
-        return _react2.default.createElement(
-          _reactRouterDom.Link,
-          { to: '/editproduct' },
-          _react2.default.createElement(
-            'button',
-            null,
-            'Edit'
-          )
-        );
-      }
-    }
-  }, {
     key: 'render',
     value: function render() {
+      var _this2 = this;
+
       return _react2.default.createElement(
         'div',
-        { className: 'product' },
+        { onClick: function onClick() {
+            return _this2.props.handleGetProduct(_this2.props.id);
+          }, className: 'product' },
         _react2.default.createElement('img', { src: this.props.mainImage, alt: this.props.mainImage }),
         _react2.default.createElement(
           'h1',
@@ -11764,8 +11751,7 @@ var Product = function (_React$Component) {
           'p',
           { hidden: true },
           this.props.description
-        ),
-        this.renderProductEdit()
+        )
       );
     }
   }]);
@@ -11796,9 +11782,7 @@ var _Sold = __webpack_require__(246);
 
 var _Sold2 = _interopRequireDefault(_Sold);
 
-var _reactRouterDom = __webpack_require__(9);
-
-var _reactRouterDom2 = _interopRequireDefault(_reactRouterDom);
+var _reactRouterDom = __webpack_require__(8);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -11818,28 +11802,15 @@ var Sold = function (_React$Component) {
   }
 
   _createClass(Sold, [{
-    key: 'renderProductEdit',
-    value: function renderProductEdit() {
-      var loggedIn = this.props.loggedIn;
-
-      if (loggedIn) {
-        return _react2.default.createElement(
-          _reactRouterDom2.default,
-          { to: '/editproduct' },
-          _react2.default.createElement(
-            'button',
-            null,
-            'Edit'
-          )
-        );
-      }
-    }
-  }, {
     key: 'render',
     value: function render() {
+      var _this2 = this;
+
       return _react2.default.createElement(
         'div',
-        { className: 'sold' },
+        { className: 'sold', onClick: function onClick() {
+            return _this2.props.handleGetProduct(_this2.props.id);
+          } },
         _react2.default.createElement('img', { src: this.props.mainImage, alt: this.props.mainImage }),
         _react2.default.createElement(
           'h1',
@@ -11855,8 +11826,7 @@ var Sold = function (_React$Component) {
           'p',
           { hidden: true },
           this.props.description
-        ),
-        this.renderProductEdit()
+        )
       );
     }
   }]);
@@ -11886,7 +11856,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactDom = __webpack_require__(121);
 
-var _reactRouterDom = __webpack_require__(9);
+var _reactRouterDom = __webpack_require__(8);
 
 var _App = __webpack_require__(233);
 
@@ -24013,7 +23983,7 @@ module.exports = ReactDOMInvalidARIAHook;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
@@ -24154,7 +24124,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _warning = __webpack_require__(8);
+var _warning = __webpack_require__(9);
 
 var _warning2 = _interopRequireDefault(_warning);
 
@@ -24459,7 +24429,7 @@ exports.default = createBrowserHistory;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
@@ -24531,7 +24501,7 @@ exports.__esModule = true;
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _warning = __webpack_require__(8);
+var _warning = __webpack_require__(9);
 
 var _warning2 = _interopRequireDefault(_warning);
 
@@ -24866,7 +24836,7 @@ exports.default = createHashHistory;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
@@ -24941,7 +24911,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _warning = __webpack_require__(8);
+var _warning = __webpack_require__(9);
 
 var _warning2 = _interopRequireDefault(_warning);
 
@@ -25442,7 +25412,7 @@ Prompt.contextTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_warning__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_warning__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_invariant__);
@@ -25573,7 +25543,7 @@ Redirect.contextTypes = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
@@ -25877,7 +25847,7 @@ var createBrowserHistory = function createBrowserHistory() {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
@@ -26198,7 +26168,7 @@ var createHashHistory = function createHashHistory() {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__PathUtils__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(39);
@@ -26377,7 +26347,7 @@ var createMemoryHistory = function createMemoryHistory() {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
@@ -26575,7 +26545,7 @@ StaticRouter.childContextTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_warning__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_warning__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_invariant__);
@@ -26816,7 +26786,7 @@ var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(9);
+var _reactRouterDom = __webpack_require__(8);
 
 var _App = __webpack_require__(234);
 
@@ -26853,11 +26823,13 @@ var App = function (_React$Component) {
     _this.state = {
       allProducts: [],
       allShows: [],
+      clickedProduct: [],
       user: {},
       email: '',
       password: '',
       userCreated: false,
       loggedIn: false,
+      productSelected: false,
       errors: [],
       showName: '',
       showDate: '',
@@ -26866,6 +26838,7 @@ var App = function (_React$Component) {
       showVenue: '',
       showCurrent: '',
       showCreated: false,
+      showEdited: false,
       productName: '',
       productDescription: '',
       productPrice: '',
@@ -26873,7 +26846,13 @@ var App = function (_React$Component) {
       productCategory: '',
       productSold: '',
       productCreated: false,
-      imageMain: ''
+      productEdited: false,
+      imageMain: '',
+      imageSupOne: '',
+      imageSupTwo: '',
+      imageSupThree: '',
+      productId: 0,
+      showId: 0
     };
     return _this;
   }
@@ -26889,6 +26868,7 @@ var App = function (_React$Component) {
         _this2.setState({
           allProducts: data,
           productCreated: false,
+          productEdited: false,
           productCategory: ''
         });
         // console.log(this.state.allProducts);
@@ -26906,6 +26886,7 @@ var App = function (_React$Component) {
       }).then(function (data) {
         _this3.setState({
           allShows: data,
+          showEdited: false,
           showCreated: false
         });
         // console.log(this.state.allShows);
@@ -27111,6 +27092,27 @@ var App = function (_React$Component) {
       });
     }
   }, {
+    key: 'updateImageSupOne',
+    value: function updateImageSupOne(e) {
+      this.setState({
+        imageSupOne: e.target.value
+      });
+    }
+  }, {
+    key: 'updateImageSupTwo',
+    value: function updateImageSupTwo(e) {
+      this.setState({
+        imageSupTwo: e.target.value
+      });
+    }
+  }, {
+    key: 'updateImageSupThree',
+    value: function updateImageSupThree(e) {
+      this.setState({
+        imageSupThree: e.target.value
+      });
+    }
+  }, {
     key: 'handleCreateProduct',
     value: function handleCreateProduct() {
       var _this7 = this;
@@ -27127,7 +27129,10 @@ var App = function (_React$Component) {
           sku: this.state.productSku,
           category: this.state.productCategory,
           sold: this.state.productSold,
-          main_img: this.state.imageMain
+          main_img: this.state.imageMain,
+          sup_img_1: this.state.imageSupOne,
+          sup_img_2: this.state.imageSupTwo,
+          sup_img_3: this.state.imageSupThree
         })
       }).then(this.setState({
         productName: '',
@@ -27135,13 +27140,188 @@ var App = function (_React$Component) {
         productPrice: '',
         productSku: '',
         productSold: '',
-        imageMain: ''
-      }))
-      // .then(() => this.handleCreateImageMain())
-      .then(function () {
+        imageMain: '',
+        imageSupOne: '',
+        imageSupTwo: '',
+        imageSupThree: ''
+      })).then(function () {
         _this7.getAllProducts();
         _this7.setState({
           productCreated: true
+        });
+      }).catch(function (err) {
+        return console.log(err);
+      });
+    }
+  }, {
+    key: 'handleGetProduct',
+    value: function handleGetProduct(id) {
+      var _this8 = this;
+
+      this.setState({
+        productId: id,
+        productSelected: true
+      }, function () {
+        return _this8.getOneProduct();
+      });
+      // this.getOneProduct();
+    }
+  }, {
+    key: 'handleGetShow',
+    value: function handleGetShow(show_id) {
+      var _this9 = this;
+
+      this.setState({
+        showId: show_id
+      }, function () {
+        return _this9.getOneShow();
+      });
+    }
+  }, {
+    key: 'getOneShow',
+    value: function getOneShow() {
+      var _this10 = this;
+
+      fetch('/api/shows/' + this.state.showId).then(function (r) {
+        return r.json();
+      }).then(function (data) {
+        _this10.setState({
+          clickedShow: data
+        });
+      }).then(function () {
+        _this10.setState({
+          showName: _this10.state.clickedShow.name,
+          showDate: _this10.state.clickedShow.show_date,
+          showLocation: _this10.state.clickedShow.location,
+          showWebsite: _this10.state.clickedShow.website,
+          showVenue: _this10.state.clickedShow.venue,
+          showCurrent: _this10.state.clickedShow.current
+        });
+        // console.log(this.state.clickedShow)
+      }).catch(function (err) {
+        return console.log(err);
+      });
+    }
+  }, {
+    key: 'getOneProduct',
+    value: function getOneProduct() {
+      var _this11 = this;
+
+      fetch('/api/products/' + this.state.productId).then(function (r) {
+        return r.json();
+      }).then(function (data) {
+        _this11.setState({
+          clickedProduct: data,
+          productSelected: false
+        });
+      }).then(function () {
+        _this11.setState({
+          productName: _this11.state.clickedProduct.name,
+          productDescription: _this11.state.clickedProduct.description,
+          productPrice: _this11.state.clickedProduct.price,
+          productSku: _this11.state.clickedProduct.sku,
+          productCategory: _this11.state.clickedProduct.category,
+          productSold: _this11.state.clickedProduct.sold,
+          imageMain: _this11.state.clickedProduct.main_img,
+          imageSupOne: _this11.state.clickedProduct.sup_img_1,
+          imageSupTwo: _this11.state.clickedProduct.sup_img_2,
+          imageSupThree: _this11.state.clickedProduct.sup_img_3
+        });
+        // console.log(this.state.clickedProduct)
+      }).catch(function (err) {
+        return console.log(err);
+      });
+    }
+  }, {
+    key: 'handleShowEditSubmit',
+    value: function handleShowEditSubmit() {
+      var _this12 = this;
+
+      fetch('/api/shows/' + this.state.showId, {
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        method: 'PUT',
+        body: JSON.stringify({
+          name: this.state.showName,
+          show_date: this.state.showDate,
+          venue: this.state.showVenue,
+          location: this.state.showLocation,
+          website: this.state.showWebsite,
+          current: this.state.showCurrent
+        })
+      }).then(this.setState({
+        showName: '',
+        showDate: '',
+        showVenue: '',
+        showLocation: '',
+        showWebsite: '',
+        showCurrent: ''
+      })).then(function () {
+        _this12.getAllShows();
+        _this12.setState({
+          showEdited: true,
+          showId: 0
+        });
+      }).catch(function (err) {
+        return console.log(err);
+      });
+    }
+  }, {
+    key: 'handleProductEditSubmit',
+    value: function handleProductEditSubmit() {
+      var _this13 = this;
+
+      fetch('/api/products/' + this.state.productId, {
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        method: 'PUT',
+        body: JSON.stringify({
+          name: this.state.productName,
+          description: this.state.productDescription,
+          price: this.state.productPrice,
+          sku: this.state.productSku,
+          category: this.state.productCategory,
+          sold: this.state.productSold,
+          main_img: this.state.imageMain,
+          sup_img_1: this.state.imageSupOne,
+          sup_img_2: this.state.imageSupTwo,
+          sup_img_3: this.state.imageSupThree
+        })
+      }).then(this.setState({
+        productName: '',
+        productDescription: '',
+        productPrice: '',
+        productSku: '',
+        productCategory: '',
+        productSold: '',
+        imageMain: '',
+        imageSupOne: '',
+        imageSupTwo: '',
+        imageSupThree: ''
+      })).then(function () {
+        _this13.getAllProducts();
+        _this13.setState({
+          productEdited: true,
+          productId: 0
+        });
+      }).catch(function (err) {
+        return console.log(err);
+      });
+    }
+  }, {
+    key: 'handleProductDeleteSubmit',
+    value: function handleProductDeleteSubmit() {
+      var _this14 = this;
+
+      fetch('/api/products/' + this.state.productId, {
+        method: 'delete'
+      }).then(function () {
+        _this14.getAllProducts();
+        _this14.setState({
+          productEdited: true,
+          productId: 0
         });
       }).catch(function (err) {
         return console.log(err);
@@ -27152,6 +27332,23 @@ var App = function (_React$Component) {
     value: function componentWillMount() {
       this.getAllProducts();
       this.getAllShows();
+    }
+  }, {
+    key: 'handleShowDeleteSubmit',
+    value: function handleShowDeleteSubmit() {
+      var _this15 = this;
+
+      fetch('/api/shows/' + this.state.showId, {
+        method: 'delete'
+      }).then(function () {
+        _this15.getAllShows();
+        _this15.setState({
+          showEdited: true,
+          showId: 0
+        });
+      }).catch(function (err) {
+        return console.log(err);
+      });
     }
   }, {
     key: 'render',
@@ -27168,6 +27365,7 @@ var App = function (_React$Component) {
           allShows: this.state.allShows,
           loggedIn: this.state.loggedIn,
           userCreated: this.state.userCreated,
+          productSelected: this.state.productSelected,
           errors: this.state.errors,
           showName: this.state.showName,
           showDate: this.state.showDate,
@@ -27176,6 +27374,7 @@ var App = function (_React$Component) {
           showVenue: this.state.showVenue,
           showCurrent: this.state.showCurrent,
           showCreated: this.state.showCreated,
+          showEdited: this.state.showEdited,
           productName: this.state.productName,
           productDescription: this.state.productDescription,
           productPrice: this.state.productPrice,
@@ -27183,8 +27382,17 @@ var App = function (_React$Component) {
           productCategory: this.state.productCategory,
           productSold: this.state.productSold,
           productCreated: this.state.productCreated,
+          productEdited: this.state.productEdited,
+          productId: this.state.productId,
           imageMain: this.state.imageMain,
+          imageSupOne: this.state.imageSupOne,
+          imageSupTwo: this.state.imageSupTwo,
+          imageSupThree: this.state.imageSupThree,
+          clickedProduct: this.state.clickedProduct,
           updateImageMain: this.updateImageMain.bind(this),
+          updateImageSupOne: this.updateImageSupOne.bind(this),
+          updateImageSupTwo: this.updateImageSupTwo.bind(this),
+          updateImageSupThree: this.updateImageSupThree.bind(this),
           updateFormEmail: this.updateFormEmail.bind(this),
           updateFormPassword: this.updateFormPassword.bind(this),
           handleCreateUser: this.handleCreateUser.bind(this),
@@ -27196,13 +27404,19 @@ var App = function (_React$Component) {
           updateShowVenue: this.updateShowVenue.bind(this),
           updateShowCurrent: this.updateShowCurrent.bind(this),
           handleCreateShow: this.handleCreateShow.bind(this),
+          handleShowEditSubmit: this.handleShowEditSubmit.bind(this),
+          handleShowDeleteSubmit: this.handleShowDeleteSubmit.bind(this),
           updateProductName: this.updateProductName.bind(this),
           updateProductDescription: this.updateProductDescription.bind(this),
           updateProductPrice: this.updateProductPrice.bind(this),
           updateProductSku: this.updateProductSku.bind(this),
           updateProductCategory: this.updateProductCategory.bind(this),
           updateProductSold: this.updateProductSold.bind(this),
-          handleCreateProduct: this.handleCreateProduct.bind(this)
+          handleCreateProduct: this.handleCreateProduct.bind(this),
+          handleGetProduct: this.handleGetProduct.bind(this),
+          handleProductEditSubmit: this.handleProductEditSubmit.bind(this),
+          handleProductDeleteSubmit: this.handleProductDeleteSubmit.bind(this),
+          handleGetShow: this.handleGetShow.bind(this)
         }),
         _react2.default.createElement(_Footer2.default, null)
       );
@@ -27235,7 +27449,7 @@ var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(9);
+var _reactRouterDom = __webpack_require__(8);
 
 var _Header = __webpack_require__(236);
 
@@ -27311,7 +27525,7 @@ var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(9);
+var _reactRouterDom = __webpack_require__(8);
 
 var _Main = __webpack_require__(238);
 
@@ -27349,15 +27563,17 @@ var _Signup = __webpack_require__(263);
 
 var _Signup2 = _interopRequireDefault(_Signup);
 
-var _EditProduct = __webpack_require__(265);
-
-var _EditProduct2 = _interopRequireDefault(_EditProduct);
-
-var _EditShow = __webpack_require__(267);
+var _EditShow = __webpack_require__(265);
 
 var _EditShow2 = _interopRequireDefault(_EditShow);
 
+var _OneProduct = __webpack_require__(267);
+
+var _OneProduct2 = _interopRequireDefault(_OneProduct);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -27389,16 +27605,64 @@ var Main = function (_React$Component) {
           _react2.default.createElement(_reactRouterDom.Route, { path: '/store', component: function component(props) {
               return _react2.default.createElement(_Store2.default, _extends({
                 allProducts: _this2.props.allProducts,
-                loggedIn: _this2.props.loggedIn
+                productId: _this2.props.productId,
+                handleGetProduct: _this2.props.handleGetProduct,
+                productSelected: _this2.props.productSelected
               }, props));
             } }),
-          _react2.default.createElement(_reactRouterDom.Route, { path: '/editproduct', component: _EditProduct2.default }),
-          _react2.default.createElement(_reactRouterDom.Route, { path: '/editshow', component: _EditShow2.default }),
+          _react2.default.createElement(_reactRouterDom.Route, { path: '/product/:productId', render: function render(props) {
+              var _extends2;
+
+              return _react2.default.createElement(_OneProduct2.default, _extends((_extends2 = {
+                clickedProduct: _this2.props.clickedProduct,
+                loggedIn: _this2.props.loggedIn,
+                productEdited: _this2.props.productEdited,
+                handleProductEditSubmit: _this2.props.handleProductEditSubmit,
+                handleProductDeleteSubmit: _this2.props.handleProductDeleteSubmit,
+                updateProductName: _this2.props.updateProductName,
+                updateProductDescription: _this2.props.updateProductDescription,
+                updateProductPrice: _this2.props.updateProductPrice,
+                updateProductSku: _this2.props.updateProductSku,
+                updateProductCategory: _this2.props.updateProductCategory,
+                updateProductSold: _this2.props.updateProductSold,
+                updateImageMain: _this2.props.updateImageMain,
+                updateImageSupOne: _this2.props.updateImageSupOne,
+                updateImageSupTwo: _this2.props.updateImageSupTwo,
+                updateImageSupThree: _this2.props.updateImageSupThree,
+                productName: _this2.props.productName,
+                productDescription: _this2.props.productDescription,
+                productPrice: _this2.props.productPrice,
+                productSku: _this2.props.productSku,
+                productCategory: _this2.props.productCategory,
+                productSold: _this2.props.productSold,
+                productCreated: _this2.props.productCreated
+              }, _defineProperty(_extends2, 'productEdited', _this2.props.productEdited), _defineProperty(_extends2, 'productId', _this2.props.productId), _defineProperty(_extends2, 'imageMain', _this2.props.imageMain), _defineProperty(_extends2, 'imageSupOne', _this2.props.imageSupOne), _defineProperty(_extends2, 'imageSupTwo', _this2.props.imageSupTwo), _defineProperty(_extends2, 'imageSupThree', _this2.props.imageSupThree), _extends2), props));
+            } }),
+          _react2.default.createElement(_reactRouterDom.Route, { path: '/show/:showId', render: function render(props) {
+              return _react2.default.createElement(_EditShow2.default, _extends({
+                showName: _this2.props.showName,
+                showDate: _this2.props.showDate,
+                showLocation: _this2.props.showLocation,
+                showWebsite: _this2.props.showWebsite,
+                showVenue: _this2.props.showVenue,
+                showCurrent: _this2.props.showCurrent,
+                updateShowName: _this2.props.updateShowName,
+                updateShowDate: _this2.props.updateShowDate,
+                updateShowLocation: _this2.props.updateShowLocation,
+                updateShowWebsite: _this2.props.updateShowWebsite,
+                updateShowVenue: _this2.props.updateShowVenue,
+                updateShowCurrent: _this2.props.updateShowCurrent,
+                showEdited: _this2.props.showEdited,
+                handleShowEditSubmit: _this2.props.handleShowEditSubmit,
+                handleShowDeleteSubmit: _this2.props.handleShowDeleteSubmit
+              }, props));
+            } }),
           _react2.default.createElement(_reactRouterDom.Route, { path: '/about', component: _About2.default }),
           _react2.default.createElement(_reactRouterDom.Route, { path: '/shows', component: function component(props) {
               return _react2.default.createElement(_Shows2.default, _extends({
                 allShows: _this2.props.allShows,
-                loggedIn: _this2.props.loggedIn
+                loggedIn: _this2.props.loggedIn,
+                handleGetShow: _this2.props.handleGetShow
               }, props));
             } }),
           _react2.default.createElement(_reactRouterDom.Route, { path: '/map', component: _Map2.default }),
@@ -27455,7 +27719,13 @@ var Main = function (_React$Component) {
                 updateProductSold: _this2.props.updateProductSold,
                 handleCreateProduct: _this2.props.handleCreateProduct,
                 imageMain: _this2.props.imageMain,
-                updateImageMain: _this2.props.updateImageMain
+                updateImageMain: _this2.props.updateImageMain,
+                imageSupOne: _this2.props.imageSupOne,
+                imageSupTwo: _this2.props.imageSupTwo,
+                imageSupThree: _this2.props.imageSupThree,
+                updateImageSupOne: _this2.props.updateImageSupOne,
+                updateImageSupTwo: _this2.props.updateImageSupTwo,
+                updateImageSupThree: _this2.props.updateImageSupThree
               }, props));
             }
           })
@@ -27494,7 +27764,7 @@ var _Home = __webpack_require__(240);
 
 var _Home2 = _interopRequireDefault(_Home);
 
-var _reactRouterDom = __webpack_require__(9);
+var _reactRouterDom = __webpack_require__(8);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27555,7 +27825,7 @@ var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(9);
+var _reactRouterDom = __webpack_require__(8);
 
 var _Store = __webpack_require__(242);
 
@@ -27590,6 +27860,12 @@ var Store = function (_React$Component) {
     key: 'render',
     value: function render() {
       var _this2 = this;
+
+      var productSelected = this.props.productSelected;
+
+      if (productSelected) {
+        return _react2.default.createElement(_reactRouterDom.Redirect, { to: '/product/' + this.props.productId });
+      }
 
       return _react2.default.createElement(
         'div',
@@ -27676,10 +27952,10 @@ var Store = function (_React$Component) {
           )
         ),
         _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: this.props.match.url, component: function component(props) {
-            return _react2.default.createElement(_Primitive2.default, _extends({ allProducts: _this2.props.allProducts, loggedIn: _this2.props.loggedIn }, props));
+            return _react2.default.createElement(_Primitive2.default, _extends({ allProducts: _this2.props.allProducts, loggedIn: _this2.props.loggedIn, handleGetProduct: _this2.props.handleGetProduct, productSelected: _this2.props.productSelected }, props));
           } }),
         _react2.default.createElement(_reactRouterDom.Route, { path: this.props.match.url + '/:categoryId', component: function component(props) {
-            return _react2.default.createElement(_Category2.default, _extends({ allProducts: _this2.props.allProducts, loggedIn: _this2.props.loggedIn }, props));
+            return _react2.default.createElement(_Category2.default, _extends({ allProducts: _this2.props.allProducts, loggedIn: _this2.props.loggedIn, handleGetProduct: _this2.props.handleGetProduct, productSelected: _this2.props.productSelected }, props));
           } })
       );
     }
@@ -27809,11 +28085,14 @@ var Category = function (_React$Component) {
         if (product.category === categoryName && product.sold == false) {
           return _react2.default.createElement(_Product2.default, {
             key: i,
+            id: product.product_id,
             name: product.name,
             price: product.price,
             description: product.description,
             mainImage: product.main_img,
-            loggedIn: _this2.props.loggedIn
+            loggedIn: _this2.props.loggedIn,
+            handleGetProduct: _this2.props.handleGetProduct,
+            productSelected: _this2.props.productSelected
           });
         }
       });
@@ -27829,11 +28108,14 @@ var Category = function (_React$Component) {
         if (product.category === categoryName && product.sold == true) {
           return _react2.default.createElement(_Sold2.default, {
             key: i,
+            id: product.product_id,
             name: product.name,
             price: product.price,
             description: product.description,
             mainImage: product.main_img,
-            loggedIn: _this3.props.loggedIn
+            loggedIn: _this3.props.loggedIn,
+            handleGetProduct: _this3.props.handleGetProduct,
+            productSelected: _this3.props.productSelected
           });
         }
       });
@@ -27857,7 +28139,7 @@ var Category = function (_React$Component) {
         ),
         _react2.default.createElement(
           'div',
-          { className: 'sold' },
+          { className: 'sold-items' },
           this.renderCategorySold()
         )
       );
@@ -27916,6 +28198,10 @@ var _Sold = __webpack_require__(104);
 
 var _Sold2 = _interopRequireDefault(_Sold);
 
+var _reactRouterDom = __webpack_require__(8);
+
+var _reactRouterDom2 = _interopRequireDefault(_reactRouterDom);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -27949,11 +28235,14 @@ var Primitive = function (_React$Component) {
         if (product.category === 'primitive' && product.sold == false) {
           return _react2.default.createElement(_Product2.default, {
             key: i,
+            id: product.product_id,
             name: product.name,
             price: product.price,
             description: product.description,
             mainImage: product.main_img,
-            loggedIn: _this2.props.loggedIn
+            loggedIn: _this2.props.loggedIn,
+            handleGetProduct: _this2.props.handleGetProduct,
+            productSelected: _this2.props.productSelected
           });
         }
       });
@@ -27967,11 +28256,14 @@ var Primitive = function (_React$Component) {
         if (product.sold == true && product.category === 'primitive') {
           return _react2.default.createElement(_Sold2.default, {
             key: i,
+            id: product.product_id,
             name: product.name,
             price: product.price,
             description: product.description,
             mainImage: product.main_img,
-            loggedIn: _this3.props.loggedIn
+            loggedIn: _this3.props.loggedIn,
+            handleGetProduct: _this3.props.handleGetProduct,
+            productSelected: _this3.props.productSelected
           });
         }
       });
@@ -27999,7 +28291,7 @@ var Primitive = function (_React$Component) {
         ),
         _react2.default.createElement(
           'div',
-          { className: 'sold' },
+          { className: 'sold-items' },
           this.renderPrimitiveSold()
         )
       );
@@ -28058,7 +28350,9 @@ var About = function About() {
           null,
           'Our family has been working with antiques for over 25 years in the southwestern Wisconsin area and is proud to have opened our first storefront in East Troy. We believe antiques are uniquely crafted with quality, telling the history of a time, place and people. Each piece we uncover or refurbish highlights the integrity of that history. Our hope is that the piece you fall in love with becomes a focal point of a story in your home.',
           _react2.default.createElement('br', null),
+          _react2.default.createElement('br', null),
           'Our story began when Christine Good brought home here very first antique trunk, purchased from Antiques on Main in East Troy. Her love for antiques inspired Tim Good, her husband, to find pieces and refurbish them. They decorated their home, trading and upgrading pieces. Antique-ing became a hobby of theirs and they began selling at local shows. Soon, they were teaching their kids, and later grandkids, the trick of the trade, passing an appreciation for the furniture. We all love antiques for reasons that are personal, but the common thread is that they remind us of moments shared together.',
+          _react2.default.createElement('br', null),
           _react2.default.createElement('br', null),
           'Just as we believe these memories will last forever, we stand behind craftsmanship and quality of antiques. Old growth wood is sturdy and cannot be reproduced. Original painted surfaces have withstood that test of time. These handcrafted pieces have been built with a care and precision that lasts. Your investment tells a story of the past, but it also can be passed down generations.'
         )
@@ -28074,12 +28368,12 @@ var About = function About() {
         _react2.default.createElement(
           'div',
           { className: 'family-member' },
-          _react2.default.createElement('img', { src: '' }),
+          _react2.default.createElement('div', { className: 'family-photo', id: 'christine' }),
           _react2.default.createElement(
             'div',
             { className: 'family-text' },
             _react2.default.createElement(
-              'h1',
+              'h2',
               null,
               'Christine Good'
             ),
@@ -28097,7 +28391,7 @@ var About = function About() {
             'div',
             { className: 'family-text' },
             _react2.default.createElement(
-              'h1',
+              'h2',
               null,
               'Tim Good'
             ),
@@ -28107,17 +28401,17 @@ var About = function About() {
               'I love finding the antiques and preserving their history. Over the years, I\'ve learned about the pieces, the people who owned them, and how they were built. I enjoy reading about them and studying their design. I collect hardware, wood, knobs and more so that I can bring them back to their original state.'
             )
           ),
-          _react2.default.createElement('img', { src: '' })
+          _react2.default.createElement('div', { className: 'family-photo', id: 'tim' })
         ),
         _react2.default.createElement(
           'div',
           { className: 'family-member' },
-          _react2.default.createElement('img', { src: '' }),
+          _react2.default.createElement('div', { className: 'family-photo', id: 'tom' }),
           _react2.default.createElement(
             'div',
             { className: 'family-text' },
             _react2.default.createElement(
-              'h1',
+              'h2',
               null,
               'Tom Good'
             ),
@@ -28135,7 +28429,7 @@ var About = function About() {
             'div',
             { className: 'family-text' },
             _react2.default.createElement(
-              'h1',
+              'h2',
               null,
               'Steven Good'
             ),
@@ -28145,17 +28439,17 @@ var About = function About() {
               'I love that you can learn so much about American furniture through antiques. They tell a story of the people and place. They share where people settled, when they migrated and how culture their culture evolved. I enjoy the unique craftsmanship, and I get to travel and explore history through each piece.'
             )
           ),
-          _react2.default.createElement('img', { src: '' })
+          _react2.default.createElement('div', { className: 'family-photo', id: 'steven' })
         ),
         _react2.default.createElement(
           'div',
           { className: 'family-member' },
-          _react2.default.createElement('img', { src: '' }),
+          _react2.default.createElement('div', { className: 'family-photo', id: 'kathy' }),
           _react2.default.createElement(
             'div',
             { className: 'family-text' },
             _react2.default.createElement(
-              'h1',
+              'h2',
               null,
               'Kathy (Good) Ritter'
             ),
@@ -28173,7 +28467,7 @@ var About = function About() {
             'div',
             { className: 'family-text' },
             _react2.default.createElement(
-              'h1',
+              'h2',
               null,
               'Kristie Conklin'
             ),
@@ -28183,7 +28477,7 @@ var About = function About() {
               'I love antiques because they tell a story, are made with quality, and were built for function. I found my very first antique with my uncle while digging holes in my grandparent\'s lawn in search of buried treasure. (I can\u2019t believe I found something!!) Most of the antiques I own tell a story of time spent with family, an adventure, or a lesson learned. I also love them because they were built with the best wood by craftsmen who designed it with a purpose in mind. I see too many people my age spending money on particle board, which they throw in the garbage the moment it\u2019s out of style. Antiques are unique, and if they no longer fit your life, you can resell them for, generally, more than what you paid.'
             )
           ),
-          _react2.default.createElement('img', { src: '' })
+          _react2.default.createElement('div', { className: 'family-photo', id: 'kristie' })
         )
       )
     )
@@ -28260,12 +28554,14 @@ var Shows = function (_React$Component) {
         if (show.current == true) {
           return _react2.default.createElement(_Show2.default, {
             key: i,
+            show_id: show.show_id,
             name: show.name,
             show_date: show.show_date,
             venue: show.venue,
             location: show.location,
             website: show.website,
-            loggedIn: _this2.props.loggedIn
+            loggedIn: _this2.props.loggedIn,
+            handleGetShow: _this2.props.handleGetShow
           });
         }
       });
@@ -28279,12 +28575,14 @@ var Shows = function (_React$Component) {
         if (show.current == false) {
           return _react2.default.createElement(_PastShow2.default, {
             key: i,
+            show_id: show.show_id,
             name: show.name,
             show_date: show.show_date,
             venue: show.venue,
             location: show.location,
             website: show.website,
-            loggedIn: _this3.props.loggedIn
+            loggedIn: _this3.props.loggedIn,
+            handleGetShow: _this3.props.handleGetShow
           });
         }
       });
@@ -28296,28 +28594,23 @@ var Shows = function (_React$Component) {
         'div',
         { className: 'shows' },
         _react2.default.createElement(
-          'h1',
+          'h2',
           null,
-          'Shows'
+          'Upcoming Shows:'
         ),
         _react2.default.createElement(
           'div',
           { className: 'upcoming' },
-          _react2.default.createElement(
-            'h2',
-            null,
-            'Upoming Shows:'
-          ),
           this.renderAllUpcomingShows()
+        ),
+        _react2.default.createElement(
+          'h2',
+          null,
+          'Past Shows:'
         ),
         _react2.default.createElement(
           'div',
           { className: 'past' },
-          _react2.default.createElement(
-            'h2',
-            null,
-            'Past Shows:'
-          ),
           this.renderAllPastShows()
         )
       );
@@ -28356,7 +28649,7 @@ var _Show = __webpack_require__(254);
 
 var _Show2 = _interopRequireDefault(_Show);
 
-var _reactRouterDom = __webpack_require__(9);
+var _reactRouterDom = __webpack_require__(8);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28378,15 +28671,19 @@ var Show = function (_React$Component) {
   _createClass(Show, [{
     key: 'renderShowEdit',
     value: function renderShowEdit() {
+      var _this2 = this;
+
       var loggedIn = this.props.loggedIn;
 
       if (loggedIn) {
         return _react2.default.createElement(
           _reactRouterDom.Link,
-          { to: '/editshow' },
+          { to: '/show/' + this.props.show_id },
           _react2.default.createElement(
             'button',
-            null,
+            { onClick: function onClick() {
+                return _this2.props.handleGetShow(_this2.props.show_id);
+              } },
             'Edit'
           )
         );
@@ -28466,7 +28763,7 @@ var _PastShow = __webpack_require__(256);
 
 var _PastShow2 = _interopRequireDefault(_PastShow);
 
-var _reactRouterDom = __webpack_require__(9);
+var _reactRouterDom = __webpack_require__(8);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28488,15 +28785,19 @@ var PastShow = function (_React$Component) {
   _createClass(PastShow, [{
     key: 'renderShowEdit',
     value: function renderShowEdit() {
+      var _this2 = this;
+
       var loggedIn = this.props.loggedIn;
 
       if (loggedIn) {
         return _react2.default.createElement(
           _reactRouterDom.Link,
-          { to: '/editshow' },
+          { to: '/show/' + this.props.show_id },
           _react2.default.createElement(
             'button',
-            null,
+            { onClick: function onClick() {
+                return _this2.props.handleGetShow(_this2.props.show_id);
+              } },
             'Edit'
           )
         );
@@ -28565,9 +28866,58 @@ var MapPage = function MapPage() {
     'div',
     { className: 'map' },
     _react2.default.createElement(
-      'h1',
-      null,
-      'This is the map page'
+      'div',
+      { className: 'map-info' },
+      _react2.default.createElement(
+        'div',
+        { className: 'store-info' },
+        _react2.default.createElement(
+          'h1',
+          null,
+          'Address:'
+        ),
+        _react2.default.createElement(
+          'p',
+          null,
+          '3066 Main Street',
+          _react2.default.createElement('br', null),
+          'East Troy, WI 53155',
+          _react2.default.createElement('br', null),
+          '(262) 642-2277'
+        ),
+        _react2.default.createElement(
+          'h1',
+          null,
+          'Directions:'
+        ),
+        _react2.default.createElement(
+          'button',
+          { id: 'google-maps' },
+          'Use Google Maps'
+        ),
+        _react2.default.createElement(
+          'h1',
+          null,
+          'Store Hours:'
+        ),
+        _react2.default.createElement(
+          'p',
+          null,
+          'Mon: 10am-4pm',
+          _react2.default.createElement('br', null),
+          'Tues & Wed: closed',
+          _react2.default.createElement('br', null),
+          'Thur - Sun: 10am-4pm',
+          _react2.default.createElement('br', null),
+          'or by appointment'
+        )
+      ),
+      _react2.default.createElement('div', { id: 'map-line' }),
+      _react2.default.createElement(
+        'div',
+        { id: 'map' },
+        'MAP'
+      )
     )
   );
 };
@@ -28601,7 +28951,7 @@ var _Login = __webpack_require__(260);
 
 var _Login2 = _interopRequireDefault(_Login);
 
-var _reactRouterDom = __webpack_require__(9);
+var _reactRouterDom = __webpack_require__(8);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28645,39 +28995,33 @@ var Login = function (_React$Component) {
           'Log In'
         ),
         _react2.default.createElement(
-          'p',
-          null,
-          'email:'
-        ),
-        _react2.default.createElement('input', {
-          type: 'text',
-          placeholder: 'example@email.com',
-          value: this.props.email,
-          onChange: this.props.updateFormEmail
-        }),
-        _react2.default.createElement(
-          'p',
-          null,
-          'password:'
-        ),
-        _react2.default.createElement('input', {
-          type: 'password',
-          placeholder: 'password',
-          value: this.props.password,
-          onChange: this.props.updateFormPassword
-        }),
-        _react2.default.createElement(
-          'button',
-          { onClick: this.props.handleLoginSubmit },
-          'Submit'
-        ),
-        _react2.default.createElement(
-          _reactRouterDom.Link,
-          { to: '/signup' },
+          'div',
+          { className: 'login-form' },
+          _react2.default.createElement('input', {
+            type: 'text',
+            placeholder: 'EMAIL',
+            value: this.props.email,
+            onChange: this.props.updateFormEmail
+          }),
+          _react2.default.createElement('input', {
+            type: 'password',
+            placeholder: 'PASSWORD',
+            value: this.props.password,
+            onChange: this.props.updateFormPassword
+          }),
           _react2.default.createElement(
-            'p',
-            null,
-            'Click here to sign up'
+            'button',
+            { onClick: this.props.handleLoginSubmit },
+            'SUBMIT'
+          ),
+          _react2.default.createElement(
+            _reactRouterDom.Link,
+            { to: '/signup' },
+            _react2.default.createElement(
+              'p',
+              null,
+              'Click here to sign up'
+            )
           )
         )
       );
@@ -28716,7 +29060,7 @@ var _Admin = __webpack_require__(262);
 
 var _Admin2 = _interopRequireDefault(_Admin);
 
-var _reactRouterDom = __webpack_require__(9);
+var _reactRouterDom = __webpack_require__(8);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28774,7 +29118,7 @@ var Admin = function (_React$Component) {
           ),
           _react2.default.createElement('input', {
             type: 'text',
-            placeholder: 'Primitive Cabinet',
+            placeholder: 'ex. Primitive Cabinet',
             value: this.props.productName,
             onChange: this.props.updateProductName
           }),
@@ -28785,7 +29129,7 @@ var Admin = function (_React$Component) {
           ),
           _react2.default.createElement('input', {
             type: 'text',
-            placeholder: 'This Primitive cabinet is from...',
+            placeholder: 'ex. This Primitive cabinet is from...',
             value: this.props.productDescription,
             onChange: this.props.updateProductDescription
           }),
@@ -28807,7 +29151,7 @@ var Admin = function (_React$Component) {
           ),
           _react2.default.createElement('input', {
             type: 'text',
-            placeholder: 'PRIM-0001',
+            placeholder: 'ex. PRIM-0001',
             value: this.props.productSku,
             onChange: this.props.updateProductSku
           }),
@@ -28872,9 +29216,42 @@ var Admin = function (_React$Component) {
           ),
           _react2.default.createElement('input', {
             type: 'text',
-            placeholder: 'this should just be a url to picture',
+            placeholder: 'for now just be a url to picture',
             value: this.props.imageMain,
             onChange: this.props.updateImageMain
+          }),
+          _react2.default.createElement(
+            'p',
+            null,
+            'first suplemental image:'
+          ),
+          _react2.default.createElement('input', {
+            type: 'text',
+            placeholder: 'for now just be a url to picture',
+            value: this.props.imageSupOne || "",
+            onChange: this.props.updateImageSupOne
+          }),
+          _react2.default.createElement(
+            'p',
+            null,
+            'second suplemental image:'
+          ),
+          _react2.default.createElement('input', {
+            type: 'text',
+            placeholder: 'for now just be a url to picture',
+            value: this.props.imageSupTwo || "",
+            onChange: this.props.updateImageSupTwo
+          }),
+          _react2.default.createElement(
+            'p',
+            null,
+            'third suplemental image:'
+          ),
+          _react2.default.createElement('input', {
+            type: 'text',
+            placeholder: 'for now just be a url to picture',
+            value: this.props.imageSupThree || "",
+            onChange: this.props.updateImageSupThree
           }),
           _react2.default.createElement(
             'p',
@@ -28899,12 +29276,12 @@ var Admin = function (_React$Component) {
               { value: 'true' },
               'Sold'
             )
+          ),
+          _react2.default.createElement(
+            'button',
+            { onClick: this.props.handleCreateProduct },
+            'create product'
           )
-        ),
-        _react2.default.createElement(
-          'button',
-          { onClick: this.props.handleCreateProduct },
-          'create product'
         ),
         _react2.default.createElement(
           'h1',
@@ -28921,7 +29298,7 @@ var Admin = function (_React$Component) {
           ),
           _react2.default.createElement('input', {
             type: 'text',
-            placeholder: '',
+            placeholder: 'ex. ELKHORN ANTIQUE SHOW',
             value: this.props.showName,
             onChange: this.props.updateShowName
           }),
@@ -28932,7 +29309,7 @@ var Admin = function (_React$Component) {
           ),
           _react2.default.createElement('input', {
             type: 'text',
-            placeholder: '',
+            placeholder: 'ex. SUNDAY, Aug 13 -or- MON, Sep 25 - SAT, Sep 30',
             value: this.props.showDate,
             onChange: this.props.updateShowDate
           }),
@@ -28943,7 +29320,7 @@ var Admin = function (_React$Component) {
           ),
           _react2.default.createElement('input', {
             type: 'text',
-            placeholder: '',
+            placeholder: 'ex. Elkhorn Convention Center',
             value: this.props.showVenue,
             onChange: this.props.updateShowVenue
           }),
@@ -28954,7 +29331,7 @@ var Admin = function (_React$Component) {
           ),
           _react2.default.createElement('input', {
             type: 'text',
-            placeholder: '',
+            placeholder: 'ex. Elkhorn, WI',
             value: this.props.showLocation,
             onChange: this.props.updateShowLocation
           }),
@@ -28965,7 +29342,7 @@ var Admin = function (_React$Component) {
           ),
           _react2.default.createElement('input', {
             type: 'text',
-            placeholder: 'must have: http://www.example.com',
+            placeholder: 'ex. http://www.elkhornantique.com *must have: http://*',
             value: this.props.showWebsite,
             onChange: this.props.updateShowWebsite
           }),
@@ -28992,12 +29369,12 @@ var Admin = function (_React$Component) {
               { value: 'false' },
               'Past'
             )
+          ),
+          _react2.default.createElement(
+            'button',
+            { onClick: this.props.handleCreateShow },
+            'create show'
           )
-        ),
-        _react2.default.createElement(
-          'button',
-          { onClick: this.props.handleCreateShow },
-          'create show'
         )
       );
     }
@@ -29035,7 +29412,7 @@ var _Signup = __webpack_require__(264);
 
 var _Signup2 = _interopRequireDefault(_Signup);
 
-var _reactRouterDom = __webpack_require__(9);
+var _reactRouterDom = __webpack_require__(8);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -29072,22 +29449,12 @@ var Signup = function (_React$Component) {
           null,
           'Sign Up:'
         ),
-        _react2.default.createElement(
-          'p',
-          null,
-          'email:'
-        ),
         _react2.default.createElement('input', {
           type: 'text',
-          placeholder: 'name@email.com',
+          placeholder: 'email ex. name@email.com',
           value: this.props.email,
           onChange: this.props.updateFormEmail
         }),
-        _react2.default.createElement(
-          'p',
-          null,
-          'password:'
-        ),
         _react2.default.createElement('input', {
           type: 'password',
           placeholder: 'password',
@@ -29131,11 +29498,11 @@ var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _EditProduct = __webpack_require__(266);
+var _EditShow = __webpack_require__(266);
 
-var _EditProduct2 = _interopRequireDefault(_EditProduct);
+var _EditShow2 = _interopRequireDefault(_EditShow);
 
-var _reactRouterDom = __webpack_require__(9);
+var _reactRouterDom = __webpack_require__(8);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -29145,34 +29512,165 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var EditProduct = function (_React$Component) {
-  _inherits(EditProduct, _React$Component);
+var EditShow = function (_React$Component) {
+  _inherits(EditShow, _React$Component);
 
-  function EditProduct() {
-    _classCallCheck(this, EditProduct);
+  function EditShow() {
+    _classCallCheck(this, EditShow);
 
-    return _possibleConstructorReturn(this, (EditProduct.__proto__ || Object.getPrototypeOf(EditProduct)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (EditShow.__proto__ || Object.getPrototypeOf(EditShow)).apply(this, arguments));
   }
 
-  _createClass(EditProduct, [{
+  _createClass(EditShow, [{
     key: 'render',
     value: function render() {
+
+      var showEdited = this.props.showEdited;
+
+      if (showEdited) {
+        return _react2.default.createElement(_reactRouterDom.Redirect, { to: '/shows' });
+      }
+
       return _react2.default.createElement(
         'div',
-        { className: 'edit-product' },
+        { className: 'edit-show' },
         _react2.default.createElement(
           'h1',
           null,
-          'Edit Product:'
+          'Reference:'
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'edit-ref' },
+          _react2.default.createElement(
+            'h1',
+            null,
+            this.props.showDate
+          ),
+          _react2.default.createElement(
+            'h3',
+            null,
+            '@ ',
+            this.props.showVenue
+          ),
+          _react2.default.createElement(
+            'h3',
+            null,
+            this.props.showLocation
+          ),
+          _react2.default.createElement(
+            'h3',
+            null,
+            this.props.showName
+          ),
+          _react2.default.createElement(
+            'p',
+            null,
+            this.props.showWebsite
+          )
+        ),
+        _react2.default.createElement(
+          'h1',
+          null,
+          'Edit Show:'
+        ),
+        _react2.default.createElement(
+          'p',
+          null,
+          '*name'
+        ),
+        _react2.default.createElement('input', {
+          type: 'text',
+          placeholder: '',
+          value: this.props.showName,
+          onChange: this.props.updateShowName
+        }),
+        _react2.default.createElement(
+          'p',
+          null,
+          '*date'
+        ),
+        _react2.default.createElement('input', {
+          type: 'text',
+          placeholder: '',
+          value: this.props.showDate,
+          onChange: this.props.updateShowDate
+        }),
+        _react2.default.createElement(
+          'p',
+          null,
+          '*venue'
+        ),
+        _react2.default.createElement('input', {
+          type: 'text',
+          placeholder: '',
+          value: this.props.showVenue,
+          onChange: this.props.updateShowVenue
+        }),
+        _react2.default.createElement(
+          'p',
+          null,
+          '*location'
+        ),
+        _react2.default.createElement('input', {
+          type: 'text',
+          placeholder: '',
+          value: this.props.showLocation,
+          onChange: this.props.updateShowLocation
+        }),
+        _react2.default.createElement(
+          'p',
+          null,
+          '*website'
+        ),
+        _react2.default.createElement('input', {
+          type: 'text',
+          placeholder: '',
+          value: this.props.showWebsite,
+          onChange: this.props.updateShowWebsite
+        }),
+        _react2.default.createElement(
+          'p',
+          null,
+          '*upcoming'
+        ),
+        _react2.default.createElement(
+          'select',
+          { value: this.props.showCurrent, onChange: this.props.updateShowCurrent },
+          _react2.default.createElement(
+            'option',
+            null,
+            'Select One'
+          ),
+          _react2.default.createElement(
+            'option',
+            { value: 'true' },
+            'Upcoming'
+          ),
+          _react2.default.createElement(
+            'option',
+            { value: 'false' },
+            'Past'
+          )
+        ),
+        _react2.default.createElement(
+          'button',
+          { onClick: this.props.handleShowEditSubmit },
+          'Edit Show'
+        ),
+        _react2.default.createElement(
+          'button',
+          { onClick: this.props.handleShowDeleteSubmit, id: 'delete' },
+          'Delete'
         )
       );
     }
   }]);
 
-  return EditProduct;
+  return EditShow;
 }(_react2.default.Component);
 
-exports.default = EditProduct;
+exports.default = EditShow;
 
 /***/ }),
 /* 266 */
@@ -29197,11 +29695,11 @@ var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _EditShow = __webpack_require__(268);
+var _OneProduct = __webpack_require__(268);
 
-var _EditShow2 = _interopRequireDefault(_EditShow);
+var _OneProduct2 = _interopRequireDefault(_OneProduct);
 
-var _reactRouterDom = __webpack_require__(9);
+var _reactRouterDom = __webpack_require__(8);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -29211,34 +29709,301 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var EditShow = function (_React$Component) {
-  _inherits(EditShow, _React$Component);
+var OneProduct = function (_React$Component) {
+  _inherits(OneProduct, _React$Component);
 
-  function EditShow() {
-    _classCallCheck(this, EditShow);
+  function OneProduct() {
+    _classCallCheck(this, OneProduct);
 
-    return _possibleConstructorReturn(this, (EditShow.__proto__ || Object.getPrototypeOf(EditShow)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (OneProduct.__proto__ || Object.getPrototypeOf(OneProduct)).apply(this, arguments));
   }
 
-  _createClass(EditShow, [{
-    key: 'render',
-    value: function render() {
+  _createClass(OneProduct, [{
+    key: 'renderProductEdit',
+    value: function renderProductEdit() {
+      var _this2 = this;
+
+      var loggedIn = this.props.loggedIn;
+
+      if (loggedIn) {
+        return _react2.default.createElement(
+          'div',
+          { className: 'edit-delete' },
+          _react2.default.createElement(
+            'button',
+            { onClick: function onClick() {
+                return _this2.activateEditForm();
+              }, id: 'edit' },
+            'Edit'
+          ),
+          _react2.default.createElement(
+            'button',
+            { onClick: this.props.handleProductDeleteSubmit, id: 'delete' },
+            'Delete'
+          )
+        );
+      }
+    }
+  }, {
+    key: 'activateEditForm',
+    value: function activateEditForm() {
+      var form = document.getElementsByClassName("product-edit")[0];
+
+      form.style.height = "950px";
+      form.style.opacity = "1";
+      form.style.zIndex = "1";
+      form.style.fontSize = ".85em";
+    }
+  }, {
+    key: 'renderEditForm',
+    value: function renderEditForm() {
       return _react2.default.createElement(
         'div',
-        { className: 'edit-show' },
+        { className: 'product-edit' },
         _react2.default.createElement(
           'h1',
           null,
-          'Edit Show:'
+          'Edit ',
+          this.props.productName,
+          ' :'
+        ),
+        _react2.default.createElement(
+          'p',
+          null,
+          '*name:'
+        ),
+        _react2.default.createElement('input', {
+          type: 'text',
+          placeholder: 'ex. Primitive Cabinet',
+          value: this.props.productName,
+          onChange: this.props.updateProductName
+        }),
+        _react2.default.createElement(
+          'p',
+          null,
+          '*description:'
+        ),
+        _react2.default.createElement('input', {
+          type: 'text',
+          placeholder: 'ex. This Primitive cabinet is from...',
+          value: this.props.productDescription,
+          onChange: this.props.updateProductDescription
+        }),
+        _react2.default.createElement(
+          'p',
+          null,
+          '*price:'
+        ),
+        _react2.default.createElement('input', {
+          type: 'text',
+          placeholder: 'ex. $100',
+          value: this.props.productPrice,
+          onChange: this.props.updateProductPrice
+        }),
+        _react2.default.createElement(
+          'p',
+          null,
+          '*sku:'
+        ),
+        _react2.default.createElement('input', {
+          type: 'text',
+          placeholder: 'ex. PRIM-0001',
+          value: this.props.productSku,
+          onChange: this.props.updateProductSku
+        }),
+        _react2.default.createElement(
+          'p',
+          null,
+          '*category:'
+        ),
+        _react2.default.createElement(
+          'select',
+          { value: this.props.productCategory, onChange: this.props.updateProductCategory },
+          _react2.default.createElement(
+            'option',
+            null,
+            'Select One'
+          ),
+          _react2.default.createElement(
+            'option',
+            { value: 'primitive' },
+            'Primitive'
+          ),
+          _react2.default.createElement(
+            'option',
+            { value: 'country' },
+            'Country Store'
+          ),
+          _react2.default.createElement(
+            'option',
+            { value: 'general' },
+            'General Store & Advertising'
+          ),
+          _react2.default.createElement(
+            'option',
+            { value: 'stoneware' },
+            'Stoneware, Pottery & Dishes'
+          ),
+          _react2.default.createElement(
+            'option',
+            { value: 'victorian' },
+            'Victorian & East Lake'
+          ),
+          _react2.default.createElement(
+            'option',
+            { value: 'folk' },
+            'Folk Art & Paintings'
+          ),
+          _react2.default.createElement(
+            'option',
+            { value: 'liveedge' },
+            'Live-Edge, Industrial & Painted'
+          ),
+          _react2.default.createElement(
+            'option',
+            { value: 'other' },
+            'Other'
+          )
+        ),
+        _react2.default.createElement(
+          'p',
+          null,
+          '*main image:'
+        ),
+        _react2.default.createElement('input', {
+          type: 'text',
+          placeholder: 'for now just be a url to picture',
+          value: this.props.imageMain,
+          onChange: this.props.updateImageMain
+        }),
+        _react2.default.createElement(
+          'p',
+          null,
+          'first suplemental image:'
+        ),
+        _react2.default.createElement('input', {
+          type: 'text',
+          placeholder: 'for now just be a url to picture',
+          value: this.props.imageSupOne || "",
+          onChange: this.props.updateImageSupOne
+        }),
+        _react2.default.createElement(
+          'p',
+          null,
+          'second suplemental image:'
+        ),
+        _react2.default.createElement('input', {
+          type: 'text',
+          placeholder: 'for now just be a url to picture',
+          value: this.props.imageSupTwo || "",
+          onChange: this.props.updateImageSupTwo
+        }),
+        _react2.default.createElement(
+          'p',
+          null,
+          'third suplemental image:'
+        ),
+        _react2.default.createElement('input', {
+          type: 'text',
+          placeholder: 'for now just be a url to picture',
+          value: this.props.imageSupThree || "",
+          onChange: this.props.updateImageSupThree
+        }),
+        _react2.default.createElement(
+          'p',
+          null,
+          'sold:'
+        ),
+        _react2.default.createElement(
+          'select',
+          { value: this.props.productSold, onChange: this.props.updateProductSold },
+          _react2.default.createElement(
+            'option',
+            null,
+            'Select One'
+          ),
+          _react2.default.createElement(
+            'option',
+            { value: 'false' },
+            'Available'
+          ),
+          _react2.default.createElement(
+            'option',
+            { value: 'true' },
+            'Sold'
+          )
+        ),
+        _react2.default.createElement(
+          'button',
+          { onClick: this.props.handleProductEditSubmit },
+          'Edit Product'
         )
+      );
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+
+      var productEdited = this.props.productEdited;
+
+      if (productEdited) {
+        return _react2.default.createElement(_reactRouterDom.Redirect, { to: '/store/' + this.props.clickedProduct.category });
+      }
+
+      return _react2.default.createElement(
+        'div',
+        { className: 'one-product' },
+        _react2.default.createElement(
+          'div',
+          { className: 'product-box' },
+          _react2.default.createElement(
+            'div',
+            { className: 'one-product-images' },
+            _react2.default.createElement('img', { className: 'main-img', src: this.props.clickedProduct.main_img }),
+            _react2.default.createElement(
+              'div',
+              { className: 'one-product-sup-images' },
+              _react2.default.createElement('img', { className: 'sup-img', src: this.props.clickedProduct.main_img }),
+              _react2.default.createElement('img', { className: 'sup-img', src: this.props.clickedProduct.sup_img_1 }),
+              _react2.default.createElement('img', { className: 'sup-img', src: this.props.clickedProduct.sup_img_2 }),
+              _react2.default.createElement('img', { className: 'sup-img', src: this.props.clickedProduct.sup_img_3 })
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'one-product-text' },
+            _react2.default.createElement(
+              'h1',
+              null,
+              this.props.clickedProduct.name
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              this.props.clickedProduct.description
+            ),
+            _react2.default.createElement(
+              'h2',
+              null,
+              this.props.clickedProduct.price
+            ),
+            _react2.default.createElement(
+              'button',
+              null,
+              'BUY'
+            )
+          )
+        ),
+        this.renderProductEdit(),
+        this.renderEditForm()
       );
     }
   }]);
 
-  return EditShow;
+  return OneProduct;
 }(_react2.default.Component);
 
-exports.default = EditShow;
+exports.default = OneProduct;
 
 /***/ }),
 /* 268 */

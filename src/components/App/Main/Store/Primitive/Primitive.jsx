@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Primitive.css';
 import Product from './Product/Product.jsx';
 import Sold from './Sold/Sold.jsx';
+import Link from 'react-router-dom';
 
 class Primitive extends React.Component {
 
@@ -16,11 +17,14 @@ class Primitive extends React.Component {
         return (
           <Product
             key={i}
+            id={product.product_id}
             name={product.name}
             price={product.price}
             description={product.description}
             mainImage={product.main_img}
             loggedIn={this.props.loggedIn}
+            handleGetProduct={this.props.handleGetProduct}
+            productSelected={this.props.productSelected}
           />
         );
       }
@@ -33,11 +37,14 @@ class Primitive extends React.Component {
         return (
           <Sold
             key={i}
+            id={product.product_id}
             name={product.name}
             price={product.price}
             description={product.description}
             mainImage={product.main_img}
             loggedIn={this.props.loggedIn}
+            handleGetProduct={this.props.handleGetProduct}
+            productSelected={this.props.productSelected}
           />
         );
       }
@@ -52,7 +59,7 @@ class Primitive extends React.Component {
           {this.renderPrimitiveProducts()}
         </div>
         <h2>Recently Sold</h2>
-        <div className="sold">
+        <div className="sold-items">
           {this.renderPrimitiveSold()}
         </div>
       </div>

@@ -1,8 +1,91 @@
 .about {
-  background-color: white;
+  background-image: url("./../../../../../public/images/about-page.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   width: 100%;
+  padding: 75px 0;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.about-text {
+  background-color: rgba(50, 50, 50, .5);
+  color: white;
+  padding: 50px;
+  border-radius: 1em;
+  width: 800px;
+}
+
+.about-text h1 {
+  font-size: 2.5em;
+  margin-top: 0;
+  font-weight: lighter;
+}
+
+.about-text p, .about-text h2 {
+  font-family: arial;
+}
+
+.about-text p {
+  font-size: 1em;
+  line-height: 1.75em;
+}
+
+.about-description {
+  margin-bottom: 65px;
+}
+
+.about-meet h2 {
+  font-size: 1.25em;
+  font-weight: lighter;
+}
+
+.family-photo {
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  background-size: 100%;
+  background-position: center;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+#christine{
+  background-image: url("./../../../../../public/images/christine.jpg");
+}
+
+#tim {
+  background-image: url("./../../../../../public/images/tim.jpg");
+}
+
+#tom {
+  background-image: url("./../../../../../public/images/tom.jpg");
+}
+
+#steven {
+  background-image: url("./../../../../../public/images/steven.jpg");
+}
+
+#kathy {
+  background-image: url("./../../../../../public/images/kathy.jpg");
+}
+
+#kristie {
+  background-image: url("./../../../../../public/images/kristie.jpg");
+}
+
+.family-member {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 0;
+}
+
+.family-text {
+  width: 70%;
 }

@@ -1,11 +1,20 @@
 import React from 'react';
-import { Switch, Route, Link } from 'react-router-dom';
+import { Switch, Route, Link, Redirect } from 'react-router-dom';
 import styles from './Store.css';
 import Category from './Category/Category.jsx';
 import Primitive from './Primitive/Primitive.jsx';
 
 class Store extends React.Component {
   render() {
+
+    const productSelected = this.props.productSelected;
+
+    if (productSelected) {
+      return(
+        <Redirect to={`/product/${this.props.productId}`} />
+      );
+    }
+
     return(
       <div className="store">
         <nav>
@@ -29,8 +38,8 @@ class Store extends React.Component {
             <Link to={`${this.props.match.url}/other`}>Other</Link>
           </div>
         </nav>
-        <Route exact path={this.props.match.url} component={ (props) => (<Primitive allProducts={this.props.allProducts} loggedIn={this.props.loggedIn} {...props} />) } />
-        <Route path={`${this.props.match.url}/:categoryId`} component={ (props) => (<Category allProducts={this.props.allProducts} loggedIn={this.props.loggedIn} {...props} />) } />
+        <Route exact path={this.props.match.url} component={ (props) => (<Primitive allProducts={this.props.allProducts} loggedIn={this.props.loggedIn} handleGetProduct={this.props.handleGetProduct} productSelected={this.props.productSelected} {...props} />) } />
+        <Route path={`${this.props.match.url}/:categoryId`} component={ (props) => (<Category allProducts={this.props.allProducts} loggedIn={this.props.loggedIn} handleGetProduct={this.props.handleGetProduct} productSelected={this.props.productSelected} {...props} />) } />
       </div>
     )
   }

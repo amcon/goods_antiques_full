@@ -1,0 +1,15 @@
+.past-show {
+  width: 20%;
+  padding-right: 50px;
+  box-sizing: border-box;
+}
+
+.past-show h1, .past-show h3 {
+  color: rgb(212,175,55);
+  font-weight: lighter;
+}
+
+.past-show h3:last-of-type {
+  color: black;
+  text-transform: uppercase;
+}

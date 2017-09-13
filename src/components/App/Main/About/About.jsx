@@ -14,6 +14,7 @@ const About = () => (
         of that history. Our hope is that the piece you fall in love with
         becomes a focal point of a story in your home.
         <br/>
+        <br/>
         Our story began when Christine Good brought home here very first
         antique trunk, purchased from Antiques on Main in East Troy. Her
         love for antiques inspired Tim Good, her husband, to find pieces
@@ -24,6 +25,7 @@ const About = () => (
         furniture. We all love antiques for reasons that are personal,
         but the common thread is that they remind us of moments shared
         together.
+        <br/>
         <br/>
         Just as we believe these memories will last forever, we stand
         behind craftsmanship and quality of antiques. Old growth wood is
@@ -36,9 +38,9 @@ const About = () => (
       <div className="about-meet">
         <h1>Meet the family</h1>
         <div className="family-member">
-          <img src="" />
+          <div className="family-photo" id="christine"></div>
           <div className="family-text">
-            <h1>Christine Good</h1>
+            <h2>Christine Good</h2>
             <p>I love the look and feel of antiques. The designs are unique
             and one-of-a-kind. I love that they provide this special sense
             of character to a home. They are inviting and give warmth to any
@@ -48,7 +50,7 @@ const About = () => (
         </div>
         <div className="family-member">
           <div className="family-text">
-            <h1>Tim Good</h1>
+            <h2>Tim Good</h2>
             <p>I love finding the antiques and preserving their history.
             Over the years, I've learned about the pieces, the people who
             owned them, and how they were built. I enjoy reading about
@@ -56,12 +58,12 @@ const About = () => (
             knobs and more so that I can bring them back to their
             original state.</p>
           </div>
-          <img src="" />
+          <div className="family-photo" id="tim"></div>
         </div>
         <div className="family-member">
-          <img src="" />
+          <div className="family-photo" id="tom"></div>
           <div className="family-text">
-            <h1>Tom Good</h1>
+            <h2>Tom Good</h2>
             <p>I love the thrill of the find. I get to save a piece of
             our history from getting destroyed while traveling and meeting
             new people. The freedom to find antiques and not be on a
@@ -73,7 +75,7 @@ const About = () => (
         </div>
         <div className="family-member">
           <div className="family-text">
-            <h1>Steven Good</h1>
+            <h2>Steven Good</h2>
             <p>I love that you can learn so much about American furniture
             through antiques. They tell a story of the people and place.
             They share where people settled, when they migrated and how
@@ -81,12 +83,12 @@ const About = () => (
             and I get to travel and explore history through each piece.
             </p>
           </div>
-          <img src="" />
+          <div className="family-photo" id="steven"></div>
         </div>
         <div className="family-member">
-          <img src="" />
+          <div className="family-photo" id="kathy"></div>
           <div className="family-text">
-            <h1>Kathy (Good) Ritter</h1>
+            <h2>Kathy (Good) Ritter</h2>
             <p>I loved growing up watching dad in the shop working on an
             antique he or mom found. He would share with me the history
             and details of the craftsmanship. Each piece had a story and
@@ -101,7 +103,7 @@ const About = () => (
         </div>
         <div className="family-member">
           <div className="family-text">
-            <h1>Kristie Conklin</h1>
+            <h2>Kristie Conklin</h2>
             <p>I love antiques because they tell a story, are made with
             quality, and were built for function. I found my very first
             antique with my uncle while digging holes in my grandparent's
@@ -116,7 +118,7 @@ const About = () => (
             generally, more than what you paid.
             </p>
           </div>
-          <img src="" />
+          <div className="family-photo" id="kristie"></div>
         </div>
       </div>
     </div>

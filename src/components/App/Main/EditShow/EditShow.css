@@ -1,8 +1,86 @@
 .edit-show {
   background-color: white;
-  width: 100%;
+  width: 1100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.edit-ref {
+  width: 20%;
+  margin-bottom: 50px;
+}
+
+.edit-ref h1, .edit-ref h3 {
+  color: rgb(212, 175, 55);
+}
+
+.edit-ref h3:last-of-type {
+  color: black;
+}
+
+.edit-show input {
+  width: 40%;
+  padding: 10px 25px;
+  box-sizing: border-box;
+  margin: 10px 0;
+  border: 1px solid black;
+  font-size: .85em;
+}
+
+.edit-show input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgb(212, 175, 55);
+}
+
+.edit-show input::-moz-placeholder { /* Firefox 19+ */
+  color: rgb(212, 175, 55);
+}
+
+.edit-show input:-ms-input-placeholder { /* IE 10+ */
+  color: rgb(212, 175, 55);
+}
+
+.edit-show input:-moz-placeholder { /* Firefox 18- */
+  color: rgb(212, 175, 55);
+}
+
+.edit-show select {
+  width: 40%;
+  border: 1px solid black;
+  padding: 10px 25px;
+  margin: 10px 0;
+  font-size: .85em;
+  height: 40px;
+  color: rgb(212, 175, 55);
+}
+
+.edit-show button {
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 15px 25px;
+  margin: 25px 0;
+  font-size: 1em;
+}
+
+.edit-show button:hover {
+  background-color: rgb(212,175,55);
+  border: 1px solid rgb(212,175,55);
+  color: white;
+  cursor: pointer;
+}
+
+#delete {
+  padding: 5px 15px;
+  margin-top: 0;
+  font-size: .75em;
+}
+
+#delete:hover {
+  background-color: red;
+  border: 1px solid red;
 }

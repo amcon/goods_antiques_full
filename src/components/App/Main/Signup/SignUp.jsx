@@ -16,14 +16,12 @@ class Signup extends React.Component {
     return(
       <div className="signup">
       <h1>Sign Up:</h1>
-      <p>email:</p>
       <input
         type="text"
-        placeholder="name@email.com"
+        placeholder="email ex. name@email.com"
         value={this.props.email}
         onChange={this.props.updateFormEmail}
       />
-      <p>password:</p>
       <input
         type="password"
         placeholder="password"

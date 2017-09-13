@@ -1,8 +1,64 @@
 .map {
   width: 100%;
-  background-color: white;
+  background-image: url('./../../../../../public/images/map-page.jpg');
+  background-size: 100%;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 50px 0;
+  box-sizing: border-box;
+}
+
+.map-info {
+  width: 1000px;
+  background-color: rgba(50, 50, 50, .6);
+  color: white;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.store-info {
+  text-align: center;
+  margin-left: 25px;
+}
+
+.store-info h1 {
+  font-size: 2.5em;
+  font-weight: lighter;
+  margin: 15px 0;
+}
+
+.store-info h1:first-of-type {
+  margin-top: 0;
+}
+
+.store-info p {
+  font-family: arial;
+}
+
+#map-line {
+  height: 450px;
+  width: 1px;
+  border-left: 1px solid white;
+}
+
+#map {
+  height: 400px;
+  width: 600px;
+  border: 1px solid white;
+}
+
+#google-maps {
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 10px 25px;
+  font-size: 1em;
+  color: white;
+  font-family: georgia;
 }

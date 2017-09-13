@@ -21,22 +21,22 @@ class Login extends React.Component {
     return (
       <div className="login">
         <h1>Log In</h1>
-        <p>email:</p>
-        <input
-          type="text"
-          placeholder="example@email.com"
-          value={this.props.email}
-          onChange={this.props.updateFormEmail}
-        />
-        <p>password:</p>
-        <input
-          type="password"
-          placeholder="password"
-          value={this.props.password}
-          onChange={this.props.updateFormPassword}
-        />
-        <button onClick={this.props.handleLoginSubmit} >Submit</button>
-        <Link to="/signup"><p>Click here to sign up</p></Link>
+        <div className="login-form">
+          <input
+            type="text"
+            placeholder="EMAIL"
+            value={this.props.email}
+            onChange={this.props.updateFormEmail}
+          />
+          <input
+            type="password"
+            placeholder="PASSWORD"
+            value={this.props.password}
+            onChange={this.props.updateFormPassword}
+          />
+          <button onClick={this.props.handleLoginSubmit} >SUBMIT</button>
+          <Link to="/signup"><p>Click here to sign up</p></Link>
+        </div>
       </div>
     );
   }

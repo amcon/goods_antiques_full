@@ -9,8 +9,8 @@ import MapPage from './Map/Map.jsx';
 import Login from './Login/Login.jsx';
 import Admin from './Admin/Admin.jsx';
 import Signup from './Signup/Signup.jsx';
-import EditProduct from './EditProduct/EditProduct.jsx';
 import EditShow from './EditShow/EditShow.jsx';
+import OneProduct from './OneProduct/OneProduct.jsx';
 
 
 class Main extends React.Component {
@@ -22,17 +22,71 @@ class Main extends React.Component {
           <Route path='/store' component={ (props) =>
             <Store
               allProducts={this.props.allProducts}
-              loggedIn={this.props.loggedIn}
+              productId={this.props.productId}
+              handleGetProduct={this.props.handleGetProduct}
+              productSelected={this.props.productSelected}
               {...props}
             />
           }/>
-          <Route path='/editproduct' component={ EditProduct } />
-          <Route path='/editshow' component={ EditShow } />
+          <Route path='/product/:productId' render={ (props) =>
+            <OneProduct
+              clickedProduct={this.props.clickedProduct}
+              loggedIn={this.props.loggedIn}
+              productEdited={this.props.productEdited}
+              handleProductEditSubmit={this.props.handleProductEditSubmit}
+              handleProductDeleteSubmit={this.props.handleProductDeleteSubmit}
+              updateProductName={this.props.updateProductName}
+              updateProductDescription={this.props.updateProductDescription}
+              updateProductPrice={this.props.updateProductPrice}
+              updateProductSku={this.props.updateProductSku}
+              updateProductCategory={this.props.updateProductCategory}
+              updateProductSold={this.props.updateProductSold}
+              updateImageMain={this.props.updateImageMain}
+              updateImageSupOne={this.props.updateImageSupOne}
+              updateImageSupTwo={this.props.updateImageSupTwo}
+              updateImageSupThree={this.props.updateImageSupThree}
+              productName={this.props.productName}
+              productDescription={this.props.productDescription}
+              productPrice={this.props.productPrice}
+              productSku={this.props.productSku}
+              productCategory={this.props.productCategory}
+              productSold={this.props.productSold}
+              productCreated={this.props.productCreated}
+              productEdited={this.props.productEdited}
+              productId={this.props.productId}
+              imageMain={this.props.imageMain}
+              imageSupOne={this.props.imageSupOne}
+              imageSupTwo={this.props.imageSupTwo}
+              imageSupThree={this.props.imageSupThree}
+              {...props}
+            />
+          }/>
+          <Route path='/show/:showId' render={ (props) =>
+            <EditShow
+              showName={this.props.showName}
+              showDate={this.props.showDate}
+              showLocation={this.props.showLocation}
+              showWebsite={this.props.showWebsite}
+              showVenue={this.props.showVenue}
+              showCurrent={this.props.showCurrent}
+              updateShowName={this.props.updateShowName}
+              updateShowDate={this.props.updateShowDate}
+              updateShowLocation={this.props.updateShowLocation}
+              updateShowWebsite={this.props.updateShowWebsite}
+              updateShowVenue={this.props.updateShowVenue}
+              updateShowCurrent={this.props.updateShowCurrent}
+              showEdited={this.props.showEdited}
+              handleShowEditSubmit={this.props.handleShowEditSubmit}
+              handleShowDeleteSubmit={this.props.handleShowDeleteSubmit}
+              {...props}
+            />
+          }/>
           <Route path='/about' component={ About } />
           <Route path='/shows' component={ (props) =>
             <Shows
               allShows={this.props.allShows}
               loggedIn={this.props.loggedIn}
+              handleGetShow={this.props.handleGetShow}
               {...props}
             />
           }/>
@@ -93,6 +147,12 @@ class Main extends React.Component {
               handleCreateProduct={this.props.handleCreateProduct}
               imageMain={this.props.imageMain}
               updateImageMain={this.props.updateImageMain}
+              imageSupOne={this.props.imageSupOne}
+              imageSupTwo={this.props.imageSupTwo}
+              imageSupThree={this.props.imageSupThree}
+              updateImageSupOne={this.props.updateImageSupOne}
+              updateImageSupTwo={this.props.updateImageSupTwo}
+              updateImageSupThree={this.props.updateImageSupThree}
               {...props} /> }
             />
         </Switch>

@@ -1,12 +1,13 @@
-.category h1 {
+.category h1, .category h2 {
   text-transform: uppercase;
+  font-weight: lighter;
 }
 
 .category {
   width: 100%;
 }
 
-.available, .sold {
+.available, .sold-items {
   display: flex;
   flex-flow: row wrap;
 }
@@ -18,15 +19,11 @@
   box-sizing: border-box;
 }
 
-.category h1, .category h2 {
-  text-transform: uppercase;
-}
-
 .category-title {
   display: block;
   width: 100%;
   text-align: center;
-  margin-top: 25px;
+  margin: 50px 0 100px 0;
 }
 
 .category h2 {

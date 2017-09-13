@@ -1,0 +1,20 @@
+.show {
+  width: 33%;
+  padding-right: 100px;
+  box-sizing: border-box;
+}
+
+.show h1, .show h3 {
+  color: rgb(212,175,55);
+  font-weight: lighter;
+}
+
+.show h3:last-of-type {
+  color: black;
+  text-transform: uppercase;
+}
+
+.show a {
+  color: black;
+  margin-left: 2px;
+}

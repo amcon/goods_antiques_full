@@ -17,12 +17,14 @@ class Shows extends React.Component {
         return (
           <Show
             key={i}
+            show_id={show.show_id}
             name={show.name}
             show_date={show.show_date}
             venue={show.venue}
             location={show.location}
             website={show.website}
             loggedIn={this.props.loggedIn}
+            handleGetShow={this.props.handleGetShow}
           />
         );
       }
@@ -35,12 +37,14 @@ class Shows extends React.Component {
         return (
           <PastShow
             key={i}
+            show_id={show.show_id}
             name={show.name}
             show_date={show.show_date}
             venue={show.venue}
             location={show.location}
             website={show.website}
             loggedIn={this.props.loggedIn}
+            handleGetShow={this.props.handleGetShow}
           />
         );
       }
@@ -50,13 +54,12 @@ class Shows extends React.Component {
   render() {
     return (
       <div className="shows">
-        <h1>Shows</h1>
+        <h2>Upcoming Shows:</h2>
         <div className="upcoming">
-          <h2>Upoming Shows:</h2>
           {this.renderAllUpcomingShows()}
         </div>
+        <h2>Past Shows:</h2>
         <div className="past">
-          <h2>Past Shows:</h2>
           {this.renderAllPastShows()}
         </div>
       </div>
