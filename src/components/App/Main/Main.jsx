@@ -58,6 +58,14 @@ class Main extends React.Component {
               imageSupOne={this.props.imageSupOne}
               imageSupTwo={this.props.imageSupTwo}
               imageSupThree={this.props.imageSupThree}
+              uploadedFile={this.props.uploadedFile}
+              uploadedSupOneFile={this.props.uploadedSupOneFile}
+              uploadedSupTwoFile={this.props.uploadedSupTwoFile}
+              uploadedSupThreeFile={this.props.uploadedSupThreeFile}
+              onImageMainDrop={this.props.onImageMainDrop}
+              onImageSupOneDrop={this.props.onImageSupOneDrop}
+              onImageSupTwoDrop={this.props.onImageSupTwoDrop}
+              onImageSupThreeDrop={this.props.onImageSupThreeDrop}
               {...props}
             />
           }/>
@@ -111,6 +119,7 @@ class Main extends React.Component {
               password={this.props.password}
               loggedIn={this.props.loggedIn}
               errors={this.props.errors}
+              adminPresent={this.props.adminPresent}
               {...props}
             />
           }/>
@@ -153,6 +162,14 @@ class Main extends React.Component {
               updateImageSupOne={this.props.updateImageSupOne}
               updateImageSupTwo={this.props.updateImageSupTwo}
               updateImageSupThree={this.props.updateImageSupThree}
+              uploadedFile={this.props.uploadedFile}
+              uploadedSupOneFile={this.props.uploadedSupOneFile}
+              uploadedSupTwoFile={this.props.uploadedSupTwoFile}
+              uploadedSupThreeFile={this.props.uploadedSupThreeFile}
+              onImageMainDrop={this.props.onImageMainDrop}
+              onImageSupOneDrop={this.props.onImageSupOneDrop}
+              onImageSupTwoDrop={this.props.onImageSupTwoDrop}
+              onImageSupThreeDrop={this.props.onImageSupThreeDrop}
               {...props} /> }
             />
         </Switch>

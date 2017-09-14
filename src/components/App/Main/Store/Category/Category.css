@@ -15,17 +15,15 @@
 .category img {
   height: 330px;
   width: 330px;
-  border: 1px solid black;
-  box-sizing: border-box;
 }
 
 .category-title {
   display: block;
   width: 100%;
   text-align: center;
-  margin: 50px 0 100px 0;
+  margin: 50px 0 75px 0;
 }
 
 .category h2 {
-  margin-bottom: 25px;
+  margin: 100px 0 25px 0;
 }

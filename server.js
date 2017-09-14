@@ -12,22 +12,22 @@ const apiRoute = require('./routes/api.js');
 
 const app = express();
 
+app.use('/api/', apiRoute);
+
 const compiler = webpack(webpackConfig);
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// app.use(history({ logger: logger }));
+app.use(history({ logger: logger }));
 
 
 app.use(express.static(__dirname + '/dist'));
 
-app.use('/api/', apiRoute);
-
 app.use(webpackDevMiddleware(compiler, {
   hot: true,
-  filename: 'main.js',
+  filename: '/main.js',
   publicPath: '/',
   stats: {
     colors: true,

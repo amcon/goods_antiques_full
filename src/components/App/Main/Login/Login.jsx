@@ -4,13 +4,27 @@ import { Redirect, Link } from 'react-router-dom';
 
 class Login extends React.Component {
 
-  // componentDidMount() {
-  //   console.log(this.props.errors);
-  // }
+  constructor(props) {
+    super(props);
+    this.state = {
+      addSignUp: true,
+    };
+  }
+
+  componentWillMount() {
+    const adminPresent = this.props.adminPresent;
+
+    if (adminPresent === true) {
+      this.setState({
+        addSignUp: false,
+      })
+    }
+  }
 
   render() {
 
     const loggedIn = this.props.loggedIn;
+
 
     if (loggedIn) {
       return(
@@ -35,7 +49,10 @@ class Login extends React.Component {
             onChange={this.props.updateFormPassword}
           />
           <button onClick={this.props.handleLoginSubmit} >SUBMIT</button>
-          <Link to="/signup"><p>Click here to sign up</p></Link>
+          {this.state.addSignUp ?
+            <Link to="/signup"><p id='sign-up'>Click here to sign up</p></Link> :
+            null
+          }
         </div>
       </div>
     );

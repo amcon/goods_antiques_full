@@ -36,6 +36,15 @@ function getUser (req, res, next) {
   .catch(err => next(err));
 }
 
+function getAdmin (req, res, next) {
+  db.oneOrNone(`SELECT email FROM "user" WHERE email = 'goodsantiqueswisconsin@gmail.com'`)
+  .then((admin) => {
+    res.rows = admin;
+    next();
+  })
+  .catch(err => next(err));
+}
+
 function logIn (req, res, next) {
   const email = req.body.email.toLowerCase();
   const password = req.body.password;
@@ -101,6 +110,7 @@ function updateUser (req, res, next) {
 module.exports = {
   createUser,
   getUser,
+  getAdmin,
   logIn,
   updateUser,
 }

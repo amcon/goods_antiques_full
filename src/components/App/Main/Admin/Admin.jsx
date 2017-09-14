@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from "./Admin.css";
 import { Redirect } from 'react-router-dom';
+import Dropzone from 'react-dropzone';
+import request from 'superagent';
 
 class Admin extends React.Component {
   render() {
@@ -9,8 +11,6 @@ class Admin extends React.Component {
     const showCreated = this.props.showCreated;
     const productCreated = this.props.productCreated;
     const category = this.props.productCategory;
-
-
 
     if (!loggedIn) {
       return(
@@ -75,33 +75,69 @@ class Admin extends React.Component {
             <option value="other">Other</option>
           </select>
           <p>*main image:</p>
-          <input
-            type="text"
-            placeholder="for now just be a url to picture"
-            value={this.props.imageMain}
-            onChange={this.props.updateImageMain}
-          />
+          <Dropzone
+            multiple={false}
+            accept="image/*"
+            onDrop={this.props.onImageMainDrop}
+            value={this.props.imageMain}>
+            <p>Drop an image or click to select a file to upload.</p>
+          </Dropzone>
+          <div>
+            {this.props.imageMain === '' ? null :
+            <div>
+              <p>{this.props.uploadedFile.name}</p>
+              <img height="200px" src={this.props.imageMain} />
+            </div>
+            }
+          </div>
           <p>first suplemental image:</p>
-          <input
-            type="text"
-            placeholder="for now just be a url to picture"
-            value={this.props.imageSupOne || ""}
-            onChange={this.props.updateImageSupOne}
-          />
+          <Dropzone
+            multiple={false}
+            accept="image/*"
+            onDrop={this.props.onImageSupOneDrop}
+            value={this.props.imageSupOne}>
+            <p>Drop an image or click to select a file to upload.</p>
+          </Dropzone>
+          <div>
+            {this.props.imageSupOne === '' ? null :
+            <div>
+              <p>{this.props.uploadedSupOneFile.name}</p>
+              <img height="200px" src={this.props.imageSupOne} />
+            </div>
+            }
+          </div>
           <p>second suplemental image:</p>
-          <input
-            type="text"
-            placeholder="for now just be a url to picture"
-            value={this.props.imageSupTwo || ""}
-            onChange={this.props.updateImageSupTwo}
-          />
+          <Dropzone
+            multiple={false}
+            accept="image/*"
+            onDrop={this.props.onImageSupTwoDrop}
+            value={this.props.imageSupTwo}>
+            <p>Drop an image or click to select a file to upload.</p>
+          </Dropzone>
+          <div>
+            {this.props.imageSupTwo === '' ? null :
+            <div>
+              <p>{this.props.uploadedSupTwoFile.name}</p>
+              <img height="200px" src={this.props.imageSupTwo} />
+            </div>
+            }
+          </div>
           <p>third suplemental image:</p>
-          <input
-            type="text"
-            placeholder="for now just be a url to picture"
-            value={this.props.imageSupThree || ""}
-            onChange={this.props.updateImageSupThree}
-          />
+          <Dropzone
+            multiple={false}
+            accept="image/*"
+            onDrop={this.props.onImageSupThreeDrop}
+            value={this.props.imageSupThree}>
+            <p>Drop an image or click to select a file to upload.</p>
+          </Dropzone>
+          <div>
+            {this.props.imageSupThree === '' ? null :
+            <div>
+              <p>{this.props.uploadedSupThreeFile.name}</p>
+              <img height="200px" src={this.props.imageSupThree} />
+            </div>
+            }
+          </div>
           <p>sold:</p>
           <select value={this.props.productSold} onChange={this.props.updateProductSold}>
             <option>Select One</option>

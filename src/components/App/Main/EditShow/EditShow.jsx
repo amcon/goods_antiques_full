@@ -3,6 +3,25 @@ import styles from './EditShow.css';
 import { Link, Redirect } from 'react-router-dom';
 
 class EditShow extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      renderDeleteWarning: false,
+    };
+  }
+
+  activateDeleteWarning() {
+    this.setState({
+      renderDeleteWarning: true,
+    })
+  }
+
+  removeDeleteWarning() {
+    this.setState({
+      renderDeleteWarning: false,
+    })
+  };
+
   render() {
 
     const showEdited = this.props.showEdited;
@@ -66,7 +85,19 @@ class EditShow extends React.Component {
           <option value="false">Past</option>
         </select>
         <button onClick={this.props.handleShowEditSubmit}>Edit Show</button>
-        <button onClick={this.props.handleShowDeleteSubmit} id="delete">Delete</button>
+        <button onClick={() => this.activateDeleteWarning()} id="delete">Delete</button>
+        {this.state.renderDeleteWarning ?
+          <div className="delete-warning">
+            <div className="delete-message">
+              <p>Are you sure you want to delete {this.props.showName}?</p>
+              <div className="delete-buttons">
+                <button onClick={this.props.handleShowDeleteSubmit}>Yes</button>
+                <button onClick={() => this.removeDeleteWarning()}>Cancel</button>
+              </div>
+            </div>
+          </div> :
+          null
+        }
       </div>
     );
   }

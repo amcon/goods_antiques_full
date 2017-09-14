@@ -6,6 +6,9 @@ function sendAsJSON (req, res, next) {
   res.json(res.rows);
 }
 
+router.route('/admin')
+  .get(userModel.getAdmin, sendAsJSON)
+
 router.route('/login')
   .post(userModel.logIn, sendAsJSON);
 

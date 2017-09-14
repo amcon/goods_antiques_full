@@ -1,8 +1,28 @@
 import React from 'react';
 import styles from './OneProduct.css';
 import { Link, Redirect } from 'react-router-dom';
+import Dropzone from 'react-dropzone';
 
 class OneProduct extends React.Component {
+
+    constructor(props) {
+      super(props);
+      this.state = {
+        renderDeleteWarning: false,
+      };
+    }
+
+    activateDeleteWarning() {
+      this.setState({
+        renderDeleteWarning: true,
+      })
+    }
+
+    removeDeleteWarning() {
+      this.setState({
+        renderDeleteWarning: false,
+      })
+    };
 
   renderProductEdit() {
     const loggedIn = this.props.loggedIn;
@@ -11,7 +31,7 @@ class OneProduct extends React.Component {
       return(
         <div className="edit-delete">
           <button onClick={() => this.activateEditForm()} id="edit">Edit</button>
-          <button onClick={this.props.handleProductDeleteSubmit} id="delete">Delete</button>
+          <button onClick={() => this.activateDeleteWarning()} id="delete">Delete</button>
         </div>
       );
     }
@@ -20,10 +40,7 @@ class OneProduct extends React.Component {
   activateEditForm() {
     const form = document.getElementsByClassName("product-edit")[0];
 
-    form.style.height = "950px";
-    form.style.opacity = "1";
-    form.style.zIndex = "1";
-    form.style.fontSize = ".85em";
+    form.classList.add("edit-selected");
   }
 
   renderEditForm() {
@@ -71,33 +88,77 @@ class OneProduct extends React.Component {
           <option value="other">Other</option>
         </select>
         <p>*main image:</p>
-        <input
-          type="text"
-          placeholder="for now just be a url to picture"
-          value={this.props.imageMain}
-          onChange={this.props.updateImageMain}
-        />
+        <div className="drop-section">
+          <Dropzone
+            multiple={false}
+            accept="image/*"
+            onDrop={this.props.onImageMainDrop}
+            value={this.props.imageMain}>
+            <p>Drop an image or click to select a file to upload.</p>
+          </Dropzone>
+          <div>
+            {this.props.imageMain === '' ? null :
+            <div>
+              <p>{this.props.uploadedFile.name}</p>
+              <img height="200px" src={this.props.imageMain} />
+            </div>
+            }
+          </div>
+        </div>
         <p>first suplemental image:</p>
-        <input
-          type="text"
-          placeholder="for now just be a url to picture"
-          value={this.props.imageSupOne || ""}
-          onChange={this.props.updateImageSupOne}
-        />
+        <div className="drop-section">
+          <Dropzone
+            multiple={false}
+            accept="image/*"
+            onDrop={this.props.onImageSupOneDrop}
+            value={this.props.imageSupOne}>
+            <p>Drop an image or click to select a file to upload.</p>
+          </Dropzone>
+          <div>
+            {this.props.imageSupOne === '' ? null :
+            <div>
+              <p>{this.props.uploadedSupOneFile.name}</p>
+              <img height="200px" src={this.props.imageSupOne} />
+            </div>
+            }
+          </div>
+        </div>
         <p>second suplemental image:</p>
-        <input
-          type="text"
-          placeholder="for now just be a url to picture"
-          value={this.props.imageSupTwo || ""}
-          onChange={this.props.updateImageSupTwo}
-        />
+        <div className="drop-section">
+          <Dropzone
+            multiple={false}
+            accept="image/*"
+            onDrop={this.props.onImageSupTwoDrop}
+            value={this.props.imageSupTwo}>
+            <p>Drop an image or click to select a file to upload.</p>
+          </Dropzone>
+          <div>
+            {this.props.imageSupTwo === '' ? null :
+            <div>
+              <p>{this.props.uploadedSupTwoFile.name}</p>
+              <img height="200px" src={this.props.imageSupTwo} />
+            </div>
+            }
+          </div>
+        </div>
         <p>third suplemental image:</p>
-        <input
-          type="text"
-          placeholder="for now just be a url to picture"
-          value={this.props.imageSupThree || ""}
-          onChange={this.props.updateImageSupThree}
-        />
+        <div className="drop-section">
+          <Dropzone
+            multiple={false}
+            accept="image/*"
+            onDrop={this.props.onImageSupThreeDrop}
+            value={this.props.imageSupThree}>
+            <p>Drop an image or click to select a file to upload.</p>
+          </Dropzone>
+          <div>
+            {this.props.imageSupThree === '' ? null :
+            <div>
+              <p>{this.props.uploadedSupThreeFile.name}</p>
+              <img height="200px" src={this.props.imageSupThree} />
+            </div>
+            }
+          </div>
+        </div>
         <p>sold:</p>
         <select value={this.props.productSold} onChange={this.props.updateProductSold}>
           <option>Select One</option>
@@ -140,6 +201,18 @@ class OneProduct extends React.Component {
         </div>
         {this.renderProductEdit()}
         {this.renderEditForm()}
+        {this.state.renderDeleteWarning ?
+          <div className="delete-warning">
+            <div className="delete-message">
+              <p>Are you sure you want to delete {this.props.showName}?</p>
+              <div className="delete-buttons">
+                <button onClick={this.props.handleProductDeleteSubmit}>Yes</button>
+                <button onClick={() => this.removeDeleteWarning()}>Cancel</button>
+              </div>
+            </div>
+          </div> :
+          null
+        }
       </div>
     );
   }

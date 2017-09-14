@@ -3,7 +3,8 @@
   width: 1100px;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
-  padding: 100px 125px;
+  padding: 100px 50px;
+  box-sizing: border-box;
 }
 
 .product-box {
@@ -35,15 +36,11 @@
 .main-img {
   height: 100%;
   width: 79.5%;
-  box-sizing: border-box;
-  border: 1px solid black;
 }
 
 .sup-img {
   height: 24%;
   width: 94.22%;
-  box-sizing: border-box;
-  border: 1px solid black;
 }
 
 .one-product-text {
@@ -157,9 +154,37 @@
   font-size: 1em;
 }
 
+.one-product button {
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 15px 25px;
+  font-size: 1em;
+}
+
 .product-edit button:hover {
   background-color: rgb(212,175,55);
   border: 1px solid rgb(212,175,55);
   color: white;
   cursor: pointer;
+}
+
+.one-product button:hover {
+  background-color: rgb(212,175,55);
+  border: 1px solid rgb(212,175,55);
+  color: white;
+  cursor: pointer;
+}
+
+.edit-selected {
+  height: 1550px;
+  opacity: 1;
+  z-index: 1;
+  font-size: .85em;
+}
+
+.drop-section {
+  display: flex;
+  width: 42%;
+  justify-content: space-between;
+  margin: 10px 0;
 }

@@ -13,12 +13,12 @@
 
 .home-info {
   width: 400px;
-  height: 400px;
+  height: 475px;
   background-color: rgba(50, 50, 50, .5);
   color: white;
   border-radius: 2em;
   box-sizing: border-box;
-  padding: 25px 50px;
+  padding: 50px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -31,7 +31,7 @@
 }
 
 .home-info h1 {
-  font-size: 2.5em;
+  font-size: 2.75em;
   font-weight: lighter;
 }
 
@@ -45,7 +45,7 @@
   align-items: center;
   box-sizing: border-box;
   border: 1px solid white;
-  padding: 10px;
+  padding: 20px 15px;
   width: 50%;
   text-decoration: none;
   color: white;

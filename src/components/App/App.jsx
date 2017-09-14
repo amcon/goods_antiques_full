@@ -1,5 +1,6 @@
 import React from 'react';
 import { Switch, BrowserRouter as Router, Route } from 'react-router-dom';
+import request from 'superagent';
 import styles from './App.css';
 import Header from './Header/Header.jsx';
 import Main from './Main/Main.jsx';
@@ -13,7 +14,8 @@ class App extends React.Component {
       allProducts: [],
       allShows: [],
       clickedProduct: [],
-      user: {},
+      admin: {email: ''},
+      adminPresent: false,
       email: '',
       password: '',
       userCreated: false,
@@ -42,6 +44,10 @@ class App extends React.Component {
       imageSupThree: '',
       productId: 0,
       showId: 0,
+      uploadedFile: {},
+      uploadedSupOneFile: {},
+      uploadedSupTwoFile: {},
+      uploadedSupThreeFile: {},
     };
   }
 
@@ -70,6 +76,25 @@ class App extends React.Component {
         showCreated: false,
       });
       // console.log(this.state.allShows);
+    })
+    .catch(err => console.log(err));
+  }
+
+  getAdmin() {
+    fetch(`/api/users/admin`)
+    .then(r => r.json())
+    .then((data) => {
+      if (data !== null) {
+        this.setState({
+          admin: data,
+        })
+        // console.log(data);
+      }
+      if (this.state.admin.email === 'goodsantiqueswisconsin@gmail.com') {
+        this.setState({
+          adminPresent: true,
+        })
+      }
     })
     .catch(err => console.log(err));
   }
@@ -299,6 +324,10 @@ class App extends React.Component {
       imageSupOne: '',
       imageSupTwo: '',
       imageSupThree: '',
+      uploadedFile: {},
+      uploadedSupOneFile: {},
+      uploadedSupTwoFile: {},
+      uploadedSupThreeFile: {},
     }))
     .then(() => {
       this.getAllProducts()
@@ -307,6 +336,124 @@ class App extends React.Component {
       })
     })
     .catch(err => console.log(err))
+  }
+
+// DROPZONE
+
+  onImageMainDrop(files) {
+    this.setState({
+      uploadedFile: files[0],
+    });
+    this.handleImageMainUpload(files[0]);
+  }
+
+  onImageSupOneDrop(files) {
+    this.setState({
+      uploadedSupOneFile: files[0],
+    });
+    this.handleImageSupOneUpload(files[0]);
+  }
+
+  onImageSupTwoDrop(files) {
+    this.setState({
+      uploadedSupTwoFile: files[0],
+    });
+    this.handleImageSupTwoUpload(files[0]);
+  }
+
+  onImageSupThreeDrop(files) {
+    this.setState({
+      uploadedSupThreeFile: files[0],
+    });
+    this.handleImageSupThreeUpload(files[0]);
+  }
+
+  handleImageMainUpload(file) {
+    const CLOUDINARY_UPLOAD_PRESET = 'br6wctso';
+    const CLOUDINARY_UPLOAD_URL = 'https://api.cloudinary.com/v1_1/aacon/upload';
+
+    let upload = request.post(CLOUDINARY_UPLOAD_URL)
+                        .field('upload_preset', CLOUDINARY_UPLOAD_PRESET)
+                        .field('file', file);
+
+    upload.end((err, response) => {
+      if (err) {
+        console.log(err);
+      }
+
+      if (response.body.secure_url !== '') {
+        this.setState({
+          imageMain: response.body.secure_url
+        });
+        console.log('main image uploaded')
+      }
+    });
+  }
+
+  handleImageSupOneUpload(file) {
+    const CLOUDINARY_UPLOAD_PRESET = 'br6wctso';
+    const CLOUDINARY_UPLOAD_URL = 'https://api.cloudinary.com/v1_1/aacon/upload';
+
+    let upload = request.post(CLOUDINARY_UPLOAD_URL)
+                        .field('upload_preset', CLOUDINARY_UPLOAD_PRESET)
+                        .field('file', file);
+
+    upload.end((err, response) => {
+      if (err) {
+        console.log(err);
+      }
+
+      if (response.body.secure_url !== '') {
+        this.setState({
+          imageSupOne: response.body.secure_url
+        });
+        console.log('first supplemental image uploaded')
+      }
+    });
+  }
+
+  handleImageSupTwoUpload(file) {
+    const CLOUDINARY_UPLOAD_PRESET = 'br6wctso';
+    const CLOUDINARY_UPLOAD_URL = 'https://api.cloudinary.com/v1_1/aacon/upload';
+
+    let upload = request.post(CLOUDINARY_UPLOAD_URL)
+                        .field('upload_preset', CLOUDINARY_UPLOAD_PRESET)
+                        .field('file', file);
+
+    upload.end((err, response) => {
+      if (err) {
+        console.log(err);
+      }
+
+      if (response.body.secure_url !== '') {
+        this.setState({
+          imageSupTwo: response.body.secure_url
+        });
+        console.log('second supplemental image uploaded')
+      }
+    });
+  }
+
+  handleImageSupThreeUpload(file) {
+    const CLOUDINARY_UPLOAD_PRESET = 'br6wctso';
+    const CLOUDINARY_UPLOAD_URL = 'https://api.cloudinary.com/v1_1/aacon/upload';
+
+    let upload = request.post(CLOUDINARY_UPLOAD_URL)
+                        .field('upload_preset', CLOUDINARY_UPLOAD_PRESET)
+                        .field('file', file);
+
+    upload.end((err, response) => {
+      if (err) {
+        console.log(err);
+      }
+
+      if (response.body.secure_url !== '') {
+        this.setState({
+          imageSupThree: response.body.secure_url
+        });
+        console.log('third supplemental image uploaded')
+      }
+    });
   }
 
   handleGetProduct(id) {
@@ -435,6 +582,10 @@ class App extends React.Component {
       imageSupOne: '',
       imageSupTwo: '',
       imageSupThree: '',
+      uploadedFile: {},
+      uploadedSupOneFile: {},
+      uploadedSupTwoFile: {},
+      uploadedSupThreeFile: {},
     }))
     .then(() => {
       this.getAllProducts()
@@ -460,11 +611,6 @@ class App extends React.Component {
     .catch(err => console.log(err))
   }
 
-  componentWillMount() {
-    this.getAllProducts();
-    this.getAllShows();
-  }
-
   handleShowDeleteSubmit() {
     fetch(`/api/shows/${this.state.showId}`, {
       method: 'delete'
@@ -479,12 +625,20 @@ class App extends React.Component {
     .catch(err => console.log(err))
   }
 
+
+  componentWillMount() {
+    this.getAllProducts();
+    this.getAllShows();
+    this.getAdmin();
+  }
+
   render() {
     return (
       <div className="app">
         <Header />
         <Main
           key="main"
+          adminPresent={this.state.adminPresent}
           email={this.state.email}
           password={this.state.password}
           allProducts={this.state.allProducts}
@@ -515,6 +669,10 @@ class App extends React.Component {
           imageSupTwo={this.state.imageSupTwo}
           imageSupThree={this.state.imageSupThree}
           clickedProduct={this.state.clickedProduct}
+          uploadedFile={this.state.uploadedFile}
+          uploadedSupOneFile={this.state.uploadedSupOneFile}
+          uploadedSupTwoFile={this.state.uploadedSupTwoFile}
+          uploadedSupThreeFile={this.state.uploadedSupThreeFile}
           updateImageMain={this.updateImageMain.bind(this)}
           updateImageSupOne={this.updateImageSupOne.bind(this)}
           updateImageSupTwo={this.updateImageSupTwo.bind(this)}
@@ -543,6 +701,10 @@ class App extends React.Component {
           handleProductEditSubmit={this.handleProductEditSubmit.bind(this)}
           handleProductDeleteSubmit={this.handleProductDeleteSubmit.bind(this)}
           handleGetShow={this.handleGetShow.bind(this)}
+          onImageMainDrop={this.onImageMainDrop.bind(this)}
+          onImageSupOneDrop={this.onImageSupOneDrop.bind(this)}
+          onImageSupTwoDrop={this.onImageSupTwoDrop.bind(this)}
+          onImageSupThreeDrop={this.onImageSupThreeDrop.bind(this)}
         />
         <Footer />
       </div>

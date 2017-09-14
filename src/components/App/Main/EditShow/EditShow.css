@@ -84,3 +84,48 @@
   background-color: red;
   border: 1px solid red;
 }
+
+.delete-warning {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(50, 50, 50, .5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.delete-message {
+  height: 150px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.delete-message p {
+  margin-bottom: 20px;
+}
+
+.delete-buttons {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.delete-buttons button {
+  margin: 0 10px;
+}
+
+.delete-buttons button:first-of-type:hover {
+  background-color: red;
+}
+
+.delete-buttons button:last-of-type:hover {
+  background-color: rgb(212,175,55);
+}
