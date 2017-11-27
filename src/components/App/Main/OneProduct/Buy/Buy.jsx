@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Buy.css';
 
-export class Buy extends React.Component {
+class Buy extends React.Component {
   render() {
     return(
       <div className="buy-page">
@@ -31,3 +31,5 @@ export class Buy extends React.Component {
     );
   }
 }
+
+export default Buy;
