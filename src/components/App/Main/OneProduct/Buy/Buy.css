@@ -1,0 +1,45 @@
+.buy-page {
+  padding: 5%;
+  box-sizing: border-box;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+    .buy-page h1 {
+      margin-bottom: 40px;
+      letter-spacing: 2px;
+      font-weight: lighter;
+    }
+
+    .buy-page h2 {
+      font-size: 20px;
+      margin-bottom: 20px;
+      margin-left: 40px;
+      display: block;
+      width: 80%;
+      color: rgb(60, 60, 60);
+    }
+
+    .buy-page p {
+      font-size: 15px;
+      margin-bottom: 60px;
+      margin-left: 40px;
+      display: block;
+      width: 85%;
+      color: rgb(60, 60, 60);
+    }
+
+    #disclaimer {
+      margin-bottom: 40px;
+      font-size: 18px;
+    }
+
+    #faq {
+      margin-top: 80px;
+      text-decoration: underline;
+    }
+
+    .buy-page a {
+      color: blue;
+      font-size: 17px;
+    }
