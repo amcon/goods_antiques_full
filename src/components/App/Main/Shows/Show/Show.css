@@ -1,7 +1,12 @@
-.show {
+.show, .draggable {
   width: 33%;
   padding-right: 100px;
   box-sizing: border-box;
+}
+
+.draggable .show {
+  width: 100%;
+  padding-right: 0;
 }
 
 .show h1, .show h3 {
@@ -17,4 +22,24 @@
 .show a {
   color: black;
   margin-left: 2px;
+}
+
+.move {
+  display: flex;
+}
+
+.move p:first-of-type {
+  margin-right: 10px;
+}
+
+.move p:hover {
+  cursor: pointer;
+}
+
+.upcoming, .past, .List {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  width: 95%;
+  margin: 0 auto;
 }

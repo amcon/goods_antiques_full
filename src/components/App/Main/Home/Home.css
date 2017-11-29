@@ -1,6 +1,6 @@
 .home {
   background-image: url('./../../../../../public/images/home-page.jpg');
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;

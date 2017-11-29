@@ -11,6 +11,7 @@ import Admin from './Admin/Admin.jsx';
 import Signup from './Signup/Signup.jsx';
 import EditShow from './EditShow/EditShow.jsx';
 import OneProduct from './OneProduct/OneProduct.jsx';
+import Buy from './OneProduct/Buy/Buy.jsx';
 
 
 class Main extends React.Component {
@@ -66,9 +67,12 @@ class Main extends React.Component {
               onImageSupOneDrop={this.props.onImageSupOneDrop}
               onImageSupTwoDrop={this.props.onImageSupTwoDrop}
               onImageSupThreeDrop={this.props.onImageSupThreeDrop}
+              chooseMainImage={this.props.chooseMainImage}
+              chosenImage={this.props.chosenImage}
               {...props}
             />
           }/>
+          <Route path='/buy' component={ Buy } />
           <Route path='/show/:showId' render={ (props) =>
             <EditShow
               showName={this.props.showName}
@@ -119,7 +123,6 @@ class Main extends React.Component {
               password={this.props.password}
               loggedIn={this.props.loggedIn}
               errors={this.props.errors}
-              adminPresent={this.props.adminPresent}
               {...props}
             />
           }/>

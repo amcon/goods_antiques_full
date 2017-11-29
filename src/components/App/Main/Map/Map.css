@@ -1,7 +1,7 @@
 .map {
   width: 100%;
   background-image: url('./../../../../../public/images/map-page.jpg');
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -26,6 +26,7 @@
 .store-info {
   text-align: center;
   margin-left: 25px;
+  width: auto;
 }
 
 .store-info h1 {
@@ -48,11 +49,16 @@
   border-left: 1px solid white;
 }
 
-#map {
+.map-container {
   height: 400px;
   width: 600px;
   border: 1px solid white;
 }
+
+.map-container div:only-child {
+  position: relative !important;
+}
+
 
 #google-maps {
   background-color: transparent;
@@ -61,4 +67,11 @@
   font-size: 1em;
   color: white;
   font-family: georgia;
+  text-decoration: none;
+}
+
+#google-maps:hover {
+  border: none;
+  background-color: white;
+  color: black;
 }

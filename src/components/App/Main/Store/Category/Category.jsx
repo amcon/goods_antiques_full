@@ -5,11 +5,42 @@ import Sold from '../Primitive/Sold/Sold.jsx';
 
 class Category extends React.Component {
 
-  // componentDidMount() {
-  //   console.log(this.props.allProducts)
-  //   console.log(this.props.match.params.categoryId.toString());
-  //   console.log('this is from the Category page');
-  // }
+  constructor(props) {
+    super(props);
+    this.state = {
+      soldItemPresent: false,
+    };
+  }
+
+  componentDidMount() {
+    // console.log(this.props.allProducts)
+    // console.log(this.props.match.params.categoryId.toString());
+    // console.log('this is from the Category page');
+    // console.log(this.state.soldItemPresent);
+    this.checkForSold();
+    this.renderSoldHeader();
+  }
+
+  checkForSold() {
+    const categoryName = this.props.match.params.categoryId.toString();
+
+    this.props.allProducts.map((product, i) => {
+      if (product.category === categoryName && product.sold == true) {
+        this.setState({
+          soldItemPresent: true,
+        })
+        console.log("i run");
+      }
+    });
+  }
+
+  renderSoldHeader() {
+    if (this.state.soldItemPresent == true) {
+      return (
+        <h2>Recently Sold</h2>
+      );
+    }
+  }
 
   createPageTitle() {
     const categoryName = this.props.match.params.categoryId.toString();
@@ -95,7 +126,7 @@ class Category extends React.Component {
         <div className="available">
           {this.renderCategoryProducts()}
         </div>
-        <h2>Recently Sold</h2>
+        {this.renderSoldHeader()}
         <div className="sold-items">
           {this.renderCategorySold()}
         </div>

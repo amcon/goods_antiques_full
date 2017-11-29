@@ -1,7 +1,8 @@
 import React from 'react';
 import styles from './OneProduct.css';
-import { Link, Redirect } from 'react-router-dom';
+import { Link, Route, Redirect } from 'react-router-dom';
 import Dropzone from 'react-dropzone';
+import Buy from './Buy/Buy.jsx';
 
 class OneProduct extends React.Component {
 
@@ -96,7 +97,7 @@ class OneProduct extends React.Component {
             value={this.props.imageMain}>
             <p>Drop an image or click to select a file to upload.</p>
           </Dropzone>
-          <div>
+          <div className="image-preview">
             {this.props.imageMain === '' ? null :
             <div>
               <p>{this.props.uploadedFile.name}</p>
@@ -114,7 +115,7 @@ class OneProduct extends React.Component {
             value={this.props.imageSupOne}>
             <p>Drop an image or click to select a file to upload.</p>
           </Dropzone>
-          <div>
+          <div className="image-preview">
             {this.props.imageSupOne === '' ? null :
             <div>
               <p>{this.props.uploadedSupOneFile.name}</p>
@@ -132,7 +133,7 @@ class OneProduct extends React.Component {
             value={this.props.imageSupTwo}>
             <p>Drop an image or click to select a file to upload.</p>
           </Dropzone>
-          <div>
+          <div className="image-preview">
             {this.props.imageSupTwo === '' ? null :
             <div>
               <p>{this.props.uploadedSupTwoFile.name}</p>
@@ -150,7 +151,7 @@ class OneProduct extends React.Component {
             value={this.props.imageSupThree}>
             <p>Drop an image or click to select a file to upload.</p>
           </Dropzone>
-          <div>
+          <div className="image-preview">
             {this.props.imageSupThree === '' ? null :
             <div>
               <p>{this.props.uploadedSupThreeFile.name}</p>
@@ -184,19 +185,21 @@ class OneProduct extends React.Component {
       <div className="one-product">
         <div className="product-box">
           <div className="one-product-images">
-            <img className="main-img" src={this.props.clickedProduct.main_img} />
+            <img className="main-img" src={this.props.chosenImage} alt='' />
               <div className="one-product-sup-images">
-                <img className="sup-img" src={this.props.clickedProduct.main_img} />
-                <img className="sup-img" src={this.props.clickedProduct.sup_img_1} />
-                <img className="sup-img" src={this.props.clickedProduct.sup_img_2} />
-                <img className="sup-img" src={this.props.clickedProduct.sup_img_3} />
+                <img className="sup-img" onClick={() => this.props.chooseMainImage(this.props.clickedProduct.main_img)} src={this.props.clickedProduct.main_img} alt="" />
+                <img className="sup-img" onClick={() => this.props.chooseMainImage(this.props.clickedProduct.sup_img_1)} src={this.props.clickedProduct.sup_img_1} alt="" />
+                <img className="sup-img" onClick={() => this.props.chooseMainImage(this.props.clickedProduct.sup_img_2)} src={this.props.clickedProduct.sup_img_2} alt="" />
+                <img className="sup-img" onClick={() => this.props.chooseMainImage(this.props.clickedProduct.sup_img_3)} src={this.props.clickedProduct.sup_img_3} alt="" />
               </div>
           </div>
           <div className="one-product-text">
             <h1>{this.props.clickedProduct.name}</h1>
             <p>{this.props.clickedProduct.description}</p>
             <h2>{this.props.clickedProduct.price}</h2>
-            <button>BUY</button>
+            <Link to='/buy' target="_blank">
+              <button>BUY</button>
+            </Link>
           </div>
         </div>
         {this.renderProductEdit()}

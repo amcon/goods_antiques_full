@@ -14,8 +14,6 @@ class App extends React.Component {
       allProducts: [],
       allShows: [],
       clickedProduct: [],
-      admin: {email: ''},
-      adminPresent: false,
       email: '',
       password: '',
       userCreated: false,
@@ -38,6 +36,7 @@ class App extends React.Component {
       productSold: '',
       productCreated: false,
       productEdited: false,
+      chosenImage: '',
       imageMain: '',
       imageSupOne: '',
       imageSupTwo: '',
@@ -76,25 +75,6 @@ class App extends React.Component {
         showCreated: false,
       });
       // console.log(this.state.allShows);
-    })
-    .catch(err => console.log(err));
-  }
-
-  getAdmin() {
-    fetch(`/api/users/admin`)
-    .then(r => r.json())
-    .then((data) => {
-      if (data !== null) {
-        this.setState({
-          admin: data,
-        })
-        // console.log(data);
-      }
-      if (this.state.admin.email === 'goodsantiqueswisconsin@gmail.com') {
-        this.setState({
-          adminPresent: true,
-        })
-      }
     })
     .catch(err => console.log(err));
   }
@@ -509,6 +489,7 @@ class App extends React.Component {
         productSku: this.state.clickedProduct.sku,
         productCategory: this.state.clickedProduct.category,
         productSold: this.state.clickedProduct.sold,
+        chosenImage: this.state.clickedProduct.main_img,
         imageMain: this.state.clickedProduct.main_img,
         imageSupOne: this.state.clickedProduct.sup_img_1,
         imageSupTwo: this.state.clickedProduct.sup_img_2,
@@ -625,11 +606,48 @@ class App extends React.Component {
     .catch(err => console.log(err))
   }
 
+  chooseMainImage(image) {
+    if (image) {
+      this.setState({
+        chosenImage: image
+      })
+    }
+  }
+
+  clearShowAndProductState() {
+    this.setState({
+      showName: '',
+      showDate: '',
+      showLocation: '',
+      showWebsite: '',
+      showVenue: '',
+      showCurrent: '',
+      productName: '',
+      productDescription: '',
+      productPrice: '',
+      productSku: '',
+      productCategory: '',
+      productSold: '',
+    })
+  }
+
+  checkForToken() {
+    console.log(localStorage.userAuthToken);
+
+    if (localStorage.userAuthToken) {
+      this.setState({
+        loggedIn: true,
+      })
+      console.log("i run");
+    }
+  }
+
 
   componentWillMount() {
     this.getAllProducts();
     this.getAllShows();
-    this.getAdmin();
+    this.clearShowAndProductState();
+    this.checkForToken();
   }
 
   render() {
@@ -638,6 +656,7 @@ class App extends React.Component {
         <Header />
         <Main
           key="main"
+          adminData={this.state.admin}
           adminPresent={this.state.adminPresent}
           email={this.state.email}
           password={this.state.password}
@@ -664,6 +683,7 @@ class App extends React.Component {
           productCreated={this.state.productCreated}
           productEdited={this.state.productEdited}
           productId={this.state.productId}
+          chosenImage={this.state.chosenImage}
           imageMain={this.state.imageMain}
           imageSupOne={this.state.imageSupOne}
           imageSupTwo={this.state.imageSupTwo}
@@ -705,6 +725,7 @@ class App extends React.Component {
           onImageSupOneDrop={this.onImageSupOneDrop.bind(this)}
           onImageSupTwoDrop={this.onImageSupTwoDrop.bind(this)}
           onImageSupThreeDrop={this.onImageSupThreeDrop.bind(this)}
+          chooseMainImage={this.chooseMainImage.bind(this)}
         />
         <Footer />
       </div>

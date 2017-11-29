@@ -4,7 +4,7 @@ body {
 header {
   width: 1100px;
   margin: 0 auto;
-  padding: 0 25px;
+  padding: 15px 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,10 +49,16 @@ main {
   min-width: 1150px;
   display: flex;
   justify-content: center;
+  border-bottom: 1px solid grey;
+  border-top: 1px solid grey;
+}
+
+main div {
+  width: 100%;
 }
 .home {
   background-image: url(/img/home-page.ihfJx.jpg);
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -116,8 +122,6 @@ main {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
   padding: 50px 0;
 }
 
@@ -210,7 +214,7 @@ main {
 }
 .about {
   background-image: url(/img/about-page.1VZQW.jpg);
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -307,9 +311,8 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
   font-weight: lighter;
+  padding-bottom: 50px;
 }
 
 .shows h2 {
@@ -324,7 +327,7 @@ main {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -345,10 +348,24 @@ main {
   color: white;
   cursor: pointer;
 }
-.show {
+
+.dragged {
+  opacity: 0.7;
+}
+
+.placeholder {
+  opacity: 0.1;
+  background-color: gold;
+}
+.show, .draggable {
   width: 33%;
   padding-right: 100px;
   box-sizing: border-box;
+}
+
+.draggable .show {
+  width: 100%;
+  padding-right: 0;
 }
 
 .show h1, .show h3 {
@@ -364,6 +381,26 @@ main {
 .show a {
   color: black;
   margin-left: 2px;
+}
+
+.move {
+  display: flex;
+}
+
+.move p:first-of-type {
+  margin-right: 10px;
+}
+
+.move p:hover {
+  cursor: pointer;
+}
+
+.upcoming, .past, .List {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  width: 95%;
+  margin: 0 auto;
 }
 .past-show {
   width: 20%;
@@ -383,7 +420,7 @@ main {
 .map {
   width: 100%;
   background-image: url(/img/map-page.26rWp.jpg);
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -408,6 +445,7 @@ main {
 .store-info {
   text-align: center;
   margin-left: 25px;
+  width: auto;
 }
 
 .store-info h1 {
@@ -430,11 +468,16 @@ main {
   border-left: 1px solid white;
 }
 
-#map {
+.map-container {
   height: 400px;
   width: 600px;
   border: 1px solid white;
 }
+
+.map-container div:only-child {
+  position: relative !important;
+}
+
 
 #google-maps {
   background-color: transparent;
@@ -443,6 +486,13 @@ main {
   font-size: 1em;
   color: white;
   font-family: georgia;
+  text-decoration: none;
+}
+
+#google-maps:hover {
+  border: none;
+  background-color: white;
+  color: black;
 }
 .login {
   background-color: white;
@@ -451,8 +501,6 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
 }
 
 .login h1 {
@@ -525,8 +573,6 @@ main {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
   padding-top: 25px;
 }
 
@@ -591,6 +637,16 @@ main {
   color: white;
   cursor: pointer;
 }
+
+.image-uploader {
+  display: flex;
+  margin: 20px 0;
+}
+
+.image-uploader .image-preview {
+  margin-left: 20px;
+  width: 200px;
+}
 .signup {
   background-color: white;
   width: 1100px;
@@ -598,8 +654,6 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
 }
 
 .signup h1 {
@@ -654,8 +708,6 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
   padding: 50px;
   box-sizing: border-box;
 }
@@ -781,8 +833,6 @@ main {
 .one-product {
   background-color: white;
   width: 1100px;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
   padding: 100px 50px;
   box-sizing: border-box;
 }
@@ -968,6 +1018,55 @@ main {
   justify-content: space-between;
   margin: 10px 0;
 }
+
+.drop-section .image-preview {
+  margin-left: 20px;
+  width: 200px;
+}
+.buy-page {
+  width: 1100px;
+  padding: 5%;
+  box-sizing: border-box;
+}
+
+    .buy-page h1 {
+      margin-bottom: 40px;
+      letter-spacing: 2px;
+      font-weight: lighter;
+    }
+
+    .buy-page h2 {
+      font-size: 20px;
+      margin-bottom: 20px;
+      margin-left: 40px;
+      display: block;
+      width: 80%;
+      color: rgb(60, 60, 60);
+    }
+
+    .buy-page p {
+      font-size: 15px;
+      margin-bottom: 60px;
+      margin-left: 40px;
+      display: block;
+      width: 85%;
+      color: rgb(60, 60, 60);
+    }
+
+    #disclaimer {
+      margin-bottom: 40px;
+      font-size: 18px;
+    }
+
+    #faq {
+      margin-top: 80px;
+      text-decoration: underline;
+    }
+
+    .buy-page a {
+      color: blue;
+      font-size: 17px;
+    }
 footer {
   display: flex;
   padding: 75px 25px;

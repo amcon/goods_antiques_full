@@ -12,7 +12,6 @@ const Header = () => (
       <Link to='/store'>Store</Link>
       <Link to='/shows'>Shows</Link>
       <Link to='/map'>Map</Link>
-      <Link to='/admin'>Admin</Link>
     </nav>
   </header>
 )

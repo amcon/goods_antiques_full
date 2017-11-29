@@ -1,9 +1,7 @@
 .buy-page {
-  width: 1000px;
+  width: 1100px;
   padding: 5%;
   box-sizing: border-box;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
 }
 
     .buy-page h1 {

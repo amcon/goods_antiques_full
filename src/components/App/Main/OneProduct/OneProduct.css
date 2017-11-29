@@ -1,8 +1,6 @@
 .one-product {
   background-color: white;
   width: 1100px;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
   padding: 100px 50px;
   box-sizing: border-box;
 }
@@ -187,4 +185,9 @@
   width: 42%;
   justify-content: space-between;
   margin: 10px 0;
+}
+
+.drop-section .image-preview {
+  margin-left: 20px;
+  width: 200px;
 }

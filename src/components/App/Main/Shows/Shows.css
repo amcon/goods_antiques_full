@@ -6,9 +6,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
   font-weight: lighter;
+  padding-bottom: 50px;
 }
 
 .shows h2 {
@@ -23,7 +22,7 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -43,4 +42,13 @@
   background-color: rgb(212,175,55);
   color: white;
   cursor: pointer;
+}
+
+.dragged {
+  opacity: 0.7;
+}
+
+.placeholder {
+  opacity: 0.1;
+  background-color: gold;
 }

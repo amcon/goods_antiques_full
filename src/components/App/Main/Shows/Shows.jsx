@@ -2,14 +2,78 @@ import React from 'react';
 import styles from './Shows.css';
 import Show from './Show/Show.jsx';
 import PastShow from './PastShow/PastShow.jsx';
+import DragSortableList from 'react-drag-sortable';
 
 
 class Shows extends React.Component {
 
   // componentDidMount() {
-  //   console.log('this message is comming from the shows page');
-  //   console.log(this.props.allShows);
+  //   this.renderOrderedCurrent();
   // }
+
+  componentWillMount() {
+    this.renderOrderedCurrent();
+  }
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      list: [],
+    };
+  }
+
+  onSort(sortedList, dropEvent) {
+    console.log("sortedList", sortedList, dropEvent);
+  }
+
+  placeholder() {
+    return(
+      <div className="placeholderContent"></div>
+    );
+  }
+
+  renderOrderedCurrent() {
+    var listArr = [];
+
+    return this.props.allShows.map((show, i) => {
+      if (show.current == true) {
+        listArr.push(
+          { content:
+            <Show
+              key={i}
+              position={i}
+              show_id={show.show_id}
+              name={show.name}
+              show_date={show.show_date}
+              venue={show.venue}
+              location={show.location}
+              website={show.website}
+              loggedIn={this.props.loggedIn}
+              handleGetShow={this.props.handleGetShow}
+            />
+          }
+        );
+        this.setState({
+          list: listArr,
+        })
+      }
+    })
+  }
+
+  renderDragSortableList() {
+    const loggedIn = this.props.loggedIn;
+    if (loggedIn) {
+      return (
+        <DragSortableList items={this.state.list} placeholder={this.placeholder()} onSort={this.onSort()} dropBackTransitionDuration={0.3} type="grid"/>
+      );
+    } else {
+      return (
+        <div className="upcoming">
+          {this.renderAllUpcomingShows()}
+        </div>
+      );
+    }
+  }
 
   renderAllUpcomingShows() {
     return this.props.allShows.map((show, i) => {
@@ -17,6 +81,7 @@ class Shows extends React.Component {
         return (
           <Show
             key={i}
+            position={i}
             show_id={show.show_id}
             name={show.name}
             show_date={show.show_date}
@@ -37,6 +102,7 @@ class Shows extends React.Component {
         return (
           <PastShow
             key={i}
+            position={i}
             show_id={show.show_id}
             name={show.name}
             show_date={show.show_date}
@@ -55,9 +121,7 @@ class Shows extends React.Component {
     return (
       <div className="shows">
         <h2>Upcoming Shows:</h2>
-        <div className="upcoming">
-          {this.renderAllUpcomingShows()}
-        </div>
+        {this.renderDragSortableList()}
         <h2>Past Shows:</h2>
         <div className="past">
           {this.renderAllPastShows()}

@@ -1,6 +1,6 @@
 .about {
   background-image: url("./../../../../../public/images/about-page.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;

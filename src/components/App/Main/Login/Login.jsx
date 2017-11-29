@@ -7,19 +7,60 @@ class Login extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      addSignUp: true,
+      admin: {email: ''},
+      adminPresent: false,
     };
   }
 
   componentWillMount() {
-    const adminPresent = this.props.adminPresent;
+    this.getAdmin();
+  }
 
-    if (adminPresent === true) {
-      this.setState({
-        addSignUp: false,
-      })
+  getAdmin() {
+    fetch(`/api/users/admin`)
+    .then(r => r.json())
+    .then((data) => {
+      if (data !== null) {
+        this.setState({
+          admin: data,
+        })
+        // console.log(data);
+      }
+      if (this.state.admin.email === 'goodsantiqueswisconsin@gmail.com') {
+        this.setState({
+          adminPresent: true,
+        })
+        console.log(this.state.adminPresent);
+      }
+    })
+    .catch(err => console.log(err));
+  }
+
+  checkForAdmin() {
+    const adminPresent = this.state.adminPresent;
+
+    if (!adminPresent) {
+      return(
+        <Link to="/signup"><p id='sign-up'>s/u</p></Link>
+      );
     }
   }
+
+  // updateSignUpState() {
+  //   const adminData = this.props.adminData;
+
+  //   console.log(adminData);
+
+  //   // adminData.map((user) => {
+  //   //   if (user.email === "goodsantiqueswisconsin@gmail.com") {
+  //   //     this.setState({
+  //   //       addSignUp: false,
+  //   //     })
+  //   //   } else {
+  //   //     console.log(adminData)
+  //   //   }
+  //   // })
+  // }
 
   render() {
 
@@ -49,10 +90,7 @@ class Login extends React.Component {
             onChange={this.props.updateFormPassword}
           />
           <button onClick={this.props.handleLoginSubmit} >SUBMIT</button>
-          {this.state.addSignUp ?
-            <Link to="/signup"><p id='sign-up'>Click here to sign up</p></Link> :
-            null
-          }
+          {this.checkForAdmin()}
         </div>
       </div>
     );

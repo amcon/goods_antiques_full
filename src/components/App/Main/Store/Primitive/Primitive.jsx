@@ -6,10 +6,38 @@ import Link from 'react-router-dom';
 
 class Primitive extends React.Component {
 
-  // componentDidMount() {
-  //   console.log(this.props.allProducts);
-  //   console.log('this is from the Primitive page');
-  // }
+  constructor(props) {
+    super(props);
+    this.state = {
+      soldItemPresent: false,
+    };
+  }
+
+  componentDidMount() {
+    // console.log(this.props.allProducts);
+    // console.log('this is from the Primitive page');
+    this.checkForSold();
+    this.renderSoldHeader();
+  }
+
+  checkForSold() {
+    this.props.allProducts.map((product, i) => {
+      if (product.category === 'primitive' && product.sold == true) {
+        this.setState({
+          soldItemPresent: true,
+        })
+        console.log("i run");
+      }
+    });
+  }
+
+  renderSoldHeader() {
+    if (this.state.soldItemPresent == true) {
+      return (
+        <h2>Recently Sold</h2>
+      );
+    }
+  }
 
   renderPrimitiveProducts() {
     return this.props.allProducts.map((product, i) => {
@@ -58,7 +86,7 @@ class Primitive extends React.Component {
         <div className="available">
           {this.renderPrimitiveProducts()}
         </div>
-        <h2>Recently Sold</h2>
+        {this.renderSoldHeader()}
         <div className="sold-items">
           {this.renderPrimitiveSold()}
         </div>
