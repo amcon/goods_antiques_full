@@ -186,40 +186,42 @@ class OneProduct extends React.Component {
     }
 
     return(
-      <div className="one-product">
-        <div className="product-box">
-          <div className="one-product-images">
-            <img className="main-img" src={this.props.chosenImage} alt='' />
-              <div className="one-product-sup-images">
-                <img className="sup-img" onClick={() => this.props.chooseMainImage(this.props.clickedProduct.main_img)} src={this.props.clickedProduct.main_img} alt="" />
-                <img className="sup-img" onClick={() => this.props.chooseMainImage(this.props.clickedProduct.sup_img_1)} src={this.props.clickedProduct.sup_img_1} alt="" />
-                <img className="sup-img" onClick={() => this.props.chooseMainImage(this.props.clickedProduct.sup_img_2)} src={this.props.clickedProduct.sup_img_2} alt="" />
-                <img className="sup-img" onClick={() => this.props.chooseMainImage(this.props.clickedProduct.sup_img_3)} src={this.props.clickedProduct.sup_img_3} alt="" />
-              </div>
-          </div>
-          <div className="one-product-text">
-            <h1>{this.props.clickedProduct.name}</h1>
-            <p>{this.props.clickedProduct.description}</p>
-            <h2>{this.props.clickedProduct.price}</h2>
-            <Link to='/buy' target="_blank">
-              <button>BUY</button>
-            </Link>
-          </div>
-        </div>
-        {this.renderProductEdit()}
-        {this.renderEditForm()}
-        {this.state.renderDeleteWarning ?
-          <div className="delete-warning">
-            <div className="delete-message">
-              <p>Are you sure you want to delete {this.props.showName}?</p>
-              <div className="delete-buttons">
-                <button onClick={this.props.handleProductDeleteSubmit}>Yes</button>
-                <button onClick={() => this.removeDeleteWarning()}>Cancel</button>
-              </div>
+      <div className="border-component">
+        <div className="one-product">
+          <div className="product-box">
+            <div className="one-product-images">
+              <img className="main-img" src={this.props.chosenImage} alt='' />
+                <div className="one-product-sup-images">
+                  <img className="sup-img" onClick={() => this.props.chooseMainImage(this.props.clickedProduct.main_img)} src={this.props.clickedProduct.main_img} alt="" />
+                  <img className="sup-img" onClick={() => this.props.chooseMainImage(this.props.clickedProduct.sup_img_1)} src={this.props.clickedProduct.sup_img_1} alt="" />
+                  <img className="sup-img" onClick={() => this.props.chooseMainImage(this.props.clickedProduct.sup_img_2)} src={this.props.clickedProduct.sup_img_2} alt="" />
+                  <img className="sup-img" onClick={() => this.props.chooseMainImage(this.props.clickedProduct.sup_img_3)} src={this.props.clickedProduct.sup_img_3} alt="" />
+                </div>
             </div>
-          </div> :
-          null
-        }
+            <div className="one-product-text">
+              <h1>{this.props.clickedProduct.name}</h1>
+              <p>{this.props.clickedProduct.description}</p>
+              <h2>{this.props.clickedProduct.price}</h2>
+              <Link to='/buy' target="_blank">
+                <button>BUY</button>
+              </Link>
+            </div>
+          </div>
+          {this.renderProductEdit()}
+          {this.renderEditForm()}
+          {this.state.renderDeleteWarning ?
+            <div className="delete-warning">
+              <div className="delete-message">
+                <p>Are you sure you want to delete {this.props.showName}?</p>
+                <div className="delete-buttons">
+                  <button onClick={this.props.handleProductDeleteSubmit}>Yes</button>
+                  <button onClick={() => this.removeDeleteWarning()}>Cancel</button>
+                </div>
+              </div>
+            </div> :
+            null
+          }
+        </div>
       </div>
     );
   }

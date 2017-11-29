@@ -7,8 +7,7 @@
   align-items: center;
   box-sizing: border-box;
   padding: 50px 0;
-  border-bottom: 1px solid grey;
-  border-top: 1px solid grey;
+  margin: 0 auto;
 }
 
 .store nav {

@@ -74,23 +74,25 @@ class Login extends React.Component {
     }
 
     return (
-      <div className="login">
-        <h1>Log In</h1>
-        <div className="login-form">
-          <input
-            type="text"
-            placeholder="EMAIL"
-            value={this.props.email}
-            onChange={this.props.updateFormEmail}
-          />
-          <input
-            type="password"
-            placeholder="PASSWORD"
-            value={this.props.password}
-            onChange={this.props.updateFormPassword}
-          />
-          <button onClick={this.props.handleLoginSubmit} >SUBMIT</button>
-          {this.checkForAdmin()}
+      <div className="border-component">
+        <div className="login">
+          <h1>Log In</h1>
+          <div className="login-form">
+            <input
+              type="text"
+              placeholder="EMAIL"
+              value={this.props.email}
+              onChange={this.props.updateFormEmail}
+            />
+            <input
+              type="password"
+              placeholder="PASSWORD"
+              value={this.props.password}
+              onChange={this.props.updateFormPassword}
+            />
+            <button onClick={this.props.handleLoginSubmit} >SUBMIT</button>
+            {this.checkForAdmin()}
+          </div>
         </div>
       </div>
     );

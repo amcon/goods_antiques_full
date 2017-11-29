@@ -8,3 +8,9 @@ main {
 main div {
   width: 100%;
 }
+
+.border-component {
+  width: 100%;
+  border-bottom: 1px solid grey;
+  border-top: 1px solid grey;
+}

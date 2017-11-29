@@ -5,8 +5,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid grey;
-  border-top: 1px solid grey;
 }
 
 .signup h1 {

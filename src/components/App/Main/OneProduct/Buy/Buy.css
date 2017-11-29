@@ -2,8 +2,7 @@
   width: 1100px;
   padding: 5%;
   box-sizing: border-box;
-  border-bottom: 1px solid grey;
-  border-top: 1px solid grey;
+  margin: 0 auto;
 }
 
     .buy-page h1 {

@@ -17078,81 +17078,85 @@ var Buy = function (_React$Component) {
     value: function render() {
       return _react2.default.createElement(
         'div',
-        { className: 'buy-page' },
+        { className: 'border-component' },
         _react2.default.createElement(
-          'h1',
-          null,
-          'MAKING A PURCHASE'
-        ),
-        _react2.default.createElement(
-          'p',
-          { id: 'disclaimer' },
-          'Thanks for your interest! Until Good\'s Antiques incorporates its e-commerce store (coming soon!), please simply:'
-        ),
-        _react2.default.createElement(
-          'h2',
-          null,
-          'Email Us'
-        ),
-        _react2.default.createElement(
-          'p',
-          null,
-          'Click ',
+          'div',
+          { className: 'buy-page' },
           _react2.default.createElement(
-            'a',
-            { target: '_blank', href: 'mailto:goodsantiqueswisconsin@gmail.com?subject=I would like to purchase an item I viewed in your online gallery&body=Hello Good\'s Antiques,%0D%0A %0D%0AI\'m interested in purchasing an item I viewed in your online gallery. %0D%0APlease get back to me as soon as possible.%0D%0A %0D%0A %0D%0A*My name: %0D%0A %0D%0A*My address is: %0D%0A %0D%0A*My phone number is: %0D%0A %0D%0A*Item name: %0D%0A %0D%0AAny questions/comments: %0D%0A %0D%0A %0D%0A %0D%0AThank you very much%0D%0ASigned,%0D%0A*' },
-            'here '
+            'h1',
+            null,
+            'MAKING A PURCHASE'
           ),
-          'and fill out the generated email form.',
-          _react2.default.createElement('br', null),
-          'Refer to the item in the previous tab for product information. Fill out the form as accurately as you can, and feel free to leave any additional questions or comments.'
-        ),
-        _react2.default.createElement(
-          'h2',
-          { id: 'faq', className: 'serif' },
-          'FREQUENTLY ASKED QUESTIONS:'
-        ),
-        _react2.default.createElement(
-          'h2',
-          { className: 'serif' },
-          'Shipping Costs'
-        ),
-        _react2.default.createElement(
-          'p',
-          null,
-          'When you purchase a piece from Goods Antiques, you purchase a one-of-a-kind item. We always suggest you pick up your piece or arrange delivery. If that is not possible, please give us a call to arrange delivery: 262-740-1416. Goods Antiques can refer you to a local, fedex or UPS shipper. Pricing varies based on location and packaging materials. We will ensure products are wrapped to prevent damage.'
-        ),
-        _react2.default.createElement(
-          'h2',
-          { className: 'serif' },
-          'Delivery'
-        ),
-        _react2.default.createElement(
-          'p',
-          null,
-          'Delivery can be arranged. Depending upon location, we may suggest a small fee for gas and time. We deliver all across the country and we may just have a show or pick that will bring us your way! Please give us a call to arrange: 262-740-1416.'
-        ),
-        _react2.default.createElement(
-          'h2',
-          { className: 'serif' },
-          'Payment'
-        ),
-        _react2.default.createElement(
-          'p',
-          null,
-          'We accept all major credit cards, and cash. All payments can be made over the phone or in store',
-          _react2.default.createElement('br', null),
-          'As a retail business we must charge tax. When we travel to shows, we charge a local tax. Other fees may apply. '
-        ),
-        _react2.default.createElement(
-          'h2',
-          { className: 'serif' },
-          'Returns'
-        ),
-        _react2.default.createElement(
-          'p',
-          null,
-          'We currently do not accept returns unless the item has been damaged on our end. Good\'s Antiques will not be responsible for return shipping rates'
+          _react2.default.createElement(
+            'p',
+            { id: 'disclaimer' },
+            'Thanks for your interest! Until Good\'s Antiques incorporates its e-commerce store (coming soon!), please simply:'
+          ),
+          _react2.default.createElement(
+            'h2',
+            null,
+            'Email Us'
+          ),
+          _react2.default.createElement(
+            'p',
+            null,
+            'Click ',
+            _react2.default.createElement(
+              'a',
+              { target: '_blank', href: 'mailto:goodsantiqueswisconsin@gmail.com?subject=I would like to purchase an item I viewed in your online gallery&body=Hello Good\'s Antiques,%0D%0A %0D%0AI\'m interested in purchasing an item I viewed in your online gallery. %0D%0APlease get back to me as soon as possible.%0D%0A %0D%0A %0D%0A*My name: %0D%0A %0D%0A*My address is: %0D%0A %0D%0A*My phone number is: %0D%0A %0D%0A*Item name: %0D%0A %0D%0AAny questions/comments: %0D%0A %0D%0A %0D%0A %0D%0AThank you very much%0D%0ASigned,%0D%0A*' },
+              'here '
+            ),
+            'and fill out the generated email form.',
+            _react2.default.createElement('br', null),
+            'Refer to the item in the previous tab for product information. Fill out the form as accurately as you can, and feel free to leave any additional questions or comments.'
+          ),
+          _react2.default.createElement(
+            'h2',
+            { id: 'faq', className: 'serif' },
+            'FREQUENTLY ASKED QUESTIONS:'
+          ),
+          _react2.default.createElement(
+            'h2',
+            { className: 'serif' },
+            'Shipping Costs'
+          ),
+          _react2.default.createElement(
+            'p',
+            null,
+            'When you purchase a piece from Goods Antiques, you purchase a one-of-a-kind item. We always suggest you pick up your piece or arrange delivery. If that is not possible, please give us a call to arrange delivery: 262-740-1416. Goods Antiques can refer you to a local, fedex or UPS shipper. Pricing varies based on location and packaging materials. We will ensure products are wrapped to prevent damage.'
+          ),
+          _react2.default.createElement(
+            'h2',
+            { className: 'serif' },
+            'Delivery'
+          ),
+          _react2.default.createElement(
+            'p',
+            null,
+            'Delivery can be arranged. Depending upon location, we may suggest a small fee for gas and time. We deliver all across the country and we may just have a show or pick that will bring us your way! Please give us a call to arrange: 262-740-1416.'
+          ),
+          _react2.default.createElement(
+            'h2',
+            { className: 'serif' },
+            'Payment'
+          ),
+          _react2.default.createElement(
+            'p',
+            null,
+            'We accept all major credit cards, and cash. All payments can be made over the phone or in store',
+            _react2.default.createElement('br', null),
+            'As a retail business we must charge tax. When we travel to shows, we charge a local tax. Other fees may apply. '
+          ),
+          _react2.default.createElement(
+            'h2',
+            { className: 'serif' },
+            'Returns'
+          ),
+          _react2.default.createElement(
+            'p',
+            null,
+            'We currently do not accept returns unless the item has been damaged on our end. Good\'s Antiques will not be responsible for return shipping rates'
+          )
         )
       );
     }
@@ -34054,94 +34058,98 @@ var Store = function (_React$Component) {
 
       return _react2.default.createElement(
         'div',
-        { className: 'store' },
+        { className: 'border-component' },
         _react2.default.createElement(
-          'nav',
-          null,
+          'div',
+          { className: 'store' },
           _react2.default.createElement(
-            'div',
-            { className: 'store-nav-section' },
+            'nav',
+            null,
             _react2.default.createElement(
-              _reactRouterDom.Link,
-              { to: this.props.match.url + '/primitive' },
-              'Primitive'
+              'div',
+              { className: 'store-nav-section' },
+              _react2.default.createElement(
+                _reactRouterDom.Link,
+                { to: this.props.match.url + '/primitive' },
+                'Primitive'
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                '|'
+              ),
+              _react2.default.createElement(
+                _reactRouterDom.Link,
+                { to: this.props.match.url + '/country' },
+                'Country Store'
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                '|'
+              ),
+              _react2.default.createElement(
+                _reactRouterDom.Link,
+                { to: this.props.match.url + '/general' },
+                'General Store & Advertising'
+              )
             ),
             _react2.default.createElement(
-              'p',
-              null,
-              '|'
+              'div',
+              { className: 'store-nav-section' },
+              _react2.default.createElement(
+                _reactRouterDom.Link,
+                { to: this.props.match.url + '/stoneware' },
+                'Stoneware, Pottery & Dishes'
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                '|'
+              ),
+              _react2.default.createElement(
+                _reactRouterDom.Link,
+                { to: this.props.match.url + '/victorian' },
+                'Victorian & East Lake'
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                '|'
+              ),
+              _react2.default.createElement(
+                _reactRouterDom.Link,
+                { to: this.props.match.url + '/folk' },
+                'Folk Art & Paintings'
+              )
             ),
             _react2.default.createElement(
-              _reactRouterDom.Link,
-              { to: this.props.match.url + '/country' },
-              'Country Store'
-            ),
-            _react2.default.createElement(
-              'p',
-              null,
-              '|'
-            ),
-            _react2.default.createElement(
-              _reactRouterDom.Link,
-              { to: this.props.match.url + '/general' },
-              'General Store & Advertising'
+              'div',
+              { className: 'store-nav-section' },
+              _react2.default.createElement(
+                _reactRouterDom.Link,
+                { to: this.props.match.url + '/liveedge' },
+                'Live-Edge, Industrial & Painted'
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                '|'
+              ),
+              _react2.default.createElement(
+                _reactRouterDom.Link,
+                { to: this.props.match.url + '/other' },
+                'Other'
+              )
             )
           ),
-          _react2.default.createElement(
-            'div',
-            { className: 'store-nav-section' },
-            _react2.default.createElement(
-              _reactRouterDom.Link,
-              { to: this.props.match.url + '/stoneware' },
-              'Stoneware, Pottery & Dishes'
-            ),
-            _react2.default.createElement(
-              'p',
-              null,
-              '|'
-            ),
-            _react2.default.createElement(
-              _reactRouterDom.Link,
-              { to: this.props.match.url + '/victorian' },
-              'Victorian & East Lake'
-            ),
-            _react2.default.createElement(
-              'p',
-              null,
-              '|'
-            ),
-            _react2.default.createElement(
-              _reactRouterDom.Link,
-              { to: this.props.match.url + '/folk' },
-              'Folk Art & Paintings'
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'store-nav-section' },
-            _react2.default.createElement(
-              _reactRouterDom.Link,
-              { to: this.props.match.url + '/liveedge' },
-              'Live-Edge, Industrial & Painted'
-            ),
-            _react2.default.createElement(
-              'p',
-              null,
-              '|'
-            ),
-            _react2.default.createElement(
-              _reactRouterDom.Link,
-              { to: this.props.match.url + '/other' },
-              'Other'
-            )
-          )
-        ),
-        _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: this.props.match.url, component: function component(props) {
-            return _react2.default.createElement(_Primitive2.default, _extends({ allProducts: _this2.props.allProducts, loggedIn: _this2.props.loggedIn, handleGetProduct: _this2.props.handleGetProduct, productSelected: _this2.props.productSelected }, props));
-          } }),
-        _react2.default.createElement(_reactRouterDom.Route, { path: this.props.match.url + '/:categoryId', component: function component(props) {
-            return _react2.default.createElement(_Category2.default, _extends({ allProducts: _this2.props.allProducts, loggedIn: _this2.props.loggedIn, handleGetProduct: _this2.props.handleGetProduct, productSelected: _this2.props.productSelected }, props));
-          } })
+          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: this.props.match.url, component: function component(props) {
+              return _react2.default.createElement(_Primitive2.default, _extends({ allProducts: _this2.props.allProducts, loggedIn: _this2.props.loggedIn, handleGetProduct: _this2.props.handleGetProduct, productSelected: _this2.props.productSelected }, props));
+            } }),
+          _react2.default.createElement(_reactRouterDom.Route, { path: this.props.match.url + '/:categoryId', component: function component(props) {
+              return _react2.default.createElement(_Category2.default, _extends({ allProducts: _this2.props.allProducts, loggedIn: _this2.props.loggedIn, handleGetProduct: _this2.props.handleGetProduct, productSelected: _this2.props.productSelected }, props));
+            } })
+        )
       );
     }
   }]);
@@ -34903,22 +34911,26 @@ var Shows = function (_React$Component) {
     value: function render() {
       return _react2.default.createElement(
         'div',
-        { className: 'shows' },
-        _react2.default.createElement(
-          'h2',
-          { className: 'serif' },
-          'Upcoming Shows:'
-        ),
-        this.renderDragSortableList(),
-        _react2.default.createElement(
-          'h2',
-          { className: 'serif' },
-          'Past Shows:'
-        ),
+        { className: 'border-component' },
         _react2.default.createElement(
           'div',
-          { className: 'past' },
-          this.renderAllPastShows()
+          { className: 'shows' },
+          _react2.default.createElement(
+            'h2',
+            { className: 'serif' },
+            'Upcoming Shows:'
+          ),
+          this.renderDragSortableList(),
+          _react2.default.createElement(
+            'h2',
+            { className: 'serif' },
+            'Past Shows:'
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'past' },
+            this.renderAllPastShows()
+          )
         )
       );
     }
@@ -48564,33 +48576,37 @@ var Login = function (_React$Component) {
 
       return _react2.default.createElement(
         'div',
-        { className: 'login' },
-        _react2.default.createElement(
-          'h1',
-          null,
-          'Log In'
-        ),
+        { className: 'border-component' },
         _react2.default.createElement(
           'div',
-          { className: 'login-form' },
-          _react2.default.createElement('input', {
-            type: 'text',
-            placeholder: 'EMAIL',
-            value: this.props.email,
-            onChange: this.props.updateFormEmail
-          }),
-          _react2.default.createElement('input', {
-            type: 'password',
-            placeholder: 'PASSWORD',
-            value: this.props.password,
-            onChange: this.props.updateFormPassword
-          }),
+          { className: 'login' },
           _react2.default.createElement(
-            'button',
-            { onClick: this.props.handleLoginSubmit },
-            'SUBMIT'
+            'h1',
+            null,
+            'Log In'
           ),
-          this.checkForAdmin()
+          _react2.default.createElement(
+            'div',
+            { className: 'login-form' },
+            _react2.default.createElement('input', {
+              type: 'text',
+              placeholder: 'EMAIL',
+              value: this.props.email,
+              onChange: this.props.updateFormEmail
+            }),
+            _react2.default.createElement('input', {
+              type: 'password',
+              placeholder: 'PASSWORD',
+              value: this.props.password,
+              onChange: this.props.updateFormPassword
+            }),
+            _react2.default.createElement(
+              'button',
+              { onClick: this.props.handleLoginSubmit },
+              'SUBMIT'
+            ),
+            this.checkForAdmin()
+          )
         )
       );
     }
@@ -48678,382 +48694,386 @@ var Admin = function (_React$Component) {
 
       return _react2.default.createElement(
         'div',
-        { className: 'admin' },
-        _react2.default.createElement(
-          'h1',
-          null,
-          'Create a new item:'
-        ),
+        { className: 'border-component' },
         _react2.default.createElement(
           'div',
-          { className: 'create-product' },
+          { className: 'admin' },
           _react2.default.createElement(
-            'p',
+            'h1',
             null,
-            '*name:'
-          ),
-          _react2.default.createElement('input', {
-            type: 'text',
-            placeholder: 'ex. Primitive Cabinet',
-            value: this.props.productName,
-            onChange: this.props.updateProductName
-          }),
-          _react2.default.createElement(
-            'p',
-            null,
-            '*description:'
-          ),
-          _react2.default.createElement('input', {
-            type: 'text',
-            placeholder: 'ex. This Primitive cabinet is from...',
-            value: this.props.productDescription,
-            onChange: this.props.updateProductDescription
-          }),
-          _react2.default.createElement(
-            'p',
-            null,
-            '*price:'
-          ),
-          _react2.default.createElement('input', {
-            type: 'text',
-            placeholder: 'ex. $100',
-            value: this.props.productPrice,
-            onChange: this.props.updateProductPrice
-          }),
-          _react2.default.createElement(
-            'p',
-            null,
-            '*sku:'
-          ),
-          _react2.default.createElement('input', {
-            type: 'text',
-            placeholder: 'ex. PRIM-0001',
-            value: this.props.productSku,
-            onChange: this.props.updateProductSku
-          }),
-          _react2.default.createElement(
-            'p',
-            null,
-            '*category:'
+            'Create a new item:'
           ),
           _react2.default.createElement(
-            'select',
-            { value: this.props.productCategory, onChange: this.props.updateProductCategory },
+            'div',
+            { className: 'create-product' },
             _react2.default.createElement(
-              'option',
+              'p',
               null,
-              'Select One'
+              '*name:'
             ),
+            _react2.default.createElement('input', {
+              type: 'text',
+              placeholder: 'ex. Primitive Cabinet',
+              value: this.props.productName,
+              onChange: this.props.updateProductName
+            }),
             _react2.default.createElement(
-              'option',
-              { value: 'primitive' },
-              'Primitive'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'country' },
-              'Country Store'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'general' },
-              'General Store & Advertising'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'stoneware' },
-              'Stoneware, Pottery & Dishes'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'victorian' },
-              'Victorian & East Lake'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'folk' },
-              'Folk Art & Paintings'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'liveedge' },
-              'Live-Edge, Industrial & Painted'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'other' },
-              'Other'
-            )
-          ),
-          _react2.default.createElement(
-            'p',
-            null,
-            '*main image:'
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'image-uploader' },
-            _react2.default.createElement(
-              _reactDropzone2.default,
-              {
-                className: 'dropzone',
-                multiple: false,
-                accept: 'image/*',
-                onDrop: this.props.onImageMainDrop,
-                value: this.props.imageMain },
-              _react2.default.createElement(
-                'p',
-                null,
-                'Drop an image or click to select a file to upload.'
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'image-preview' },
-              this.props.imageMain === '' ? null : _react2.default.createElement(
-                'div',
-                null,
-                _react2.default.createElement('img', { height: '200px', src: this.props.imageMain }),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  this.props.uploadedFile.name
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'p',
-            null,
-            'first suplemental image:'
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'image-uploader' },
-            _react2.default.createElement(
-              _reactDropzone2.default,
-              {
-                className: 'dropzone',
-                multiple: false,
-                accept: 'image/*',
-                onDrop: this.props.onImageSupOneDrop,
-                value: this.props.imageSupOne },
-              _react2.default.createElement(
-                'p',
-                null,
-                'Drop an image or click to select a file to upload.'
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'image-preview' },
-              this.props.imageSupOne === '' ? null : _react2.default.createElement(
-                'div',
-                null,
-                _react2.default.createElement('img', { height: '200px', src: this.props.imageSupOne }),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  this.props.uploadedSupOneFile.name
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'p',
-            null,
-            'second suplemental image:'
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'image-uploader' },
-            _react2.default.createElement(
-              _reactDropzone2.default,
-              {
-                className: 'dropzone',
-                multiple: false,
-                accept: 'image/*',
-                onDrop: this.props.onImageSupTwoDrop,
-                value: this.props.imageSupTwo },
-              _react2.default.createElement(
-                'p',
-                null,
-                'Drop an image or click to select a file to upload.'
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'image-preview' },
-              this.props.imageSupTwo === '' ? null : _react2.default.createElement(
-                'div',
-                null,
-                _react2.default.createElement('img', { height: '200px', src: this.props.imageSupTwo }),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  this.props.uploadedSupTwoFile.name
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'p',
-            null,
-            'third suplemental image:'
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'image-uploader' },
-            _react2.default.createElement(
-              _reactDropzone2.default,
-              {
-                className: 'dropzone',
-                multiple: false,
-                accept: 'image/*',
-                onDrop: this.props.onImageSupThreeDrop,
-                value: this.props.imageSupThree },
-              _react2.default.createElement(
-                'p',
-                null,
-                'Drop an image or click to select a file to upload.'
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'image-preview' },
-              this.props.imageSupThree === '' ? null : _react2.default.createElement(
-                'div',
-                null,
-                _react2.default.createElement('img', { height: '200px', src: this.props.imageSupThree }),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  this.props.uploadedSupThreeFile.name
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'p',
-            null,
-            'sold:'
-          ),
-          _react2.default.createElement(
-            'select',
-            { value: this.props.productSold, onChange: this.props.updateProductSold },
-            _react2.default.createElement(
-              'option',
+              'p',
               null,
-              'Select One'
+              '*description:'
             ),
+            _react2.default.createElement('input', {
+              type: 'text',
+              placeholder: 'ex. This Primitive cabinet is from...',
+              value: this.props.productDescription,
+              onChange: this.props.updateProductDescription
+            }),
             _react2.default.createElement(
-              'option',
-              { value: 'false' },
-              'Available'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'true' },
-              'Sold'
-            )
-          ),
-          _react2.default.createElement(
-            'button',
-            { onClick: this.props.handleCreateProduct },
-            'create product'
-          )
-        ),
-        _react2.default.createElement(
-          'h1',
-          null,
-          'Create a new show:'
-        ),
-        _react2.default.createElement(
-          'div',
-          { className: 'create-show' },
-          _react2.default.createElement(
-            'p',
-            null,
-            '*name:'
-          ),
-          _react2.default.createElement('input', {
-            type: 'text',
-            placeholder: 'ex. ELKHORN ANTIQUE SHOW',
-            value: this.props.showName,
-            onChange: this.props.updateShowName
-          }),
-          _react2.default.createElement(
-            'p',
-            null,
-            '*date:'
-          ),
-          _react2.default.createElement('input', {
-            type: 'text',
-            placeholder: 'ex. SUNDAY, Aug 13 -or- MON, Sep 25 - SAT, Sep 30',
-            value: this.props.showDate,
-            onChange: this.props.updateShowDate
-          }),
-          _react2.default.createElement(
-            'p',
-            null,
-            '*venue:'
-          ),
-          _react2.default.createElement('input', {
-            type: 'text',
-            placeholder: 'ex. Elkhorn Convention Center',
-            value: this.props.showVenue,
-            onChange: this.props.updateShowVenue
-          }),
-          _react2.default.createElement(
-            'p',
-            null,
-            '*location:'
-          ),
-          _react2.default.createElement('input', {
-            type: 'text',
-            placeholder: 'ex. Elkhorn, WI',
-            value: this.props.showLocation,
-            onChange: this.props.updateShowLocation
-          }),
-          _react2.default.createElement(
-            'p',
-            null,
-            '*website:'
-          ),
-          _react2.default.createElement('input', {
-            type: 'text',
-            placeholder: 'ex. http://www.elkhornantique.com *must have: http://*',
-            value: this.props.showWebsite,
-            onChange: this.props.updateShowWebsite
-          }),
-          _react2.default.createElement(
-            'p',
-            null,
-            '*upcoming or past:'
-          ),
-          _react2.default.createElement(
-            'select',
-            { value: this.props.showCurrent, onChange: this.props.updateShowCurrent },
-            _react2.default.createElement(
-              'option',
+              'p',
               null,
-              'Select One'
+              '*price:'
+            ),
+            _react2.default.createElement('input', {
+              type: 'text',
+              placeholder: 'ex. $100',
+              value: this.props.productPrice,
+              onChange: this.props.updateProductPrice
+            }),
+            _react2.default.createElement(
+              'p',
+              null,
+              '*sku:'
+            ),
+            _react2.default.createElement('input', {
+              type: 'text',
+              placeholder: 'ex. PRIM-0001',
+              value: this.props.productSku,
+              onChange: this.props.updateProductSku
+            }),
+            _react2.default.createElement(
+              'p',
+              null,
+              '*category:'
             ),
             _react2.default.createElement(
-              'option',
-              { value: 'true' },
-              'Upcoming'
+              'select',
+              { value: this.props.productCategory, onChange: this.props.updateProductCategory },
+              _react2.default.createElement(
+                'option',
+                null,
+                'Select One'
+              ),
+              _react2.default.createElement(
+                'option',
+                { value: 'primitive' },
+                'Primitive'
+              ),
+              _react2.default.createElement(
+                'option',
+                { value: 'country' },
+                'Country Store'
+              ),
+              _react2.default.createElement(
+                'option',
+                { value: 'general' },
+                'General Store & Advertising'
+              ),
+              _react2.default.createElement(
+                'option',
+                { value: 'stoneware' },
+                'Stoneware, Pottery & Dishes'
+              ),
+              _react2.default.createElement(
+                'option',
+                { value: 'victorian' },
+                'Victorian & East Lake'
+              ),
+              _react2.default.createElement(
+                'option',
+                { value: 'folk' },
+                'Folk Art & Paintings'
+              ),
+              _react2.default.createElement(
+                'option',
+                { value: 'liveedge' },
+                'Live-Edge, Industrial & Painted'
+              ),
+              _react2.default.createElement(
+                'option',
+                { value: 'other' },
+                'Other'
+              )
             ),
             _react2.default.createElement(
-              'option',
-              { value: 'false' },
-              'Past'
+              'p',
+              null,
+              '*main image:'
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'image-uploader' },
+              _react2.default.createElement(
+                _reactDropzone2.default,
+                {
+                  className: 'dropzone',
+                  multiple: false,
+                  accept: 'image/*',
+                  onDrop: this.props.onImageMainDrop,
+                  value: this.props.imageMain },
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'Drop an image or click to select a file to upload.'
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'image-preview' },
+                this.props.imageMain === '' ? null : _react2.default.createElement(
+                  'div',
+                  null,
+                  _react2.default.createElement('img', { height: '200px', src: this.props.imageMain }),
+                  _react2.default.createElement(
+                    'p',
+                    null,
+                    this.props.uploadedFile.name
+                  )
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              'first suplemental image:'
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'image-uploader' },
+              _react2.default.createElement(
+                _reactDropzone2.default,
+                {
+                  className: 'dropzone',
+                  multiple: false,
+                  accept: 'image/*',
+                  onDrop: this.props.onImageSupOneDrop,
+                  value: this.props.imageSupOne },
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'Drop an image or click to select a file to upload.'
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'image-preview' },
+                this.props.imageSupOne === '' ? null : _react2.default.createElement(
+                  'div',
+                  null,
+                  _react2.default.createElement('img', { height: '200px', src: this.props.imageSupOne }),
+                  _react2.default.createElement(
+                    'p',
+                    null,
+                    this.props.uploadedSupOneFile.name
+                  )
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              'second suplemental image:'
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'image-uploader' },
+              _react2.default.createElement(
+                _reactDropzone2.default,
+                {
+                  className: 'dropzone',
+                  multiple: false,
+                  accept: 'image/*',
+                  onDrop: this.props.onImageSupTwoDrop,
+                  value: this.props.imageSupTwo },
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'Drop an image or click to select a file to upload.'
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'image-preview' },
+                this.props.imageSupTwo === '' ? null : _react2.default.createElement(
+                  'div',
+                  null,
+                  _react2.default.createElement('img', { height: '200px', src: this.props.imageSupTwo }),
+                  _react2.default.createElement(
+                    'p',
+                    null,
+                    this.props.uploadedSupTwoFile.name
+                  )
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              'third suplemental image:'
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'image-uploader' },
+              _react2.default.createElement(
+                _reactDropzone2.default,
+                {
+                  className: 'dropzone',
+                  multiple: false,
+                  accept: 'image/*',
+                  onDrop: this.props.onImageSupThreeDrop,
+                  value: this.props.imageSupThree },
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'Drop an image or click to select a file to upload.'
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'image-preview' },
+                this.props.imageSupThree === '' ? null : _react2.default.createElement(
+                  'div',
+                  null,
+                  _react2.default.createElement('img', { height: '200px', src: this.props.imageSupThree }),
+                  _react2.default.createElement(
+                    'p',
+                    null,
+                    this.props.uploadedSupThreeFile.name
+                  )
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              '*sold:'
+            ),
+            _react2.default.createElement(
+              'select',
+              { value: this.props.productSold, onChange: this.props.updateProductSold },
+              _react2.default.createElement(
+                'option',
+                null,
+                'Select One'
+              ),
+              _react2.default.createElement(
+                'option',
+                { value: 'false' },
+                'Available'
+              ),
+              _react2.default.createElement(
+                'option',
+                { value: 'true' },
+                'Sold'
+              )
+            ),
+            _react2.default.createElement(
+              'button',
+              { onClick: this.props.handleCreateProduct },
+              'create product'
             )
           ),
           _react2.default.createElement(
-            'button',
-            { onClick: this.props.handleCreateShow },
-            'create show'
+            'h1',
+            null,
+            'Create a new show:'
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'create-show' },
+            _react2.default.createElement(
+              'p',
+              null,
+              '*name:'
+            ),
+            _react2.default.createElement('input', {
+              type: 'text',
+              placeholder: 'ex. ELKHORN ANTIQUE SHOW',
+              value: this.props.showName,
+              onChange: this.props.updateShowName
+            }),
+            _react2.default.createElement(
+              'p',
+              null,
+              '*date:'
+            ),
+            _react2.default.createElement('input', {
+              type: 'text',
+              placeholder: 'ex. SUNDAY, Aug 13 -or- MON, Sep 25 - SAT, Sep 30',
+              value: this.props.showDate,
+              onChange: this.props.updateShowDate
+            }),
+            _react2.default.createElement(
+              'p',
+              null,
+              '*venue:'
+            ),
+            _react2.default.createElement('input', {
+              type: 'text',
+              placeholder: 'ex. Elkhorn Convention Center',
+              value: this.props.showVenue,
+              onChange: this.props.updateShowVenue
+            }),
+            _react2.default.createElement(
+              'p',
+              null,
+              '*location:'
+            ),
+            _react2.default.createElement('input', {
+              type: 'text',
+              placeholder: 'ex. Elkhorn, WI',
+              value: this.props.showLocation,
+              onChange: this.props.updateShowLocation
+            }),
+            _react2.default.createElement(
+              'p',
+              null,
+              '*website:'
+            ),
+            _react2.default.createElement('input', {
+              type: 'text',
+              placeholder: 'ex. http://www.elkhornantique.com *must have: http://*',
+              value: this.props.showWebsite,
+              onChange: this.props.updateShowWebsite
+            }),
+            _react2.default.createElement(
+              'p',
+              null,
+              '*upcoming or past:'
+            ),
+            _react2.default.createElement(
+              'select',
+              { value: this.props.showCurrent, onChange: this.props.updateShowCurrent },
+              _react2.default.createElement(
+                'option',
+                null,
+                'Select One'
+              ),
+              _react2.default.createElement(
+                'option',
+                { value: 'true' },
+                'Upcoming'
+              ),
+              _react2.default.createElement(
+                'option',
+                { value: 'false' },
+                'Past'
+              )
+            ),
+            _react2.default.createElement(
+              'button',
+              { onClick: this.props.handleCreateShow },
+              'create show'
+            )
           )
         )
       );
@@ -49105,46 +49125,89 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var Signup = function (_React$Component) {
   _inherits(Signup, _React$Component);
 
-  function Signup() {
+  function Signup(props) {
     _classCallCheck(this, Signup);
 
-    return _possibleConstructorReturn(this, (Signup.__proto__ || Object.getPrototypeOf(Signup)).apply(this, arguments));
+    var _this = _possibleConstructorReturn(this, (Signup.__proto__ || Object.getPrototypeOf(Signup)).call(this, props));
+
+    _this.state = {
+      admin: { email: '' },
+      adminPresent: false
+    };
+    return _this;
   }
 
   _createClass(Signup, [{
+    key: 'componentWillMount',
+    value: function componentWillMount() {
+      this.getAdmin();
+    }
+  }, {
+    key: 'getAdmin',
+    value: function getAdmin() {
+      var _this2 = this;
+
+      fetch('/api/users/admin').then(function (r) {
+        return r.json();
+      }).then(function (data) {
+        if (data !== null) {
+          _this2.setState({
+            admin: data
+          });
+          // console.log(data);
+        }
+        if (_this2.state.admin.email === 'goodsantiqueswisconsin@gmail.com') {
+          _this2.setState({
+            adminPresent: true
+          });
+          console.log(_this2.state.adminPresent);
+        }
+      }).catch(function (err) {
+        return console.log(err);
+      });
+    }
+  }, {
     key: 'render',
     value: function render() {
-
       var userCreated = this.props.userCreated;
+      var adminPresent = this.state.adminPresent;
 
       if (userCreated) {
         return _react2.default.createElement(_reactRouterDom.Redirect, { to: 'login' });
       }
 
+      if (adminPresent) {
+        return _react2.default.createElement(_reactRouterDom.Redirect, { to: 'login' });
+      }
+
       return _react2.default.createElement(
         'div',
-        { className: 'signup' },
+        { className: 'border-component' },
         _react2.default.createElement(
-          'h1',
-          null,
-          'Sign Up:'
-        ),
-        _react2.default.createElement('input', {
-          type: 'text',
-          placeholder: 'email ex. name@email.com',
-          value: this.props.email,
-          onChange: this.props.updateFormEmail
-        }),
-        _react2.default.createElement('input', {
-          type: 'password',
-          placeholder: 'password',
-          value: this.props.password,
-          onChange: this.props.updateFormPassword
-        }),
-        _react2.default.createElement(
-          'button',
-          { onClick: this.props.handleCreateUser },
-          'Sign Up'
+          'div',
+          { className: 'signup' },
+          _react2.default.createElement(
+            'h1',
+            null,
+            'Sign Up:'
+          ),
+          _react2.default.createElement('input', {
+            type: 'text',
+            placeholder: 'email ex. name@email.com',
+            value: this.props.email,
+            onChange: this.props.updateFormEmail
+          }),
+          _react2.default.createElement('input', {
+            type: 'password',
+            placeholder: 'password',
+            value: this.props.password,
+            onChange: this.props.updateFormPassword
+          }),
+          _react2.default.createElement(
+            'button',
+            { onClick: this.props.handleCreateUser },
+            'Sign Up'
+          )
         )
       );
     }
@@ -49233,169 +49296,173 @@ var EditShow = function (_React$Component) {
 
       return _react2.default.createElement(
         'div',
-        { className: 'edit-show' },
-        _react2.default.createElement(
-          'h1',
-          null,
-          'Reference:'
-        ),
+        { className: 'border-component' },
         _react2.default.createElement(
           'div',
-          { className: 'edit-ref' },
+          { className: 'edit-show' },
           _react2.default.createElement(
             'h1',
             null,
-            this.props.showDate
+            'Reference:'
           ),
           _react2.default.createElement(
-            'h3',
-            null,
-            '@ ',
-            this.props.showVenue
+            'div',
+            { className: 'edit-ref' },
+            _react2.default.createElement(
+              'h1',
+              null,
+              this.props.showDate
+            ),
+            _react2.default.createElement(
+              'h3',
+              null,
+              '@ ',
+              this.props.showVenue
+            ),
+            _react2.default.createElement(
+              'h3',
+              null,
+              this.props.showLocation
+            ),
+            _react2.default.createElement(
+              'h3',
+              null,
+              this.props.showName
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              this.props.showWebsite
+            )
           ),
           _react2.default.createElement(
-            'h3',
+            'h1',
             null,
-            this.props.showLocation
-          ),
-          _react2.default.createElement(
-            'h3',
-            null,
-            this.props.showName
+            'Edit Show:'
           ),
           _react2.default.createElement(
             'p',
             null,
-            this.props.showWebsite
-          )
-        ),
-        _react2.default.createElement(
-          'h1',
-          null,
-          'Edit Show:'
-        ),
-        _react2.default.createElement(
-          'p',
-          null,
-          '*name'
-        ),
-        _react2.default.createElement('input', {
-          type: 'text',
-          placeholder: '',
-          value: this.props.showName,
-          onChange: this.props.updateShowName
-        }),
-        _react2.default.createElement(
-          'p',
-          null,
-          '*date'
-        ),
-        _react2.default.createElement('input', {
-          type: 'text',
-          placeholder: '',
-          value: this.props.showDate,
-          onChange: this.props.updateShowDate
-        }),
-        _react2.default.createElement(
-          'p',
-          null,
-          '*venue'
-        ),
-        _react2.default.createElement('input', {
-          type: 'text',
-          placeholder: '',
-          value: this.props.showVenue,
-          onChange: this.props.updateShowVenue
-        }),
-        _react2.default.createElement(
-          'p',
-          null,
-          '*location'
-        ),
-        _react2.default.createElement('input', {
-          type: 'text',
-          placeholder: '',
-          value: this.props.showLocation,
-          onChange: this.props.updateShowLocation
-        }),
-        _react2.default.createElement(
-          'p',
-          null,
-          '*website'
-        ),
-        _react2.default.createElement('input', {
-          type: 'text',
-          placeholder: '',
-          value: this.props.showWebsite,
-          onChange: this.props.updateShowWebsite
-        }),
-        _react2.default.createElement(
-          'p',
-          null,
-          '*upcoming'
-        ),
-        _react2.default.createElement(
-          'select',
-          { value: this.props.showCurrent, onChange: this.props.updateShowCurrent },
+            '*name'
+          ),
+          _react2.default.createElement('input', {
+            type: 'text',
+            placeholder: '',
+            value: this.props.showName,
+            onChange: this.props.updateShowName
+          }),
           _react2.default.createElement(
-            'option',
+            'p',
             null,
-            'Select One'
+            '*date'
+          ),
+          _react2.default.createElement('input', {
+            type: 'text',
+            placeholder: '',
+            value: this.props.showDate,
+            onChange: this.props.updateShowDate
+          }),
+          _react2.default.createElement(
+            'p',
+            null,
+            '*venue'
+          ),
+          _react2.default.createElement('input', {
+            type: 'text',
+            placeholder: '',
+            value: this.props.showVenue,
+            onChange: this.props.updateShowVenue
+          }),
+          _react2.default.createElement(
+            'p',
+            null,
+            '*location'
+          ),
+          _react2.default.createElement('input', {
+            type: 'text',
+            placeholder: '',
+            value: this.props.showLocation,
+            onChange: this.props.updateShowLocation
+          }),
+          _react2.default.createElement(
+            'p',
+            null,
+            '*website'
+          ),
+          _react2.default.createElement('input', {
+            type: 'text',
+            placeholder: '',
+            value: this.props.showWebsite,
+            onChange: this.props.updateShowWebsite
+          }),
+          _react2.default.createElement(
+            'p',
+            null,
+            '*upcoming'
           ),
           _react2.default.createElement(
-            'option',
-            { value: 'true' },
-            'Upcoming'
-          ),
-          _react2.default.createElement(
-            'option',
-            { value: 'false' },
-            'Past'
-          )
-        ),
-        _react2.default.createElement(
-          'button',
-          { onClick: this.props.handleShowEditSubmit },
-          'Edit Show'
-        ),
-        _react2.default.createElement(
-          'button',
-          { onClick: function onClick() {
-              return _this2.activateDeleteWarning();
-            }, id: 'delete' },
-          'Delete'
-        ),
-        this.state.renderDeleteWarning ? _react2.default.createElement(
-          'div',
-          { className: 'delete-warning' },
-          _react2.default.createElement(
-            'div',
-            { className: 'delete-message' },
+            'select',
+            { value: this.props.showCurrent, onChange: this.props.updateShowCurrent },
             _react2.default.createElement(
-              'p',
+              'option',
               null,
-              'Are you sure you want to delete ',
-              this.props.showName,
-              '?'
+              'Select One'
             ),
             _react2.default.createElement(
+              'option',
+              { value: 'true' },
+              'Upcoming'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'false' },
+              'Past'
+            )
+          ),
+          _react2.default.createElement(
+            'button',
+            { onClick: this.props.handleShowEditSubmit },
+            'Edit Show'
+          ),
+          _react2.default.createElement(
+            'button',
+            { onClick: function onClick() {
+                return _this2.activateDeleteWarning();
+              }, id: 'delete' },
+            'Delete'
+          ),
+          this.state.renderDeleteWarning ? _react2.default.createElement(
+            'div',
+            { className: 'delete-warning' },
+            _react2.default.createElement(
               'div',
-              { className: 'delete-buttons' },
+              { className: 'delete-message' },
               _react2.default.createElement(
-                'button',
-                { onClick: this.props.handleShowDeleteSubmit },
-                'Yes'
+                'p',
+                null,
+                'Are you sure you want to delete ',
+                this.props.showName,
+                '?'
               ),
               _react2.default.createElement(
-                'button',
-                { onClick: function onClick() {
-                    return _this2.removeDeleteWarning();
-                  } },
-                'Cancel'
+                'div',
+                { className: 'delete-buttons' },
+                _react2.default.createElement(
+                  'button',
+                  { onClick: this.props.handleShowDeleteSubmit },
+                  'Yes'
+                ),
+                _react2.default.createElement(
+                  'button',
+                  { onClick: function onClick() {
+                      return _this2.removeDeleteWarning();
+                    } },
+                  'Cancel'
+                )
               )
             )
-          )
-        ) : null
+          ) : null
+        )
       );
     }
   }]);
@@ -49816,93 +49883,97 @@ var OneProduct = function (_React$Component) {
 
       return _react2.default.createElement(
         'div',
-        { className: 'one-product' },
+        { className: 'border-component' },
         _react2.default.createElement(
           'div',
-          { className: 'product-box' },
+          { className: 'one-product' },
           _react2.default.createElement(
             'div',
-            { className: 'one-product-images' },
-            _react2.default.createElement('img', { className: 'main-img', src: this.props.chosenImage, alt: '' }),
+            { className: 'product-box' },
             _react2.default.createElement(
               'div',
-              { className: 'one-product-sup-images' },
-              _react2.default.createElement('img', { className: 'sup-img', onClick: function onClick() {
-                  return _this3.props.chooseMainImage(_this3.props.clickedProduct.main_img);
-                }, src: this.props.clickedProduct.main_img, alt: '' }),
-              _react2.default.createElement('img', { className: 'sup-img', onClick: function onClick() {
-                  return _this3.props.chooseMainImage(_this3.props.clickedProduct.sup_img_1);
-                }, src: this.props.clickedProduct.sup_img_1, alt: '' }),
-              _react2.default.createElement('img', { className: 'sup-img', onClick: function onClick() {
-                  return _this3.props.chooseMainImage(_this3.props.clickedProduct.sup_img_2);
-                }, src: this.props.clickedProduct.sup_img_2, alt: '' }),
-              _react2.default.createElement('img', { className: 'sup-img', onClick: function onClick() {
-                  return _this3.props.chooseMainImage(_this3.props.clickedProduct.sup_img_3);
-                }, src: this.props.clickedProduct.sup_img_3, alt: '' })
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'one-product-text' },
-            _react2.default.createElement(
-              'h1',
-              null,
-              this.props.clickedProduct.name
-            ),
-            _react2.default.createElement(
-              'p',
-              null,
-              this.props.clickedProduct.description
-            ),
-            _react2.default.createElement(
-              'h2',
-              null,
-              this.props.clickedProduct.price
-            ),
-            _react2.default.createElement(
-              _reactRouterDom.Link,
-              { to: '/buy', target: '_blank' },
+              { className: 'one-product-images' },
+              _react2.default.createElement('img', { className: 'main-img', src: this.props.chosenImage, alt: '' }),
               _react2.default.createElement(
-                'button',
-                null,
-                'BUY'
+                'div',
+                { className: 'one-product-sup-images' },
+                _react2.default.createElement('img', { className: 'sup-img', onClick: function onClick() {
+                    return _this3.props.chooseMainImage(_this3.props.clickedProduct.main_img);
+                  }, src: this.props.clickedProduct.main_img, alt: '' }),
+                _react2.default.createElement('img', { className: 'sup-img', onClick: function onClick() {
+                    return _this3.props.chooseMainImage(_this3.props.clickedProduct.sup_img_1);
+                  }, src: this.props.clickedProduct.sup_img_1, alt: '' }),
+                _react2.default.createElement('img', { className: 'sup-img', onClick: function onClick() {
+                    return _this3.props.chooseMainImage(_this3.props.clickedProduct.sup_img_2);
+                  }, src: this.props.clickedProduct.sup_img_2, alt: '' }),
+                _react2.default.createElement('img', { className: 'sup-img', onClick: function onClick() {
+                    return _this3.props.chooseMainImage(_this3.props.clickedProduct.sup_img_3);
+                  }, src: this.props.clickedProduct.sup_img_3, alt: '' })
               )
-            )
-          )
-        ),
-        this.renderProductEdit(),
-        this.renderEditForm(),
-        this.state.renderDeleteWarning ? _react2.default.createElement(
-          'div',
-          { className: 'delete-warning' },
-          _react2.default.createElement(
-            'div',
-            { className: 'delete-message' },
-            _react2.default.createElement(
-              'p',
-              null,
-              'Are you sure you want to delete ',
-              this.props.showName,
-              '?'
             ),
             _react2.default.createElement(
               'div',
-              { className: 'delete-buttons' },
+              { className: 'one-product-text' },
               _react2.default.createElement(
-                'button',
-                { onClick: this.props.handleProductDeleteSubmit },
-                'Yes'
+                'h1',
+                null,
+                this.props.clickedProduct.name
               ),
               _react2.default.createElement(
-                'button',
-                { onClick: function onClick() {
-                    return _this3.removeDeleteWarning();
-                  } },
-                'Cancel'
+                'p',
+                null,
+                this.props.clickedProduct.description
+              ),
+              _react2.default.createElement(
+                'h2',
+                null,
+                this.props.clickedProduct.price
+              ),
+              _react2.default.createElement(
+                _reactRouterDom.Link,
+                { to: '/buy', target: '_blank' },
+                _react2.default.createElement(
+                  'button',
+                  null,
+                  'BUY'
+                )
               )
             )
-          )
-        ) : null
+          ),
+          this.renderProductEdit(),
+          this.renderEditForm(),
+          this.state.renderDeleteWarning ? _react2.default.createElement(
+            'div',
+            { className: 'delete-warning' },
+            _react2.default.createElement(
+              'div',
+              { className: 'delete-message' },
+              _react2.default.createElement(
+                'p',
+                null,
+                'Are you sure you want to delete ',
+                this.props.showName,
+                '?'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'delete-buttons' },
+                _react2.default.createElement(
+                  'button',
+                  { onClick: this.props.handleProductDeleteSubmit },
+                  'Yes'
+                ),
+                _react2.default.createElement(
+                  'button',
+                  { onClick: function onClick() {
+                      return _this3.removeDeleteWarning();
+                    } },
+                  'Cancel'
+                )
+              )
+            )
+          ) : null
+        )
       );
     }
   }]);
