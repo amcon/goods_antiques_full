@@ -17,7 +17,9 @@ footer {
 .footer-section h3 {
   font-size: .8em;
   margin: 0;
-  margin-bottom: 1.5px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid grey;
+  padding-bottom: 5px;
   font-weight: lighter;
 }
 

@@ -7,6 +7,10 @@
   margin-right: 3%;
 }
 
+.sold h1 {
+  letter-spacing: 3px;
+}
+
 .sold h1, p {
-  font-size: 1em;
+  font-size: .9em;
 }

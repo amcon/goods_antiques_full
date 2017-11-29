@@ -41,9 +41,9 @@ class Show extends React.Component {
     return(
       <div className={this.state.showClass} id="show">
         <h1>{this.props.show_date}</h1>
-        <h3>@ {this.props.venue}</h3>
-        <h3>{this.props.location}</h3>
-        <h3>{this.props.name}</h3>
+        <h3 className="serif">@ {this.props.venue}</h3>
+        <h3 className="serif">{this.props.location}</h3>
+        <h3 className="serif">{this.props.name}</h3>
         <p>to learn more about the event click
           <a href={this.props.website}>here</a>
         </p>

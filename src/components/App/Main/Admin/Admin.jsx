@@ -77,6 +77,7 @@ class Admin extends React.Component {
           <p>*main image:</p>
           <div className="image-uploader">
             <Dropzone
+              className="dropzone"
               multiple={false}
               accept="image/*"
               onDrop={this.props.onImageMainDrop}
@@ -95,6 +96,7 @@ class Admin extends React.Component {
           <p>first suplemental image:</p>
           <div className="image-uploader">
             <Dropzone
+              className="dropzone"
               multiple={false}
               accept="image/*"
               onDrop={this.props.onImageSupOneDrop}
@@ -113,6 +115,7 @@ class Admin extends React.Component {
           <p>second suplemental image:</p>
           <div className="image-uploader">
             <Dropzone
+              className="dropzone"
               multiple={false}
               accept="image/*"
               onDrop={this.props.onImageSupTwoDrop}
@@ -131,6 +134,7 @@ class Admin extends React.Component {
           <p>third suplemental image:</p>
           <div className="image-uploader">
             <Dropzone
+              className="dropzone"
               multiple={false}
               accept="image/*"
               onDrop={this.props.onImageSupThreeDrop}
@@ -146,7 +150,7 @@ class Admin extends React.Component {
               }
             </div>
           </div>
-          <p>sold:</p>
+          <p>*sold:</p>
           <select value={this.props.productSold} onChange={this.props.updateProductSold}>
             <option>Select One</option>
             <option value="false">Available</option>

@@ -1,5 +1,6 @@
 const path = require('path');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const GoogleFontsPlugin = require("google-fonts-webpack-plugin")
 
 const APP_DIR = path.resolve(__dirname, 'src');
 
@@ -37,6 +38,12 @@ module.exports = {
   },
   plugins: [
     new ExtractTextPlugin("styles.css"),
+    new GoogleFontsPlugin({
+            fonts: [
+                { family: 'Libre Baskerville' },
+                { family: 'Open Sans' }
+            ]
+        })
   ],
   resolve: {
     modules: [

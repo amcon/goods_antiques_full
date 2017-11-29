@@ -91,6 +91,7 @@ class OneProduct extends React.Component {
         <p>*main image:</p>
         <div className="drop-section">
           <Dropzone
+            className="dropzone"
             multiple={false}
             accept="image/*"
             onDrop={this.props.onImageMainDrop}
@@ -109,6 +110,7 @@ class OneProduct extends React.Component {
         <p>first suplemental image:</p>
         <div className="drop-section">
           <Dropzone
+            className="dropzone"
             multiple={false}
             accept="image/*"
             onDrop={this.props.onImageSupOneDrop}
@@ -127,6 +129,7 @@ class OneProduct extends React.Component {
         <p>second suplemental image:</p>
         <div className="drop-section">
           <Dropzone
+            className="dropzone"
             multiple={false}
             accept="image/*"
             onDrop={this.props.onImageSupTwoDrop}
@@ -145,6 +148,7 @@ class OneProduct extends React.Component {
         <p>third suplemental image:</p>
         <div className="drop-section">
           <Dropzone
+            className="dropzone"
             multiple={false}
             accept="image/*"
             onDrop={this.props.onImageSupThreeDrop}

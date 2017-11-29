@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.past-show h1 {
+  letter-spacing: 0;
+}
+
 .past-show h1, .past-show h3 {
   color: rgb(212,175,55);
   font-weight: lighter;

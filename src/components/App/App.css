@@ -1,3 +1,18 @@
 body {
   margin: 0;
 }
+
+h1 {
+  font-family: 'Libre Baskerville', serif;
+  letter-spacing: 4px;
+}
+
+.serif {
+  font-family: 'Libre Baskerville', serif;
+}
+
+h2, h3, p, a {
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px;
+  font-weight: lighter;
+}

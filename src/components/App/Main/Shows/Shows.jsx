@@ -120,9 +120,9 @@ class Shows extends React.Component {
   render() {
     return (
       <div className="shows">
-        <h2>Upcoming Shows:</h2>
+        <h2 className="serif">Upcoming Shows:</h2>
         {this.renderDragSortableList()}
-        <h2>Past Shows:</h2>
+        <h2 className="serif">Past Shows:</h2>
         <div className="past">
           {this.renderAllPastShows()}
         </div>

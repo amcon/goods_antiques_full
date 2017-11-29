@@ -9,6 +9,10 @@
   padding-right: 0;
 }
 
+.show h1 {
+  letter-spacing: 0;
+}
+
 .show h1, .show h3 {
   color: rgb(212,175,55);
   font-weight: lighter;

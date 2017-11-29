@@ -7,6 +7,8 @@
   align-items: center;
   margin: 0 auto;
   padding-top: 25px;
+  border-bottom: 1px solid grey;
+  border-top: 1px solid grey;
 }
 
 .admin h1 {
@@ -79,4 +81,14 @@
 .image-uploader .image-preview {
   margin-left: 20px;
   width: 200px;
+}
+
+.dropzone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed grey;
+  height: 200px;
+  width: 200px;
+  text-align: center;
 }

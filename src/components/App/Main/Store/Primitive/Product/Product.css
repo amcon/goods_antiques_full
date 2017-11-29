@@ -7,6 +7,14 @@
   margin-right: 3%;
 }
 
-.product h1, p {
-  font-size: 1em;
+.product:hover {
+  cursor: pointer;
+}
+
+.product h1 {
+  letter-spacing: 3px;
+}
+
+.product h1, .product p {
+  font-size: .9em;
 }

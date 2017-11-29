@@ -17109,12 +17109,12 @@ var Buy = function (_React$Component) {
         ),
         _react2.default.createElement(
           'h2',
-          { id: 'faq' },
+          { id: 'faq', className: 'serif' },
           'FREQUENTLY ASKED QUESTIONS:'
         ),
         _react2.default.createElement(
           'h2',
-          null,
+          { className: 'serif' },
           'Shipping Costs'
         ),
         _react2.default.createElement(
@@ -17124,7 +17124,7 @@ var Buy = function (_React$Component) {
         ),
         _react2.default.createElement(
           'h2',
-          null,
+          { className: 'serif' },
           'Delivery'
         ),
         _react2.default.createElement(
@@ -17134,7 +17134,7 @@ var Buy = function (_React$Component) {
         ),
         _react2.default.createElement(
           'h2',
-          null,
+          { className: 'serif' },
           'Payment'
         ),
         _react2.default.createElement(
@@ -17146,7 +17146,7 @@ var Buy = function (_React$Component) {
         ),
         _react2.default.createElement(
           'h2',
-          null,
+          { className: 'serif' },
           'Returns'
         ),
         _react2.default.createElement(
@@ -33786,7 +33786,7 @@ var Main = function (_React$Component) {
                 productSelected: _this2.props.productSelected
               }, props));
             } }),
-          _react2.default.createElement(_reactRouterDom.Route, { path: '/product/:productId', render: function render(props) {
+          _react2.default.createElement(_reactRouterDom.Route, { path: '/products/:productId', render: function render(props) {
               var _extends2;
 
               return _react2.default.createElement(_OneProduct2.default, _extends((_extends2 = {
@@ -33976,7 +33976,7 @@ var Home = function Home() {
       ),
       _react2.default.createElement(
         _reactRouterDom.Link,
-        { to: '/store' },
+        { to: '/store', className: 'serif' },
         'GALLERY'
       )
     )
@@ -34049,7 +34049,7 @@ var Store = function (_React$Component) {
       var productSelected = this.props.productSelected;
 
       if (productSelected) {
-        return _react2.default.createElement(_reactRouterDom.Redirect, { to: '/product/' + this.props.productId });
+        return _react2.default.createElement(_reactRouterDom.Redirect, { to: '/products/' + this.props.productId });
       }
 
       return _react2.default.createElement(
@@ -34906,13 +34906,13 @@ var Shows = function (_React$Component) {
         { className: 'shows' },
         _react2.default.createElement(
           'h2',
-          null,
+          { className: 'serif' },
           'Upcoming Shows:'
         ),
         this.renderDragSortableList(),
         _react2.default.createElement(
           'h2',
-          null,
+          { className: 'serif' },
           'Past Shows:'
         ),
         _react2.default.createElement(
@@ -35034,18 +35034,18 @@ var Show = function (_React$Component) {
         ),
         _react2.default.createElement(
           'h3',
-          null,
+          { className: 'serif' },
           '@ ',
           this.props.venue
         ),
         _react2.default.createElement(
           'h3',
-          null,
+          { className: 'serif' },
           this.props.location
         ),
         _react2.default.createElement(
           'h3',
-          null,
+          { className: 'serif' },
           this.props.name
         ),
         _react2.default.createElement(
@@ -35182,12 +35182,12 @@ var PastShow = function (_React$Component) {
         ),
         _react2.default.createElement(
           'h3',
-          null,
+          { className: 'serif' },
           this.props.location
         ),
         _react2.default.createElement(
           'h3',
-          null,
+          { className: 'serif' },
           this.props.name
         ),
         this.renderShowEdit()
@@ -48796,6 +48796,7 @@ var Admin = function (_React$Component) {
             _react2.default.createElement(
               _reactDropzone2.default,
               {
+                className: 'dropzone',
                 multiple: false,
                 accept: 'image/*',
                 onDrop: this.props.onImageMainDrop,
@@ -48832,6 +48833,7 @@ var Admin = function (_React$Component) {
             _react2.default.createElement(
               _reactDropzone2.default,
               {
+                className: 'dropzone',
                 multiple: false,
                 accept: 'image/*',
                 onDrop: this.props.onImageSupOneDrop,
@@ -48868,6 +48870,7 @@ var Admin = function (_React$Component) {
             _react2.default.createElement(
               _reactDropzone2.default,
               {
+                className: 'dropzone',
                 multiple: false,
                 accept: 'image/*',
                 onDrop: this.props.onImageSupTwoDrop,
@@ -48904,6 +48907,7 @@ var Admin = function (_React$Component) {
             _react2.default.createElement(
               _reactDropzone2.default,
               {
+                className: 'dropzone',
                 multiple: false,
                 accept: 'image/*',
                 onDrop: this.props.onImageSupThreeDrop,
@@ -49631,6 +49635,7 @@ var OneProduct = function (_React$Component) {
           _react2.default.createElement(
             _reactDropzone2.default,
             {
+              className: 'dropzone',
               multiple: false,
               accept: 'image/*',
               onDrop: this.props.onImageMainDrop,
@@ -49667,6 +49672,7 @@ var OneProduct = function (_React$Component) {
           _react2.default.createElement(
             _reactDropzone2.default,
             {
+              className: 'dropzone',
               multiple: false,
               accept: 'image/*',
               onDrop: this.props.onImageSupOneDrop,
@@ -49703,6 +49709,7 @@ var OneProduct = function (_React$Component) {
           _react2.default.createElement(
             _reactDropzone2.default,
             {
+              className: 'dropzone',
               multiple: false,
               accept: 'image/*',
               onDrop: this.props.onImageSupTwoDrop,
@@ -49739,6 +49746,7 @@ var OneProduct = function (_React$Component) {
           _react2.default.createElement(
             _reactDropzone2.default,
             {
+              className: 'dropzone',
               multiple: false,
               accept: 'image/*',
               onDrop: this.props.onImageSupThreeDrop,

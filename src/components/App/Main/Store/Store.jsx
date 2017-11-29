@@ -11,7 +11,7 @@ class Store extends React.Component {
 
     if (productSelected) {
       return(
-        <Redirect to={`/product/${this.props.productId}`} />
+        <Redirect to={`/products/${this.props.productId}`} />
       );
     }
 

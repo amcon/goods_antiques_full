@@ -29,7 +29,7 @@ class Main extends React.Component {
               {...props}
             />
           }/>
-          <Route path='/product/:productId' render={ (props) =>
+          <Route path='/products/:productId' render={ (props) =>
             <OneProduct
               clickedProduct={this.props.clickedProduct}
               loggedIn={this.props.loggedIn}

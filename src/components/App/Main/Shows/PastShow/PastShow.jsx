@@ -18,8 +18,8 @@ class PastShow extends React.Component {
     return (
       <div className="past-show">
         <h1>{this.props.show_date}</h1>
-        <h3>{this.props.location}</h3>
-        <h3>{this.props.name}</h3>
+        <h3 className="serif">{this.props.location}</h3>
+        <h3 className="serif">{this.props.name}</h3>
         {this.renderShowEdit()}
       </div>
     )

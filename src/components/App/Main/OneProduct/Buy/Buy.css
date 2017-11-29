@@ -2,6 +2,8 @@
   width: 1100px;
   padding: 5%;
   box-sizing: border-box;
+  border-bottom: 1px solid grey;
+  border-top: 1px solid grey;
 }
 
     .buy-page h1 {
@@ -26,16 +28,19 @@
       display: block;
       width: 85%;
       color: rgb(60, 60, 60);
+      line-height: 2em;
     }
 
     #disclaimer {
       margin-bottom: 40px;
-      font-size: 18px;
+      font-size: 15px;
     }
 
     #faq {
       margin-top: 80px;
-      text-decoration: underline;
+      padding-bottom: 5px;
+      border-bottom: 1px solid black;
+      width: fit-content;
     }
 
     .buy-page a {
