@@ -34,6 +34,10 @@ module.exports = {
       { test: /\.png$/,
         loader: 'file-loader?name=/img/[name].[hash:base64:5].[ext]'
       },
+      {
+        test: /\.otf(\?v=\d+\.\d+\.\d+)?$/,
+        loader: 'file-loader?name=/fonts/[name].[ext]'
+      },
     ],
   },
   plugins: [

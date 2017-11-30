@@ -31831,7 +31831,7 @@ var App = function (_React$Component) {
           productEdited: false,
           productCategory: ''
         });
-        console.log(_this2.state.allProducts);
+        // console.log(this.state.allProducts);
       }).catch(function (err) {
         return console.log(err);
       });
@@ -31849,7 +31849,7 @@ var App = function (_React$Component) {
           showEdited: false,
           showCreated: false
         });
-        console.log(_this3.state.allShows);
+        // console.log(this.state.allShows);
       }).catch(function (err) {
         return console.log(err);
       });
@@ -32346,7 +32346,7 @@ var App = function (_React$Component) {
           imageSupThree: _this15.state.clickedProduct.sup_img_3,
           productPosition: _this15.state.clickedProduct.product_position
         });
-        console.log(_this15.state.clickedProduct);
+        // console.log(this.state.clickedProduct)
       }).catch(function (err) {
         return console.log(err);
       });
