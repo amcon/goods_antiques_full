@@ -3,15 +3,21 @@ const path = require('path');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const GoogleFontsPlugin = require("google-fonts-webpack-plugin");
 
+const BUILD_DIR = path.resolve(__dirname, 'dist');
 const APP_DIR = path.resolve(__dirname, 'src');
 
 module.exports = {
-  entry: [
-    `${APP_DIR}/index.js`,
-  ],
+  entry: `${APP_DIR}/index.js`,
   output: {
-    path: path.resolve(__dirname, './dist'),
+    path: BUILD_DIR,
     filename: 'main.js',
+  },
+  cache: true,
+  debug: true,
+  devtool: 'eval-source-map',
+  stats: {
+    colors: true,
+    reasons: true
   },
   module: {
     rules: [
