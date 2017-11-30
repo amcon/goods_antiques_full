@@ -22,6 +22,7 @@ class App extends React.Component {
       errors: [],
       showName: '',
       showDate: '',
+      showDateLiteral: '',
       showLocation: '',
       showWebsite: '',
       showVenue: '',
@@ -34,6 +35,7 @@ class App extends React.Component {
       productSku: '',
       productCategory: '',
       productSold: '',
+      productPosition: '',
       productCreated: false,
       productEdited: false,
       chosenImage: '',
@@ -49,6 +51,8 @@ class App extends React.Component {
       uploadedSupThreeFile: {},
     };
   }
+
+// main database fetch calls:
 
   getAllProducts() {
     fetch(`/api/products`)
@@ -78,6 +82,8 @@ class App extends React.Component {
     })
     .catch(err => console.log(err));
   }
+
+  // all functionality surrounding users login/sign up:
 
   updateFormEmail(e) {
     this.setState({
@@ -146,6 +152,8 @@ class App extends React.Component {
     });
   }
 
+  // updating/editing shows and products:
+
   updateShowName(e) {
     this.setState({
       showName: e.target.value,
@@ -156,6 +164,12 @@ class App extends React.Component {
     this.setState({
       showDate: e.target.value,
     });
+  }
+
+  updateShowDateLiteral(e) {
+    this.setState({
+      showDateLiteral: e.target.value,
+    })
   }
 
   updateShowLocation(e) {
@@ -191,6 +205,7 @@ class App extends React.Component {
       body: JSON.stringify({
         name: this.state.showName,
         show_date: this.state.showDate,
+        date_literal: this.state.showDateLiteral,
         location: this.state.showLocation,
         website: this.state.showWebsite,
         venue: this.state.showVenue,
@@ -200,6 +215,7 @@ class App extends React.Component {
     .then(this.setState({
       showName: '',
       showDate: '',
+      showDateLiteral: '',
       showLocation: '',
       showWebsite: '',
       showVenue: '',
@@ -275,6 +291,12 @@ class App extends React.Component {
     })
   }
 
+  updateProductPosition(e) {
+    this.setState({
+      productPosition: e.target.value,
+    })
+  }
+
   handleCreateProduct() {
     fetch('/api/products', {
       headers: {
@@ -292,6 +314,7 @@ class App extends React.Component {
         sup_img_1: this.state.imageSupOne,
         sup_img_2: this.state.imageSupTwo,
         sup_img_3: this.state.imageSupThree,
+        product_position: this.state.productPosition,
       })
     })
     .then(this.setState({
@@ -308,6 +331,7 @@ class App extends React.Component {
       uploadedSupOneFile: {},
       uploadedSupTwoFile: {},
       uploadedSupThreeFile: {},
+      productPosition: '',
     }))
     .then(() => {
       this.getAllProducts()
@@ -436,12 +460,13 @@ class App extends React.Component {
     });
   }
 
+  // more specific GET functions:
+
   handleGetProduct(id) {
     this.setState({
       productId: id,
       productSelected: true,
     }, () => this.getOneProduct());
-    // this.getOneProduct();
   }
 
   handleGetShow(show_id) {
@@ -462,12 +487,12 @@ class App extends React.Component {
       this.setState({
         showName: this.state.clickedShow.name,
         showDate: this.state.clickedShow.show_date,
+        showDateLiteral: this.state.clickedShow.date_literal,
         showLocation: this.state.clickedShow.location,
         showWebsite: this.state.clickedShow.website,
         showVenue: this.state.clickedShow.venue,
         showCurrent: this.state.clickedShow.current,
       })
-      // console.log(this.state.clickedShow)
     })
     .catch(err => console.log(err));
   }
@@ -494,11 +519,14 @@ class App extends React.Component {
         imageSupOne: this.state.clickedProduct.sup_img_1,
         imageSupTwo: this.state.clickedProduct.sup_img_2,
         imageSupThree: this.state.clickedProduct.sup_img_3,
+        productPosition: this.state.clickedProduct.product_position,
       })
       // console.log(this.state.clickedProduct)
     })
     .catch(err => console.log(err));
   }
+
+  // fetch calls to edit/delete shows/products:
 
   handleShowEditSubmit() {
     fetch(`/api/shows/${this.state.showId}`, {
@@ -509,6 +537,7 @@ class App extends React.Component {
       body: JSON.stringify({
         name: this.state.showName,
         show_date: this.state.showDate,
+        date_literal: this.state.showDateLiteral,
         venue: this.state.showVenue,
         location: this.state.showLocation,
         website: this.state.showWebsite,
@@ -518,6 +547,7 @@ class App extends React.Component {
     .then(this.setState({
       showName: '',
       showDate: '',
+      showDateLiteral: '',
       showVenue: '',
       showLocation: '',
       showWebsite: '',
@@ -550,6 +580,7 @@ class App extends React.Component {
         sup_img_1: this.state.imageSupOne,
         sup_img_2: this.state.imageSupTwo,
         sup_img_3: this.state.imageSupThree,
+        product_position: this.state.productPosition,
       })
     })
     .then(this.setState({
@@ -567,6 +598,7 @@ class App extends React.Component {
       uploadedSupOneFile: {},
       uploadedSupTwoFile: {},
       uploadedSupThreeFile: {},
+      productPosition: '',
     }))
     .then(() => {
       this.getAllProducts()
@@ -606,6 +638,8 @@ class App extends React.Component {
     .catch(err => console.log(err))
   }
 
+  // function to change state based on which image is clicked:
+
   chooseMainImage(image) {
     if (image) {
       this.setState({
@@ -614,10 +648,13 @@ class App extends React.Component {
     }
   }
 
+  // when the page changes, the state of a product/show should be deleted if the user doesn't press submit in an edit form
+
   clearShowAndProductState() {
     this.setState({
       showName: '',
       showDate: '',
+      showDateLiteral: '',
       showLocation: '',
       showWebsite: '',
       showVenue: '',
@@ -628,17 +665,25 @@ class App extends React.Component {
       productSku: '',
       productCategory: '',
       productSold: '',
+      productPosition: '',
+      chosenImage: '',
+      imageMain: '',
+      imageSupOne: '',
+      imageSupTwo: '',
+      imageSupThree: '',
     })
   }
 
+  // to ensure that the user stays logged in, this checks local storage for the token
+
   checkForToken() {
-    console.log(localStorage.userAuthToken);
+    // console.log(localStorage.userAuthToken);
 
     if (localStorage.userAuthToken) {
       this.setState({
         loggedIn: true,
       })
-      console.log("i run");
+      // console.log("i run");
     }
   }
 
@@ -668,6 +713,7 @@ class App extends React.Component {
           errors={this.state.errors}
           showName={this.state.showName}
           showDate={this.state.showDate}
+          showDateLiteral={this.state.showDateLiteral}
           showLocation={this.state.showLocation}
           showWebsite={this.state.showWebsite}
           showVenue={this.state.showVenue}
@@ -688,6 +734,7 @@ class App extends React.Component {
           imageSupOne={this.state.imageSupOne}
           imageSupTwo={this.state.imageSupTwo}
           imageSupThree={this.state.imageSupThree}
+          productPosition={this.state.productPosition}
           clickedProduct={this.state.clickedProduct}
           uploadedFile={this.state.uploadedFile}
           uploadedSupOneFile={this.state.uploadedSupOneFile}
@@ -703,6 +750,7 @@ class App extends React.Component {
           handleLoginSubmit={this.handleLoginSubmit.bind(this)}
           updateShowName={this.updateShowName.bind(this)}
           updateShowDate={this.updateShowDate.bind(this)}
+          updateShowDateLiteral={this.updateShowDateLiteral.bind(this)}
           updateShowLocation={this.updateShowLocation.bind(this)}
           updateShowWebsite={this.updateShowWebsite.bind(this)}
           updateShowVenue={this.updateShowVenue.bind(this)}
@@ -716,6 +764,7 @@ class App extends React.Component {
           updateProductSku={this.updateProductSku.bind(this)}
           updateProductCategory={this.updateProductCategory.bind(this)}
           updateProductSold={this.updateProductSold.bind(this)}
+          updateProductPosition={this.updateProductPosition.bind(this)}
           handleCreateProduct={this.handleCreateProduct.bind(this)}
           handleGetProduct={this.handleGetProduct.bind(this)}
           handleProductEditSubmit={this.handleProductEditSubmit.bind(this)}

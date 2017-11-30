@@ -58,6 +58,13 @@ class EditShow extends React.Component {
             value={this.props.showDate}
             onChange={this.props.updateShowDate}
           />
+          <p>*date literal</p>
+          <input
+            type="date"
+            placeholder=""
+            value={this.props.showDateLiteral}
+            onChange={this.props.updateShowDateLiteral}
+          />
           <p>*venue</p>
           <input
             type="text"

@@ -1,5 +1,5 @@
 .buy-page {
-  width: 1100px;
+  width: 1200px;
   padding: 5%;
   box-sizing: border-box;
   margin: 0 auto;
@@ -9,6 +9,7 @@
       margin-bottom: 40px;
       letter-spacing: 2px;
       font-weight: lighter;
+      margin-left: 40px;
     }
 
     .buy-page h2 {

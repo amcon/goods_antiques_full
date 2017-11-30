@@ -1,10 +1,12 @@
 .login {
   background-color: white;
-  width: 1100px;
+  width: 1200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 125px 0;
+  margin: 0 auto;
 }
 
 .login h1 {

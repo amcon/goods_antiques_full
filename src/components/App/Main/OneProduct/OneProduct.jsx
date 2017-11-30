@@ -164,12 +164,19 @@ class OneProduct extends React.Component {
             }
           </div>
         </div>
-        <p>sold:</p>
+        <p>*sold:</p>
         <select value={this.props.productSold} onChange={this.props.updateProductSold}>
           <option>Select One</option>
           <option value="false">Available</option>
           <option value="true">Sold</option>
         </select>
+        <p>*Product Position</p>
+        <input
+          type="text"
+          placeholder="1 = first product that shows up"
+          value={this.props.productPosition}
+          onChange={this.props.updateProductPosition}
+        />
         <button onClick={this.props.handleProductEditSubmit}>Edit Product</button>
       </div>
     );

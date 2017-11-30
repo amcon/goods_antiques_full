@@ -31784,6 +31784,7 @@ var App = function (_React$Component) {
       errors: [],
       showName: '',
       showDate: '',
+      showDateLiteral: '',
       showLocation: '',
       showWebsite: '',
       showVenue: '',
@@ -31796,6 +31797,7 @@ var App = function (_React$Component) {
       productSku: '',
       productCategory: '',
       productSold: '',
+      productPosition: '',
       productCreated: false,
       productEdited: false,
       chosenImage: '',
@@ -31813,6 +31815,8 @@ var App = function (_React$Component) {
     return _this;
   }
 
+  // main database fetch calls:
+
   _createClass(App, [{
     key: 'getAllProducts',
     value: function getAllProducts() {
@@ -31827,7 +31831,7 @@ var App = function (_React$Component) {
           productEdited: false,
           productCategory: ''
         });
-        // console.log(this.state.allProducts);
+        console.log(_this2.state.allProducts);
       }).catch(function (err) {
         return console.log(err);
       });
@@ -31845,11 +31849,14 @@ var App = function (_React$Component) {
           showEdited: false,
           showCreated: false
         });
-        // console.log(this.state.allShows);
+        console.log(_this3.state.allShows);
       }).catch(function (err) {
         return console.log(err);
       });
     }
+
+    // all functionality surrounding users login/sign up:
+
   }, {
     key: 'updateFormEmail',
     value: function updateFormEmail(e) {
@@ -31922,6 +31929,9 @@ var App = function (_React$Component) {
         });
       });
     }
+
+    // updating/editing shows and products:
+
   }, {
     key: 'updateShowName',
     value: function updateShowName(e) {
@@ -31934,6 +31944,13 @@ var App = function (_React$Component) {
     value: function updateShowDate(e) {
       this.setState({
         showDate: e.target.value
+      });
+    }
+  }, {
+    key: 'updateShowDateLiteral',
+    value: function updateShowDateLiteral(e) {
+      this.setState({
+        showDateLiteral: e.target.value
       });
     }
   }, {
@@ -31977,6 +31994,7 @@ var App = function (_React$Component) {
         body: JSON.stringify({
           name: this.state.showName,
           show_date: this.state.showDate,
+          date_literal: this.state.showDateLiteral,
           location: this.state.showLocation,
           website: this.state.showWebsite,
           venue: this.state.showVenue,
@@ -31985,6 +32003,7 @@ var App = function (_React$Component) {
       }).then(this.setState({
         showName: '',
         showDate: '',
+        showDateLiteral: '',
         showLocation: '',
         showWebsite: '',
         showVenue: '',
@@ -32069,6 +32088,13 @@ var App = function (_React$Component) {
       });
     }
   }, {
+    key: 'updateProductPosition',
+    value: function updateProductPosition(e) {
+      this.setState({
+        productPosition: e.target.value
+      });
+    }
+  }, {
     key: 'handleCreateProduct',
     value: function handleCreateProduct() {
       var _this7 = this;
@@ -32088,7 +32114,8 @@ var App = function (_React$Component) {
           main_img: this.state.imageMain,
           sup_img_1: this.state.imageSupOne,
           sup_img_2: this.state.imageSupTwo,
-          sup_img_3: this.state.imageSupThree
+          sup_img_3: this.state.imageSupThree,
+          product_position: this.state.productPosition
         })
       }).then(this.setState({
         productName: '',
@@ -32103,7 +32130,8 @@ var App = function (_React$Component) {
         uploadedFile: {},
         uploadedSupOneFile: {},
         uploadedSupTwoFile: {},
-        uploadedSupThreeFile: {}
+        uploadedSupThreeFile: {},
+        productPosition: ''
       })).then(function () {
         _this7.getAllProducts();
         _this7.setState({
@@ -32240,6 +32268,9 @@ var App = function (_React$Component) {
         }
       });
     }
+
+    // more specific GET functions:
+
   }, {
     key: 'handleGetProduct',
     value: function handleGetProduct(id) {
@@ -32251,7 +32282,6 @@ var App = function (_React$Component) {
       }, function () {
         return _this12.getOneProduct();
       });
-      // this.getOneProduct();
     }
   }, {
     key: 'handleGetShow',
@@ -32279,12 +32309,12 @@ var App = function (_React$Component) {
         _this14.setState({
           showName: _this14.state.clickedShow.name,
           showDate: _this14.state.clickedShow.show_date,
+          showDateLiteral: _this14.state.clickedShow.date_literal,
           showLocation: _this14.state.clickedShow.location,
           showWebsite: _this14.state.clickedShow.website,
           showVenue: _this14.state.clickedShow.venue,
           showCurrent: _this14.state.clickedShow.current
         });
-        // console.log(this.state.clickedShow)
       }).catch(function (err) {
         return console.log(err);
       });
@@ -32313,13 +32343,17 @@ var App = function (_React$Component) {
           imageMain: _this15.state.clickedProduct.main_img,
           imageSupOne: _this15.state.clickedProduct.sup_img_1,
           imageSupTwo: _this15.state.clickedProduct.sup_img_2,
-          imageSupThree: _this15.state.clickedProduct.sup_img_3
+          imageSupThree: _this15.state.clickedProduct.sup_img_3,
+          productPosition: _this15.state.clickedProduct.product_position
         });
-        // console.log(this.state.clickedProduct)
+        console.log(_this15.state.clickedProduct);
       }).catch(function (err) {
         return console.log(err);
       });
     }
+
+    // fetch calls to edit/delete shows/products:
+
   }, {
     key: 'handleShowEditSubmit',
     value: function handleShowEditSubmit() {
@@ -32333,6 +32367,7 @@ var App = function (_React$Component) {
         body: JSON.stringify({
           name: this.state.showName,
           show_date: this.state.showDate,
+          date_literal: this.state.showDateLiteral,
           venue: this.state.showVenue,
           location: this.state.showLocation,
           website: this.state.showWebsite,
@@ -32341,6 +32376,7 @@ var App = function (_React$Component) {
       }).then(this.setState({
         showName: '',
         showDate: '',
+        showDateLiteral: '',
         showVenue: '',
         showLocation: '',
         showWebsite: '',
@@ -32375,7 +32411,8 @@ var App = function (_React$Component) {
           main_img: this.state.imageMain,
           sup_img_1: this.state.imageSupOne,
           sup_img_2: this.state.imageSupTwo,
-          sup_img_3: this.state.imageSupThree
+          sup_img_3: this.state.imageSupThree,
+          product_position: this.state.productPosition
         })
       }).then(this.setState({
         productName: '',
@@ -32391,7 +32428,8 @@ var App = function (_React$Component) {
         uploadedFile: {},
         uploadedSupOneFile: {},
         uploadedSupTwoFile: {},
-        uploadedSupThreeFile: {}
+        uploadedSupThreeFile: {},
+        productPosition: ''
       })).then(function () {
         _this17.getAllProducts();
         _this17.setState({
@@ -32436,6 +32474,9 @@ var App = function (_React$Component) {
         return console.log(err);
       });
     }
+
+    // function to change state based on which image is clicked:
+
   }, {
     key: 'chooseMainImage',
     value: function chooseMainImage(image) {
@@ -32445,12 +32486,16 @@ var App = function (_React$Component) {
         });
       }
     }
+
+    // when the page changes, the state of a product/show should be deleted if the user doesn't press submit in an edit form
+
   }, {
     key: 'clearShowAndProductState',
     value: function clearShowAndProductState() {
       this.setState({
         showName: '',
         showDate: '',
+        showDateLiteral: '',
         showLocation: '',
         showWebsite: '',
         showVenue: '',
@@ -32460,19 +32505,28 @@ var App = function (_React$Component) {
         productPrice: '',
         productSku: '',
         productCategory: '',
-        productSold: ''
+        productSold: '',
+        productPosition: '',
+        chosenImage: '',
+        imageMain: '',
+        imageSupOne: '',
+        imageSupTwo: '',
+        imageSupThree: ''
       });
     }
+
+    // to ensure that the user stays logged in, this checks local storage for the token
+
   }, {
     key: 'checkForToken',
     value: function checkForToken() {
-      console.log(localStorage.userAuthToken);
+      // console.log(localStorage.userAuthToken);
 
       if (localStorage.userAuthToken) {
         this.setState({
           loggedIn: true
         });
-        console.log("i run");
+        // console.log("i run");
       }
     }
   }, {
@@ -32504,6 +32558,7 @@ var App = function (_React$Component) {
           errors: this.state.errors,
           showName: this.state.showName,
           showDate: this.state.showDate,
+          showDateLiteral: this.state.showDateLiteral,
           showLocation: this.state.showLocation,
           showWebsite: this.state.showWebsite,
           showVenue: this.state.showVenue,
@@ -32524,6 +32579,7 @@ var App = function (_React$Component) {
           imageSupOne: this.state.imageSupOne,
           imageSupTwo: this.state.imageSupTwo,
           imageSupThree: this.state.imageSupThree,
+          productPosition: this.state.productPosition,
           clickedProduct: this.state.clickedProduct,
           uploadedFile: this.state.uploadedFile,
           uploadedSupOneFile: this.state.uploadedSupOneFile,
@@ -32539,6 +32595,7 @@ var App = function (_React$Component) {
           handleLoginSubmit: this.handleLoginSubmit.bind(this),
           updateShowName: this.updateShowName.bind(this),
           updateShowDate: this.updateShowDate.bind(this),
+          updateShowDateLiteral: this.updateShowDateLiteral.bind(this),
           updateShowLocation: this.updateShowLocation.bind(this),
           updateShowWebsite: this.updateShowWebsite.bind(this),
           updateShowVenue: this.updateShowVenue.bind(this),
@@ -32552,6 +32609,7 @@ var App = function (_React$Component) {
           updateProductSku: this.updateProductSku.bind(this),
           updateProductCategory: this.updateProductCategory.bind(this),
           updateProductSold: this.updateProductSold.bind(this),
+          updateProductPosition: this.updateProductPosition.bind(this),
           handleCreateProduct: this.handleCreateProduct.bind(this),
           handleGetProduct: this.handleGetProduct.bind(this),
           handleProductEditSubmit: this.handleProductEditSubmit.bind(this),
@@ -33809,6 +33867,7 @@ var Main = function (_React$Component) {
                 updateImageSupOne: _this2.props.updateImageSupOne,
                 updateImageSupTwo: _this2.props.updateImageSupTwo,
                 updateImageSupThree: _this2.props.updateImageSupThree,
+                updateProductPosition: _this2.props.updateProductPosition,
                 productName: _this2.props.productName,
                 productDescription: _this2.props.productDescription,
                 productPrice: _this2.props.productPrice,
@@ -33816,19 +33875,21 @@ var Main = function (_React$Component) {
                 productCategory: _this2.props.productCategory,
                 productSold: _this2.props.productSold,
                 productCreated: _this2.props.productCreated
-              }, _defineProperty(_extends2, 'productEdited', _this2.props.productEdited), _defineProperty(_extends2, 'productId', _this2.props.productId), _defineProperty(_extends2, 'imageMain', _this2.props.imageMain), _defineProperty(_extends2, 'imageSupOne', _this2.props.imageSupOne), _defineProperty(_extends2, 'imageSupTwo', _this2.props.imageSupTwo), _defineProperty(_extends2, 'imageSupThree', _this2.props.imageSupThree), _defineProperty(_extends2, 'uploadedFile', _this2.props.uploadedFile), _defineProperty(_extends2, 'uploadedSupOneFile', _this2.props.uploadedSupOneFile), _defineProperty(_extends2, 'uploadedSupTwoFile', _this2.props.uploadedSupTwoFile), _defineProperty(_extends2, 'uploadedSupThreeFile', _this2.props.uploadedSupThreeFile), _defineProperty(_extends2, 'onImageMainDrop', _this2.props.onImageMainDrop), _defineProperty(_extends2, 'onImageSupOneDrop', _this2.props.onImageSupOneDrop), _defineProperty(_extends2, 'onImageSupTwoDrop', _this2.props.onImageSupTwoDrop), _defineProperty(_extends2, 'onImageSupThreeDrop', _this2.props.onImageSupThreeDrop), _defineProperty(_extends2, 'chooseMainImage', _this2.props.chooseMainImage), _defineProperty(_extends2, 'chosenImage', _this2.props.chosenImage), _extends2), props));
+              }, _defineProperty(_extends2, 'productEdited', _this2.props.productEdited), _defineProperty(_extends2, 'productId', _this2.props.productId), _defineProperty(_extends2, 'imageMain', _this2.props.imageMain), _defineProperty(_extends2, 'imageSupOne', _this2.props.imageSupOne), _defineProperty(_extends2, 'imageSupTwo', _this2.props.imageSupTwo), _defineProperty(_extends2, 'imageSupThree', _this2.props.imageSupThree), _defineProperty(_extends2, 'productPosition', _this2.props.productPosition), _defineProperty(_extends2, 'uploadedFile', _this2.props.uploadedFile), _defineProperty(_extends2, 'uploadedSupOneFile', _this2.props.uploadedSupOneFile), _defineProperty(_extends2, 'uploadedSupTwoFile', _this2.props.uploadedSupTwoFile), _defineProperty(_extends2, 'uploadedSupThreeFile', _this2.props.uploadedSupThreeFile), _defineProperty(_extends2, 'onImageMainDrop', _this2.props.onImageMainDrop), _defineProperty(_extends2, 'onImageSupOneDrop', _this2.props.onImageSupOneDrop), _defineProperty(_extends2, 'onImageSupTwoDrop', _this2.props.onImageSupTwoDrop), _defineProperty(_extends2, 'onImageSupThreeDrop', _this2.props.onImageSupThreeDrop), _defineProperty(_extends2, 'chooseMainImage', _this2.props.chooseMainImage), _defineProperty(_extends2, 'chosenImage', _this2.props.chosenImage), _extends2), props));
             } }),
           _react2.default.createElement(_reactRouterDom.Route, { path: '/buy', component: _Buy2.default }),
           _react2.default.createElement(_reactRouterDom.Route, { path: '/show/:showId', render: function render(props) {
               return _react2.default.createElement(_EditShow2.default, _extends({
                 showName: _this2.props.showName,
                 showDate: _this2.props.showDate,
+                showDateLiteral: _this2.props.showDateLiteral,
                 showLocation: _this2.props.showLocation,
                 showWebsite: _this2.props.showWebsite,
                 showVenue: _this2.props.showVenue,
                 showCurrent: _this2.props.showCurrent,
                 updateShowName: _this2.props.updateShowName,
                 updateShowDate: _this2.props.updateShowDate,
+                updateShowDateLiteral: _this2.props.updateShowDateLiteral,
                 updateShowLocation: _this2.props.updateShowLocation,
                 updateShowWebsite: _this2.props.updateShowWebsite,
                 updateShowVenue: _this2.props.updateShowVenue,
@@ -33875,12 +33936,14 @@ var Main = function (_React$Component) {
                 productCreated: _this2.props.productCreated,
                 showName: _this2.props.showName,
                 showDate: _this2.props.showDate,
+                showDateLiteral: _this2.props.showDateLiteral,
                 showLocation: _this2.props.showLocation,
                 showWebsite: _this2.props.showWebsite,
                 showVenue: _this2.props.showVenue,
                 showCurrent: _this2.props.showCurrent,
                 updateShowName: _this2.props.updateShowName,
                 updateShowDate: _this2.props.updateShowDate,
+                updateShowDateLiteral: _this2.props.updateShowDateLiteral,
                 updateShowLocation: _this2.props.updateShowLocation,
                 updateShowWebsite: _this2.props.updateShowWebsite,
                 updateShowVenue: _this2.props.updateShowVenue,
@@ -33892,6 +33955,7 @@ var Main = function (_React$Component) {
                 productSku: _this2.props.productSku,
                 productCategory: _this2.props.productCategory,
                 productSold: _this2.props.productSold,
+                productPosition: _this2.props.productPosition,
                 updateProductName: _this2.props.updateProductName,
                 updateProductDescription: _this2.props.updateProductDescription,
                 updateProductPrice: _this2.props.updateProductPrice,
@@ -33907,6 +33971,7 @@ var Main = function (_React$Component) {
                 updateImageSupOne: _this2.props.updateImageSupOne,
                 updateImageSupTwo: _this2.props.updateImageSupTwo,
                 updateImageSupThree: _this2.props.updateImageSupThree,
+                updateProductPosition: _this2.props.updateProductPosition,
                 uploadedFile: _this2.props.uploadedFile,
                 uploadedSupOneFile: _this2.props.uploadedSupOneFile,
                 uploadedSupTwoFile: _this2.props.uploadedSupTwoFile,
@@ -34307,8 +34372,11 @@ var Category = function (_React$Component) {
       var _this3 = this;
 
       var categoryName = this.props.match.params.categoryId.toString();
+      var sortedCategoryAvailable = this.props.allProducts.sort(function (a, b) {
+        return a.product_position - b.product_position;
+      });
 
-      return this.props.allProducts.map(function (product, i) {
+      return sortedCategoryAvailable.map(function (product, i) {
         if (product.category === categoryName && product.sold == false) {
           return _react2.default.createElement(_Product2.default, {
             key: i,
@@ -34330,8 +34398,11 @@ var Category = function (_React$Component) {
       var _this4 = this;
 
       var categoryName = this.props.match.params.categoryId.toString();
+      var sortedCategorySold = this.props.allProducts.sort(function (a, b) {
+        return a.product_position - b.product_position;
+      });
 
-      return this.props.allProducts.map(function (product, i) {
+      return sortedCategorySold.map(function (product, i) {
         if (product.category === categoryName && product.sold == true) {
           return _react2.default.createElement(_Sold2.default, {
             key: i,
@@ -34485,7 +34556,11 @@ var Primitive = function (_React$Component) {
     value: function renderPrimitiveProducts() {
       var _this3 = this;
 
-      return this.props.allProducts.map(function (product, i) {
+      var sortedPrimitiveAvailable = this.props.allProducts.sort(function (a, b) {
+        return a.product_position - b.product_position;
+      });
+
+      return sortedPrimitiveAvailable.map(function (product, i) {
         if (product.category === 'primitive' && product.sold == false) {
           return _react2.default.createElement(_Product2.default, {
             key: i,
@@ -34506,7 +34581,11 @@ var Primitive = function (_React$Component) {
     value: function renderPrimitiveSold() {
       var _this4 = this;
 
-      return this.props.allProducts.map(function (product, i) {
+      var sortedPrimitiveSold = this.props.allProducts.sort(function (a, b) {
+        return a.product_position - b.product_position;
+      });
+
+      return sortedPrimitiveSold.map(function (product, i) {
         if (product.sold == true && product.category === 'primitive') {
           return _react2.default.createElement(_Sold2.default, {
             key: i,
@@ -34786,88 +34865,92 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var Shows = function (_React$Component) {
   _inherits(Shows, _React$Component);
 
+  function Shows() {
+    _classCallCheck(this, Shows);
+
+    return _possibleConstructorReturn(this, (Shows.__proto__ || Object.getPrototypeOf(Shows)).apply(this, arguments));
+  }
+
   _createClass(Shows, [{
-    key: 'componentWillMount',
+    key: 'renderAllUpcomingShows',
 
 
     // componentDidMount() {
     //   this.renderOrderedCurrent();
     // }
 
-    value: function componentWillMount() {
-      this.renderOrderedCurrent();
-    }
-  }]);
+    // componentWillMount() {
+    //   this.renderOrderedCurrent();
+    // }
 
-  function Shows(props) {
-    _classCallCheck(this, Shows);
+    // constructor(props) {
+    //   super(props);
+    //   this.state = {
+    //     list: [],
+    //   };
+    // }
 
-    var _this = _possibleConstructorReturn(this, (Shows.__proto__ || Object.getPrototypeOf(Shows)).call(this, props));
+    // onSort(sortedList, dropEvent) {
+    //   console.log("sortedList", sortedList, dropEvent);
+    // }
 
-    _this.state = {
-      list: []
-    };
-    return _this;
-  }
+    // placeholder() {
+    //   return(
+    //     <div className="placeholderContent"></div>
+    //   );
+    // }
 
-  _createClass(Shows, [{
-    key: 'onSort',
-    value: function onSort(sortedList, dropEvent) {
-      console.log("sortedList", sortedList, dropEvent);
-    }
-  }, {
-    key: 'placeholder',
-    value: function placeholder() {
-      return _react2.default.createElement('div', { className: 'placeholderContent' });
-    }
-  }, {
-    key: 'renderOrderedCurrent',
-    value: function renderOrderedCurrent() {
+    // renderOrderedCurrent() {
+    //   var listArr = [];
+
+    //   return this.props.allShows.map((show, i) => {
+    //     if (show.current == true) {
+    //       listArr.push(
+    //         { content:
+    //           <Show
+    //             key={i}
+    //             position={i}
+    //             show_id={show.show_id}
+    //             name={show.name}
+    //             show_date={show.show_date}
+    //             venue={show.venue}
+    //             location={show.location}
+    //             website={show.website}
+    //             loggedIn={this.props.loggedIn}
+    //             handleGetShow={this.props.handleGetShow}
+    //           />
+    //         }
+    //       );
+    //       this.setState({
+    //         list: listArr,
+    //       })
+    //     }
+    //   })
+    // }
+
+    // renderDragSortableList() {
+    //   const loggedIn = this.props.loggedIn;
+    //   if (loggedIn) {
+    //     return (
+    //       <DragSortableList items={this.state.list} placeholder={this.placeholder()} onSort={this.onSort()} dropBackTransitionDuration={0.3} type="grid"/>
+    //     );
+    //   } else {
+    //     return (
+    //       <div className="upcoming">
+    //         {this.renderAllUpcomingShows()}
+    //       </div>
+    //     );
+    //   }
+    // }
+
+    value: function renderAllUpcomingShows() {
       var _this2 = this;
 
-      var listArr = [];
-
-      return this.props.allShows.map(function (show, i) {
-        if (show.current == true) {
-          listArr.push({ content: _react2.default.createElement(_Show2.default, {
-              key: i,
-              position: i,
-              show_id: show.show_id,
-              name: show.name,
-              show_date: show.show_date,
-              venue: show.venue,
-              location: show.location,
-              website: show.website,
-              loggedIn: _this2.props.loggedIn,
-              handleGetShow: _this2.props.handleGetShow
-            })
-          });
-          _this2.setState({
-            list: listArr
-          });
-        }
+      var sortedUpcomingShows = this.props.allShows.sort(function (a, b) {
+        return new Date(a.date_literal).getTime() - new Date(b.date_literal).getTime();
       });
-    }
-  }, {
-    key: 'renderDragSortableList',
-    value: function renderDragSortableList() {
-      var loggedIn = this.props.loggedIn;
-      if (loggedIn) {
-        return _react2.default.createElement(_reactDragSortable2.default, { items: this.state.list, placeholder: this.placeholder(), onSort: this.onSort(), dropBackTransitionDuration: 0.3, type: 'grid' });
-      } else {
-        return _react2.default.createElement(
-          'div',
-          { className: 'upcoming' },
-          this.renderAllUpcomingShows()
-        );
-      }
-    }
-  }, {
-    key: 'renderAllUpcomingShows',
-    value: function renderAllUpcomingShows() {
-      var _this3 = this;
 
-      return this.props.allShows.map(function (show, i) {
+      return sortedUpcomingShows.map(function (show, i) {
         if (show.current == true) {
           return _react2.default.createElement(_Show2.default, {
             key: i,
@@ -34878,8 +34961,8 @@ var Shows = function (_React$Component) {
             venue: show.venue,
             location: show.location,
             website: show.website,
-            loggedIn: _this3.props.loggedIn,
-            handleGetShow: _this3.props.handleGetShow
+            loggedIn: _this2.props.loggedIn,
+            handleGetShow: _this2.props.handleGetShow
           });
         }
       });
@@ -34887,9 +34970,13 @@ var Shows = function (_React$Component) {
   }, {
     key: 'renderAllPastShows',
     value: function renderAllPastShows() {
-      var _this4 = this;
+      var _this3 = this;
 
-      return this.props.allShows.map(function (show, i) {
+      var sortedPastShows = this.props.allShows.sort(function (a, b) {
+        return new Date(a.date_literal).getTime() - new Date(b.date_literal).getTime();
+      });
+
+      return sortedPastShows.map(function (show, i) {
         if (show.current == false) {
           return _react2.default.createElement(_PastShow2.default, {
             key: i,
@@ -34900,8 +34987,8 @@ var Shows = function (_React$Component) {
             venue: show.venue,
             location: show.location,
             website: show.website,
-            loggedIn: _this4.props.loggedIn,
-            handleGetShow: _this4.props.handleGetShow
+            loggedIn: _this3.props.loggedIn,
+            handleGetShow: _this3.props.handleGetShow
           });
         }
       });
@@ -34920,7 +35007,11 @@ var Shows = function (_React$Component) {
             { className: 'serif' },
             'Upcoming Shows:'
           ),
-          this.renderDragSortableList(),
+          _react2.default.createElement(
+            'div',
+            { className: 'upcoming' },
+            this.renderAllUpcomingShows()
+          ),
           _react2.default.createElement(
             'h2',
             { className: 'serif' },
@@ -48977,6 +49068,17 @@ var Admin = function (_React$Component) {
               )
             ),
             _react2.default.createElement(
+              'p',
+              null,
+              '*Product Position'
+            ),
+            _react2.default.createElement('input', {
+              type: 'text',
+              placeholder: '1 = first product that shows up',
+              value: this.props.productPosition,
+              onChange: this.props.updateProductPosition
+            }),
+            _react2.default.createElement(
               'button',
               { onClick: this.props.handleCreateProduct },
               'create product'
@@ -49011,6 +49113,17 @@ var Admin = function (_React$Component) {
               placeholder: 'ex. SUNDAY, Aug 13 -or- MON, Sep 25 - SAT, Sep 30',
               value: this.props.showDate,
               onChange: this.props.updateShowDate
+            }),
+            _react2.default.createElement(
+              'p',
+              null,
+              '*date literal'
+            ),
+            _react2.default.createElement('input', {
+              type: 'date',
+              placeholder: 'select the first date of the show',
+              value: this.props.dateLiteral,
+              onChange: this.props.updateShowDateLiteral
             }),
             _react2.default.createElement(
               'p',
@@ -49361,6 +49474,17 @@ var EditShow = function (_React$Component) {
             placeholder: '',
             value: this.props.showDate,
             onChange: this.props.updateShowDate
+          }),
+          _react2.default.createElement(
+            'p',
+            null,
+            '*date literal'
+          ),
+          _react2.default.createElement('input', {
+            type: 'date',
+            placeholder: '',
+            value: this.props.showDateLiteral,
+            onChange: this.props.updateShowDateLiteral
           }),
           _react2.default.createElement(
             'p',
@@ -49842,7 +49966,7 @@ var OneProduct = function (_React$Component) {
         _react2.default.createElement(
           'p',
           null,
-          'sold:'
+          '*sold:'
         ),
         _react2.default.createElement(
           'select',
@@ -49863,6 +49987,17 @@ var OneProduct = function (_React$Component) {
             'Sold'
           )
         ),
+        _react2.default.createElement(
+          'p',
+          null,
+          '*Product Position'
+        ),
+        _react2.default.createElement('input', {
+          type: 'text',
+          placeholder: '1 = first product that shows up',
+          value: this.props.productPosition,
+          onChange: this.props.updateProductPosition
+        }),
         _react2.default.createElement(
           'button',
           { onClick: this.props.handleProductEditSubmit },

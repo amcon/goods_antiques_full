@@ -20,13 +20,13 @@ function getAllProducts (req, res, next) {
 }
 
 function createProduct (req, res, next) {
-  db.none(`INSERT INTO product (name, description, price, sku, category, sold, main_img, sup_img_1, sup_img_2, sup_img_3) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)`, [req.body.name, req.body.description, req.body.price, req.body.sku, req.body.category, req.body.sold, req.body.main_img, req.body.sup_img_1, req.body.sup_img_2, req.body.sup_img_3])
+  db.none(`INSERT INTO product (name, description, price, sku, category, sold, main_img, sup_img_1, sup_img_2, sup_img_3, product_position) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11)`, [req.body.name, req.body.description, req.body.price, req.body.sku, req.body.category, req.body.sold, req.body.main_img, req.body.sup_img_1, req.body.sup_img_2, req.body.sup_img_3, req.body.product_position])
   .then(next())
   .catch(err => next(err));
 }
 
 function editProduct (req, res, next) {
-  db.none(`UPDATE product SET name = $1, description = $2, price = $3, sku = $4, category = $5, sold = $6, main_img = $7, sup_img_1 = $8, sup_img_2 = $9, sup_img_3 = $10 WHERE product_id = $11`, [req.body.name, req.body.description, req.body.price, req.body.sku, req.body.category, req.body.sold, req.body.main_img, req.body.sup_img_1, req.body.sup_img_2, req.body.sup_img_3, req.params.product_id])
+  db.none(`UPDATE product SET name = $1, description = $2, price = $3, sku = $4, category = $5, sold = $6, main_img = $7, sup_img_1 = $8, sup_img_2 = $9, sup_img_3 = $10, product_position = $11 WHERE product_id = $12`, [req.body.name, req.body.description, req.body.price, req.body.sku, req.body.category, req.body.sold, req.body.main_img, req.body.sup_img_1, req.body.sup_img_2, req.body.sup_img_3, req.body.product_position, req.params.product_id])
   .then((data) => res.rows = data)
   .then(() => next())
   .catch(err => next(err));

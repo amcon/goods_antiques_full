@@ -25,13 +25,15 @@ CREATE TABLE product (
   sup_img_1 VARCHAR(100),
   sup_img_2 VARCHAR(100),
   sup_img_3 VARCHAR(100),
-  sold BOOLEAN
+  sold BOOLEAN,
+  product_position VARCHAR(10)
 );
 
 CREATE TABLE show (
   show_id SERIAL UNIQUE PRIMARY KEY,
   name VARCHAR(100) NOT NULL,
   show_date VARCHAR(100) NOT NULL,
+  date_literal VARCHAR NOT NULL,
   venue VARCHAR(100) NOT NULL,
   location VARCHAR(100) NOT NULL,
   website VARCHAR(100) NOT NULL,

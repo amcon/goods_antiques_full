@@ -17,7 +17,7 @@ h2, h3, p, a {
   font-weight: lighter;
 }
 header {
-  width: 1100px;
+  width: 1200px;
   margin: 0 auto;
   padding: 15px 25px;
   display: flex;
@@ -61,7 +61,7 @@ nav a:hover {
 }
 main {
   min-height: 500px;
-  min-width: 1150px;
+  min-width: 1250px;
   display: flex;
   justify-content: center;
 }
@@ -134,14 +134,14 @@ main div {
   color: black;
 }
 .store {
-  width: 1100px;
+  width: 1200px;
   background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  padding: 50px 0;
+  padding: 50px 25px;
   margin: 0 auto;
 }
 
@@ -336,7 +336,7 @@ main div {
   width: 70%;
 }
 .shows {
-  width: 1100px;
+  width: 1200px;
   margin: 0 auto;
   background-color: white;
   display: flex;
@@ -344,7 +344,7 @@ main div {
   justify-content: center;
   align-items: flex-start;
   font-weight: lighter;
-  padding-bottom: 50px;
+  padding: 50px 0 100px 0;
 }
 
 .shows h2 {
@@ -540,11 +540,13 @@ main div {
 }
 .login {
   background-color: white;
-  width: 1100px;
+  width: 1200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 125px 0;
+  margin: 0 auto;
 }
 
 .login h1 {
@@ -611,7 +613,7 @@ main div {
 
 .admin {
   background-color: white;
-  width: 1100px;
+  width: 1200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -688,8 +690,8 @@ main div {
 }
 
 .image-uploader .image-preview {
-  margin-left: 20px;
-  width: 200px;
+  margin-left: 35px;
+  width: 220px;
   border: 1px solid grey;
   display: flex;
   justify-content: center;
@@ -703,13 +705,13 @@ main div {
   width: 100%;
 }
 
-.dropzone {
+.create-product .dropzone {
   display: flex;
   justify-content: center;
   align-items: center;
   border: 2px dashed grey;
-  height: 200px;
-  width: 200px;
+  height: 220px;
+  width: 220px;
   text-align: center;
 }
 
@@ -718,11 +720,13 @@ main div {
 }
 .signup {
   background-color: white;
-  width: 1100px;
+  width: 1200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 125px 0;
+  margin: 0 auto;
 }
 
 .signup h1 {
@@ -772,7 +776,7 @@ main div {
 }
 .edit-show {
   background-color: white;
-  width: 1100px;
+  width: 1200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -901,8 +905,8 @@ main div {
 }
 .one-product {
   background-color: white;
-  width: 1100px;
-  padding: 100px 50px;
+  width: 1200px;
+  padding: 100px;
   box-sizing: border-box;
   margin: 0 auto;
 }
@@ -1085,7 +1089,7 @@ main div {
 }
 
 .edit-selected {
-  height: 1550px;
+  height: 1700px;
   opacity: 1;
   z-index: 1;
   font-size: .85em;
@@ -1099,7 +1103,7 @@ main div {
 }
 
 .drop-section .image-preview {
-  margin-left: 20px;
+  margin-left: 35px;
   width: 200px;
   border: 1px solid grey;
   display: flex;
@@ -1110,6 +1114,8 @@ main div {
 
 .drop-section .image-preview img {
   object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 .dropzone {
@@ -1126,7 +1132,7 @@ main div {
   cursor: pointer;
 }
 .buy-page {
-  width: 1100px;
+  width: 1200px;
   padding: 5%;
   box-sizing: border-box;
   margin: 0 auto;
@@ -1136,6 +1142,7 @@ main div {
       margin-bottom: 40px;
       letter-spacing: 2px;
       font-weight: lighter;
+      margin-left: 40px;
     }
 
     .buy-page h2 {
@@ -1175,8 +1182,8 @@ main div {
     }
 footer {
   display: flex;
-  padding: 75px 25px;
-  width: 1100px;
+  padding: 50px 25px 75px 25px;
+  width: 1200px;
   margin: 0 auto;
   box-sizing: border-box;
   font-family: arial;
@@ -1193,9 +1200,10 @@ footer {
   font-size: .8em;
   margin: 0;
   margin-bottom: 10px;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid rgb(50, 50, 50);
   padding-bottom: 5px;
-  font-weight: lighter;
+  font-weight: normal;
+  color: rgb(50, 50, 50);
 }
 
 .footer-section p {

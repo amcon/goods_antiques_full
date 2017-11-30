@@ -40,7 +40,9 @@ class Primitive extends React.Component {
   }
 
   renderPrimitiveProducts() {
-    return this.props.allProducts.map((product, i) => {
+    var sortedPrimitiveAvailable = this.props.allProducts.sort(function(a, b){return a.product_position - b.product_position});
+
+    return sortedPrimitiveAvailable.map((product, i) => {
       if (product.category === 'primitive' && product.sold == false ) {
         return (
           <Product
@@ -60,7 +62,9 @@ class Primitive extends React.Component {
   }
 
   renderPrimitiveSold() {
-    return this.props.allProducts.map((product, i) => {
+    var sortedPrimitiveSold = this.props.allProducts.sort(function(a, b){return a.product_position - b.product_position});
+
+    return sortedPrimitiveSold.map((product, i) => {
       if (product.sold == true && product.category === 'primitive') {
         return (
           <Sold

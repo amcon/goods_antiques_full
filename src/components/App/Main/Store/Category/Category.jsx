@@ -77,8 +77,9 @@ class Category extends React.Component {
 
   renderCategoryProducts() {
     const categoryName = this.props.match.params.categoryId.toString();
+    var sortedCategoryAvailable = this.props.allProducts.sort(function(a, b){return a.product_position - b.product_position});
 
-    return this.props.allProducts.map((product, i) => {
+    return sortedCategoryAvailable.map((product, i) => {
       if (product.category === categoryName && product.sold == false) {
         return (
           <Product
@@ -99,8 +100,9 @@ class Category extends React.Component {
 
   renderCategorySold() {
     const categoryName = this.props.match.params.categoryId.toString();
+    var sortedCategorySold = this.props.allProducts.sort(function(a, b){return a.product_position - b.product_position});
 
-    return this.props.allProducts.map((product, i) => {
+    return sortedCategorySold.map((product, i) => {
       if (product.category === categoryName && product.sold == true) {
         return (
           <Sold

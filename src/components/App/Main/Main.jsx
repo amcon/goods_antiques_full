@@ -46,6 +46,7 @@ class Main extends React.Component {
               updateImageSupOne={this.props.updateImageSupOne}
               updateImageSupTwo={this.props.updateImageSupTwo}
               updateImageSupThree={this.props.updateImageSupThree}
+              updateProductPosition={this.props.updateProductPosition}
               productName={this.props.productName}
               productDescription={this.props.productDescription}
               productPrice={this.props.productPrice}
@@ -59,6 +60,7 @@ class Main extends React.Component {
               imageSupOne={this.props.imageSupOne}
               imageSupTwo={this.props.imageSupTwo}
               imageSupThree={this.props.imageSupThree}
+              productPosition={this.props.productPosition}
               uploadedFile={this.props.uploadedFile}
               uploadedSupOneFile={this.props.uploadedSupOneFile}
               uploadedSupTwoFile={this.props.uploadedSupTwoFile}
@@ -77,12 +79,14 @@ class Main extends React.Component {
             <EditShow
               showName={this.props.showName}
               showDate={this.props.showDate}
+              showDateLiteral={this.props.showDateLiteral}
               showLocation={this.props.showLocation}
               showWebsite={this.props.showWebsite}
               showVenue={this.props.showVenue}
               showCurrent={this.props.showCurrent}
               updateShowName={this.props.updateShowName}
               updateShowDate={this.props.updateShowDate}
+              updateShowDateLiteral={this.props.updateShowDateLiteral}
               updateShowLocation={this.props.updateShowLocation}
               updateShowWebsite={this.props.updateShowWebsite}
               updateShowVenue={this.props.updateShowVenue}
@@ -133,12 +137,14 @@ class Main extends React.Component {
               productCreated={this.props.productCreated}
               showName={this.props.showName}
               showDate={this.props.showDate}
+              showDateLiteral={this.props.showDateLiteral}
               showLocation={this.props.showLocation}
               showWebsite={this.props.showWebsite}
               showVenue={this.props.showVenue}
               showCurrent={this.props.showCurrent}
               updateShowName={this.props.updateShowName}
               updateShowDate={this.props.updateShowDate}
+              updateShowDateLiteral={this.props.updateShowDateLiteral}
               updateShowLocation={this.props.updateShowLocation}
               updateShowWebsite={this.props.updateShowWebsite}
               updateShowVenue={this.props.updateShowVenue}
@@ -150,6 +156,7 @@ class Main extends React.Component {
               productSku={this.props.productSku}
               productCategory={this.props.productCategory}
               productSold={this.props.productSold}
+              productPosition={this.props.productPosition}
               updateProductName={this.props.updateProductName}
               updateProductDescription={this.props.updateProductDescription}
               updateProductPrice={this.props.updateProductPrice}
@@ -165,6 +172,7 @@ class Main extends React.Component {
               updateImageSupOne={this.props.updateImageSupOne}
               updateImageSupTwo={this.props.updateImageSupTwo}
               updateImageSupThree={this.props.updateImageSupThree}
+              updateProductPosition={this.props.updateProductPosition}
               uploadedFile={this.props.uploadedFile}
               uploadedSupOneFile={this.props.uploadedSupOneFile}
               uploadedSupTwoFile={this.props.uploadedSupTwoFile}

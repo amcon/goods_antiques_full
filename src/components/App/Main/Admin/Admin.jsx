@@ -157,6 +157,13 @@ class Admin extends React.Component {
               <option value="false">Available</option>
               <option value="true">Sold</option>
             </select>
+            <p>*Product Position</p>
+            <input
+              type="text"
+              placeholder="1 = first product that shows up"
+              value={this.props.productPosition}
+              onChange={this.props.updateProductPosition}
+            />
             <button onClick={this.props.handleCreateProduct}>create product</button>
           </div>
 
@@ -177,6 +184,13 @@ class Admin extends React.Component {
               placeholder="ex. SUNDAY, Aug 13 -or- MON, Sep 25 - SAT, Sep 30"
               value={this.props.showDate}
               onChange={this.props.updateShowDate}
+            />
+            <p>*date literal</p>
+            <input
+              type="date"
+              placeholder="select the first date of the show"
+              value={this.props.dateLiteral}
+              onChange={this.props.updateShowDateLiteral}
             />
             <p>*venue:</p>
             <input
