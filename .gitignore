@@ -1,9 +1,4 @@
 node_modules
 www/bundle.js
 .env
-dist/
-
-/node_modules
-npm-debug.log
-.DS_Store
-/*.env
+/dist
