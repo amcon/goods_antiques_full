@@ -13,7 +13,6 @@ module.exports = {
     filename: 'main.js',
   },
   cache: true,
-  debug: true,
   devtool: 'eval-source-map',
   stats: {
     colors: true,
