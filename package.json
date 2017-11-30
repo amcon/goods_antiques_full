@@ -4,7 +4,8 @@
   "description": "goods-antiques.com with full admin authority",
   "main": "index.js",
   "engines": {
-    "node": "7.7.2"
+    "node": "7.7.2",
+    "npm": "4.1.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
