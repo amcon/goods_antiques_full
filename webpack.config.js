@@ -1,7 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const GoogleFontsPlugin = require("google-fonts-webpack-plugin")
+const GoogleFontsPlugin = require("google-fonts-webpack-plugin");
 
 const APP_DIR = path.resolve(__dirname, 'src');
 
@@ -25,9 +25,11 @@ module.exports = {
       {
         test: /\.css$/,
         use: ExtractTextPlugin.extract({
-          fallback: "style-loader",
-          use: "css-loader"
-        })
+          fallback: require.resolve('style-loader'),
+          use: [
+             { loader: require.resolve('css-loader'), options: { minimize: true } }
+          ]
+       })
       },
       { test: /\.jpg$/,
         loader: 'file-loader?name=/img/[name].[hash:base64:5].[ext]'
@@ -48,7 +50,7 @@ module.exports = {
       },
     }),
     new webpack.optimize.UglifyJsPlugin(),
-    new ExtractTextPlugin("styles.css"),
+    new ExtractTextPlugin({filename: "styles.css", allChunks: true}),
     new GoogleFontsPlugin({
             fonts: [
                 { family: 'Libre Baskerville' },
