@@ -14,7 +14,8 @@
     "compile": "webpack",
     "start": "webpack && node server.js",
     "rebuild": "webpack -d --progress --colors",
-    "watch": "webpack -d --progress --watch"
+    "watch": "webpack -d --progress --watch",
+    "build": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
