@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "goods-antiques.com with full admin authority",
   "main": "index.js",
+  "engines": {
+    "node": "7.7.2"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "heroku-prebuild": "bash ./scripts/deployment_react.sh",
