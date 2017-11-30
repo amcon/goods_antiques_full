@@ -8,10 +8,13 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf dist && rm -rf node_modules",
     "heroku-prebuild": "bash ./scripts/deployment_react.sh",
     "heroku-postbuild": "bash ./scripts/deployment_cleanup.sh",
     "compile": "webpack",
-    "start": "webpack && node server.js"
+    "start": "webpack && node server.js",
+    "rebuild": "webpack -d --progress --colors",
+    "watch": "webpack -d --progress --watch"
   },
   "repository": {
     "type": "git",
