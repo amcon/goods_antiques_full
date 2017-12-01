@@ -8,7 +8,7 @@ const BUILD_DIR = path.resolve(__dirname, 'dist');
 const APP_DIR = path.resolve(__dirname, 'src');
 
 module.exports = {
-  entry: `${APP_DIR}/index.js`,
+  entry: `${__dirname}/src/index.js`,
   output: {
     path: BUILD_DIR,
     filename: 'main.js',
