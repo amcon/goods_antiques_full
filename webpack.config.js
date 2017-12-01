@@ -8,9 +8,10 @@ const BUILD_DIR = path.resolve(__dirname, 'dist');
 const APP_DIR = path.resolve(__dirname, 'src');
 
 module.exports = {
-  entry: `${__dirname}/src/index.jsx`,
+  entry: `${__dirname}/src/index.js`,
   output: {
-    filename: `${__dirname}/dist/main.js`,
+    path: BUILD_DIR,
+    filename: 'main.js',
   },
   cache: true,
   devtool: 'eval-source-map',
