@@ -79,3 +79,25 @@ module.exports = {
     ],
   },
 };
+
+if (process.env &&
+  process.env.NODE_ENV &&
+  process.env.NODE_ENV === 'production') {
+  const prodPlugins = [
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: true,
+      },
+      output: {
+        comments: false,
+      },
+    }),
+    new webpack.optimize.CommonsChunkPlugin('/js/common.js'),
+  ];
+
+  config.plugins = config.plugins.concat(prodPlugins);
+
+  config.cache = false;
+  config.debug = false;
+  config.devtool = undefined;
+}
