@@ -11,7 +11,7 @@ const config = {
   entry: `${__dirname}/src/index.js`,
   output: {
     path: BUILD_DIR,
-    filename: 'main.js',
+    filename: '[name].js',
   },
   cache: true,
   devtool: 'eval-source-map',
