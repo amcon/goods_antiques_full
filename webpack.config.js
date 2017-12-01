@@ -7,7 +7,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const BUILD_DIR = path.resolve(__dirname, 'dist');
 const APP_DIR = path.resolve(__dirname, 'src');
 
-module.exports = {
+const config = {
   entry: `${__dirname}/src/index.js`,
   output: {
     path: BUILD_DIR,
@@ -101,3 +101,5 @@ if (process.env &&
   config.debug = false;
   config.devtool = undefined;
 }
+
+module.exports = config;
