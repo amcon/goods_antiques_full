@@ -20,6 +20,8 @@ npm i css-loader
 npm i babel-loader
 npm i babel-core
 npm i babel-preset-latest
+npm i react
+npm i react-router-dom
 npm i webpack
 
 # build out webpack assets
