@@ -54,7 +54,7 @@ const config = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        include: APP_DIR,
+        // include: APP_DIR,
         loader: [
           'babel-loader?presets[]=react,presets[]=es2015',
         ],
