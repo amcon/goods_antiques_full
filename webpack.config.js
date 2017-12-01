@@ -4,6 +4,9 @@ const path = require('path');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const GoogleFontsPlugin = require("google-fonts-webpack-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const babelSettings = {
+  extends: path.join(__dirname, '/.babelrc')
+}
 
 const BUILD_DIR = path.resolve(__dirname, 'dist');
 const APP_DIR = path.resolve(__dirname, 'src');
@@ -56,7 +59,7 @@ const config = {
         exclude: /node_modules/,
         include: APP_DIR,
         loader: [
-          'babel-loader',
+          'babel-loader?presets[]=react,presets[]=es2015' + JSON.stringify(babelSettings),
         ],
       },
       {
