@@ -16,7 +16,6 @@
     "build": "webpack --config webpack.config.js",
     "build:production": "NODE_ENV=production webpack --config ./node_modules/webpack/bin/webpack.js",
     "start": "node server.js",
-    "postinstall": "cd app",
     "rebuild": "webpack -d --progress --colors",
     "watch": "webpack -d --progress --watch"
   },
