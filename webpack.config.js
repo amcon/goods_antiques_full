@@ -43,8 +43,8 @@ module.exports = {
   ],
   resolve: {
     modules: [
-      path.resolve(__dirname, '/node_modules'),
-      path.resolve(__dirname, '/src'),
+      path.join(__dirname, '/node_modules'),
+      path.join(__dirname, '/src')
     ],
   },
   module: {
