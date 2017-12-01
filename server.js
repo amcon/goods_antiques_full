@@ -22,7 +22,7 @@ app.use('/api/', apiRoute);
 app.use(history({ logger: logger }));
 
 
-app.use(express.static(path.join(__dirname, '/dist')));
+app.use('/dist', express.static(path.join(__dirname, '/dist')));
 
 const compiler = webpack(webpackConfig);
 app.use(webpackDevMiddleware(compiler, {
