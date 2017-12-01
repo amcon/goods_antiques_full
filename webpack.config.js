@@ -26,7 +26,7 @@ module.exports = {
         exclude: /node_modules/,
         include: APP_DIR,
         loader: [
-          'babel?presets[]=es2015&presets[]=react',
+          'babel-loader?presets[]=es2015&presets[]=react',
         ],
       },
       {
