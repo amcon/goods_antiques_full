@@ -14,6 +14,7 @@ npm i --only=dev --ignore-scripts
 npm i extract-text-webpack-plugin
 npm i google-fonts-webpack-plugin
 npm i html-webpack-plugin
+npm i html-webpack-template
 npm i webpack
 
 # build out webpack assets
