@@ -1,13 +1,13 @@
-const webpack = require('webpack');
-const path = require('path');
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const GoogleFontsPlugin = require("google-fonts-webpack-plugin");
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+var webpack = require('webpack');
+var path = require('path');
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var GoogleFontsPlugin = require("google-fonts-webpack-plugin");
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const BUILD_DIR = path.resolve(__dirname, 'dist');
-const APP_DIR = path.resolve(__dirname, 'src');
+var BUILD_DIR = path.resolve(__dirname, 'dist');
+var APP_DIR = path.resolve(__dirname, 'src');
 
-const config = {
+var config = {
   entry: `${__dirname}/src/index.js`,
   output: {
     path: BUILD_DIR,
@@ -84,7 +84,7 @@ const config = {
 if (process.env &&
   process.env.NODE_ENV &&
   process.env.NODE_ENV === 'production') {
-  const prodPlugins = [
+  var prodPlugins = [
     new webpack.optimize.UglifyJsPlugin({
       compress: {
         warnings: true,
