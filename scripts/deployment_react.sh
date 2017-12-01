@@ -22,6 +22,7 @@ npm i babel-core
 npm i babel-preset-latest
 npm i react
 npm i react-router-dom
+npm i babel-preset-react
 npm i webpack
 
 # build out webpack assets
