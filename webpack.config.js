@@ -98,7 +98,6 @@ if (process.env &&
   config.plugins = config.plugins.concat(prodPlugins);
 
   config.cache = false;
-  config.debug = false;
   config.devtool = undefined;
 }
 
