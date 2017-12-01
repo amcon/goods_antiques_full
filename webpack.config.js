@@ -44,12 +44,10 @@ const config = {
   ],
   resolve: {
     modules: [
+      path.join(__dirname, '/node_modules'),
       path.resolve(__dirname, '/src')
     ],
     extensions: ['.js', '.jsx', ".es6", ".json"]
-  },
-  resolveLoader: {
-    root: path.join(__dirname, 'node_modules')
   },
   module: {
     rules: [
