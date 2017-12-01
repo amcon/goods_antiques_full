@@ -19,6 +19,33 @@ module.exports = {
     colors: true,
     reasons: true
   },
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: JSON.stringify(process.env.NODE_ENV || 'development'),
+      },
+    }),
+    new webpack.optimize.UglifyJsPlugin(),
+    new ExtractTextPlugin({filename: "styles.css", allChunks: true}),
+    new GoogleFontsPlugin({
+            fonts: [
+                { family: 'Libre Baskerville' },
+                { family: 'Open Sans' }
+            ]
+        }),
+    new HtmlWebpackPlugin({
+      title: 'Goods Antiques',
+      xhtml: true,
+      inject: false,
+      template: require('html-webpack-template'),
+      appMountId: 'root-container'
+    }),
+  ],
+  resolve: {
+    modules: [
+      path.resolve(__dirname, 'node_modules'),
+    ],
+  },
   module: {
     rules: [
       {
@@ -48,33 +75,6 @@ module.exports = {
         test: /\.otf(\?v=\d+\.\d+\.\d+)?$/,
         loader: 'file-loader'
       },
-    ],
-  },
-  plugins: [
-    new HtmlWebpackPlugin({
-      title: 'Goods Antiques',
-      xhtml: true,
-      inject: false,
-      template: require('html-webpack-template'),
-      appMountId: 'root-container'
-    }),
-    new webpack.DefinePlugin({
-      'process.env': {
-        NODE_ENV: JSON.stringify(process.env.NODE_ENV || 'development'),
-      },
-    }),
-    new webpack.optimize.UglifyJsPlugin(),
-    new ExtractTextPlugin({filename: "styles.css", allChunks: true}),
-    new GoogleFontsPlugin({
-            fonts: [
-                { family: 'Libre Baskerville' },
-                { family: 'Open Sans' }
-            ]
-        })
-  ],
-  resolve: {
-    modules: [
-      path.resolve(__dirname, 'node_modules'),
     ],
   },
 };
