@@ -12,6 +12,7 @@ npm run clean -s
 # Don't invoke the npm lifecycle methods
 npm i --only=dev --ignore-scripts
 npm i extract-text-webpack-plugin
+npm i google-fonts-webpack-plugin
 npm i webpack
 
 # build out webpack assets
