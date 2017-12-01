@@ -24,6 +24,7 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
+        include: APP_DIR,
         use: [
           'babel-loader',
         ],
