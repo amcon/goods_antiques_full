@@ -9,6 +9,7 @@ const _Promise = require('babel-runtime/core-js/promise')['default'];
 const bodyParser = require('body-parser');
 const history = require('connect-history-api-fallback');
 const apiRoute = require('./routes/api.js');
+const development = process.env.NODE_ENV !== "production";
 
 const app = express();
 
