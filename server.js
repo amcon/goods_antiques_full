@@ -25,15 +25,19 @@ app.use(history({ logger: logger }));
 app.use('/dist', express.static(path.join(__dirname, '/dist')));
 
 const compiler = webpack(webpackConfig);
-app.use(webpackDevMiddleware(compiler, {
-  hot: true,
-  filename: './dist/main.js',
-  publicPath: '/',
-  stats: {
-    colors: true,
-  },
-  historyApiFallback: true,
-}));
+
+if (development) {
+  app.use(webpackDevMiddleware(compiler, {
+    hot: true,
+    filename: './dist/main.js',
+    publicPath: '/',
+    stats: {
+      colors: true,
+    },
+    historyApiFallback: true,
+  }));
+}
+
 
 const server = app.listen(3000, function() {
   const host = server.address().address;
