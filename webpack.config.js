@@ -46,6 +46,7 @@ const config = {
       path.join(__dirname, '/node_modules'),
       path.join(__dirname, '/src')
     ],
+    extensions: ['.js', '.jsx']
   },
   module: {
     rules: [
