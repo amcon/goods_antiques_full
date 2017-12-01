@@ -13,7 +13,7 @@ npm run clean -s
 npm i --only=dev --ignore-scripts
 
 # build out webpack assets
-npm run build:production
+npm run build
 
 # Remove the DEV version of node modules
 rm -rf node_modules

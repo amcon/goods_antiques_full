@@ -15,7 +15,6 @@
     "compile": "webpack",
     "build": "node ./node_modules/webpack/bin/webpack.js --display-error-details",
     "build:production": "NODE_ENV=production webpack --config ./node_modules/webpack/bin/webpack.js",
-    "postinstall": "npm install",
     "start": "node server.js",
     "rebuild": "webpack -d --progress --colors",
     "watch": "webpack -d --progress --watch",
@@ -106,8 +105,6 @@
     "react-router-dom": "^4.2.2",
     "redux": "^3.7.2",
     "style-loader": "^0.18.2",
-    "superagent": "^3.8.1",
-    "webpack": "^3.9.1",
-    "webpack-dev-middleware": "^1.12.2"
+    "superagent": "^3.8.1"
   }
 }
