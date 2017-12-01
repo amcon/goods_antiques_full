@@ -14,6 +14,8 @@
     "heroku-postbuild": "bash ./scripts/deployment_cleanup.sh",
     "compile": "webpack",
     "build": "node ./node_modules/webpack/bin/webpack.js --display-error-details",
+    "build:production": "NODE_ENV=production webpack --config webpack.config.js",
+    "postinstall": "cd client && npm install",
     "start": "node server.js",
     "rebuild": "webpack -d --progress --colors",
     "watch": "webpack -d --progress --watch",
