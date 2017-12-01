@@ -2,7 +2,7 @@ require('dotenv').config({ silent: true });
 const express = require('express');
 const webpackDevMiddleware = require('webpack-dev-middleware');
 const webpack = require('webpack');
-const webpackConfig = require('webpack.config.js');
+const webpackConfig = require('./webpack.config.js');
 const logger = require('morgan');
 const path = require('path');
 const _Promise = require('babel-runtime/core-js/promise')['default'];
