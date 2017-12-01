@@ -53,8 +53,8 @@ const config = {
     rules: [
       {
         test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        // include: APP_DIR,
+        exclude: /.*node_modules((?!my-npm-linked-module-name).)*$/,
+        include: APP_DIR,
         loader: [
           'babel-loader?presets[]=react,presets[]=es2015',
         ],
