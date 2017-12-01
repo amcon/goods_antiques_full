@@ -4,8 +4,8 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const GoogleFontsPlugin = require("google-fonts-webpack-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const BUILD_DIR = path.resolve('./dist');
-const APP_DIR = path.resolve('./src');
+const BUILD_DIR = path.resolve(__dirname, 'dist');
+const APP_DIR = path.resolve(__dirname, 'src');
 
 module.exports = {
   entry: `${APP_DIR}/index.js`,
