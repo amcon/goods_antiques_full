@@ -92,7 +92,7 @@ if (process.env &&
         comments: false,
       },
     }),
-    new webpack.optimize.CommonsChunkPlugin('/js/common.js'),
+    new webpack.optimize.CommonsChunkPlugin('/common.js'),
   ];
 
   config.plugins = config.plugins.concat(prodPlugins);
