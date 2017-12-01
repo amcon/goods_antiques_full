@@ -23,7 +23,7 @@ app.use(history({ logger: logger }));
 
 
 
-app.use('/dist', express.static(DIST));
+// app.use('/dist', express.static(DIST));
 
 const compiler = webpack(webpackConfig);
 
