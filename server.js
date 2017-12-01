@@ -28,7 +28,7 @@ const compiler = webpack(webpackConfig);
 app.use(webpackDevMiddleware(compiler, {
   hot: true,
   filename: './dist/main.js',
-  publicPath: '/src',
+  publicPath: '/',
   stats: {
     colors: true,
   },
