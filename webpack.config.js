@@ -12,6 +12,7 @@ module.exports = {
     path: BUILD_DIR,
     filename: 'main.js',
   },
+  watch: true,
   cache: true,
   devtool: 'eval-source-map',
   stats: {
