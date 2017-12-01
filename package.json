@@ -13,7 +13,7 @@
     "heroku-prebuild": "bash ./scripts/deployment_react.sh",
     "heroku-postbuild": "bash ./scripts/deployment_cleanup.sh",
     "compile": "webpack",
-    "start": "webpack && node server.js",
+    "start": "webpack --config webpack.config.js && node server.js",
     "rebuild": "webpack -d --progress --colors",
     "watch": "webpack -d --progress --watch",
     "build": "webpack --config webpack.config.js"
