@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './Shows.css';
 import Show from './Show/Show.jsx';
 import PastShow from './PastShow/PastShow.jsx';
-import DragSortableList from 'react-drag-sortable';
 
 
 class Shows extends React.Component {
