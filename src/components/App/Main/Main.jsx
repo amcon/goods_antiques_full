@@ -8,10 +8,10 @@ import Shows from './Shows/Shows.jsx';
 import MapPage from './Map/Map.jsx';
 import Login from './Login/Login.jsx';
 import Admin from './Admin/Admin.jsx';
-import Signup from './Signup/Signup.jsx';
 import EditShow from './EditShow/EditShow.jsx';
 import OneProduct from './OneProduct/OneProduct.jsx';
 import Buy from './OneProduct/Buy/Buy.jsx';
+import Signup from './Signup/Signup.jsx';
 
 
 class Main extends React.Component {
