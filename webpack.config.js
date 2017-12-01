@@ -51,17 +51,17 @@ module.exports = {
     ],
   },
   plugins: [
-    new webpack.DefinePlugin({
-      'process.env': {
-        NODE_ENV: JSON.stringify(process.env.NODE_ENV || 'development'),
-      },
-    }),
     new HtmlWebpackPlugin({
       title: 'Goods Antiques',
       xhtml: true,
       inject: false,
       template: require('html-webpack-template'),
       appMountId: 'root-container'
+    }),
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: JSON.stringify(process.env.NODE_ENV || 'development'),
+      },
     }),
     new webpack.optimize.UglifyJsPlugin(),
     new ExtractTextPlugin({filename: "styles.css", allChunks: true}),
