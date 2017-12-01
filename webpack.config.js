@@ -2,6 +2,7 @@ const webpack = require('webpack');
 const path = require('path');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const GoogleFontsPlugin = require("google-fonts-webpack-plugin");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const BUILD_DIR = path.resolve('./dist');
 const APP_DIR = path.resolve('./src');
@@ -37,10 +38,10 @@ module.exports = {
        })
       },
       { test: /\.jpg$/,
-        loader: 'file-loader?name=/img/[name].[hash:base64:5].[ext]'
+        loader: 'file-loader'
       },
       { test: /\.png$/,
-        loader: 'file-loader?name=/img/[name].[hash:base64:5].[ext]'
+        loader: 'file-loader'
       },
       {
         test: /\.otf(\?v=\d+\.\d+\.\d+)?$/,
@@ -53,6 +54,13 @@ module.exports = {
       'process.env': {
         NODE_ENV: JSON.stringify(process.env.NODE_ENV || 'development'),
       },
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Goods Antiques',
+      xhtml: true,
+      inject: false,
+      template: require('html-webpack-template'),
+      appMountId: 'root-container'
     }),
     new webpack.optimize.UglifyJsPlugin(),
     new ExtractTextPlugin({filename: "styles.css", allChunks: true}),
