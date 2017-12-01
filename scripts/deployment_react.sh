@@ -18,6 +18,7 @@ npm i html-webpack-template
 npm i style-loader
 npm i css-loader
 npm i babel-loader
+npm i babel-core
 npm i webpack
 
 # build out webpack assets
