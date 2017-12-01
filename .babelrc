@@ -1,7 +1,7 @@
 {
   "presets": [
     ["latest", { "modules": false }],
-    "react"
+    "react", "es2015"
   ],
 
 }
