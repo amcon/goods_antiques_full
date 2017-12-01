@@ -10,7 +10,7 @@ const bodyParser = require('body-parser');
 const history = require('connect-history-api-fallback');
 const apiRoute = require('./routes/api.js');
 const development = process.env.NODE_ENV !== "production";
-
+const DIST = path.join(__dirname, "/dist"),
 const app = express();
 
 app.use(logger('dev'));
@@ -23,7 +23,7 @@ app.use(history({ logger: logger }));
 
 
 
-app.use('/dist', express.static(path.join(__dirname, '/dist')));
+app.use('/dist', express.static(DIST));
 
 const compiler = webpack(webpackConfig);
 
@@ -37,6 +37,10 @@ if (development) {
     },
     historyApiFallback: true,
   }));
+} else {
+  app.use(express.static(DIST));
+
+  app.get("*", (req, res) => res.sendFile(path.join(DIST, "index.html")));
 }
 
 
