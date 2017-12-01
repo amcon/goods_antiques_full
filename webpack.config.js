@@ -46,7 +46,7 @@ module.exports = {
       },
       {
         test: /\.otf(\?v=\d+\.\d+\.\d+)?$/,
-        loader: 'file-loader?name=/fonts/[name].[ext]'
+        loader: 'file-loader'
       },
     ],
   },

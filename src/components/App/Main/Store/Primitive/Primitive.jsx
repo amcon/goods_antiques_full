@@ -26,7 +26,6 @@ class Primitive extends React.Component {
         this.setState({
           soldItemPresent: true,
         })
-        console.log("i run");
       }
     });
   }
@@ -34,7 +33,7 @@ class Primitive extends React.Component {
   renderSoldHeader() {
     if (this.state.soldItemPresent == true) {
       return (
-        <h2>Recently Sold</h2>
+        <h2 className="serif">Recently Sold</h2>
       );
     }
   }
