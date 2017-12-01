@@ -11,19 +11,7 @@ npm run clean -s
 # Go get all the npm assets we'll need which include all the devDependencies
 # Don't invoke the npm lifecycle methods
 npm i --only=dev --ignore-scripts
-npm i extract-text-webpack-plugin
-npm i google-fonts-webpack-plugin
-npm i html-webpack-plugin
-npm i html-webpack-template
-npm i style-loader
-npm i css-loader
-npm i babel-loader
-npm i babel-core
-npm i babel-preset-latest
-npm i react
-npm i react-router-dom
-npm i babel-preset-react
-npm i webpack
+npm i extract-text-webpack-plugin google-fonts-webpack-plugin html-webpack-plugin html-webpack-template style-loader css-loader babel-loader babel-core babel-preset-latest react react-router-dom babel-preset-react webpack file-loader
 
 # build out webpack assets
 npm run build
