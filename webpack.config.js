@@ -72,9 +72,5 @@ module.exports = {
             ]
         })
   ],
-  resolve: {
-    modules: [
-      path.join(__dirname, 'node_modules'),
-    ],
-  },
+  resolve: { modulesDirectories: ['node_modules', 'src'], extension: ['', '.js', '.jsx'] },
 };
