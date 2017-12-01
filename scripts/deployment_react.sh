@@ -11,6 +11,7 @@ npm run clean -s
 # Go get all the npm assets we'll need which include all the devDependencies
 # Don't invoke the npm lifecycle methods
 npm i --only=dev --ignore-scripts
+npm i extract-text-webpack-plugin
 npm i webpack
 
 # build out webpack assets
