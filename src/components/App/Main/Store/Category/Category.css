@@ -13,8 +13,7 @@
 }
 
 .category img {
-  height: 330px;
-  width: 330px;
+  width: 100%;
 }
 
 .category-title {

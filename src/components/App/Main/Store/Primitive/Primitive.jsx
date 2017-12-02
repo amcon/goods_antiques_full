@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './Primitive.css';
 import Product from './Product/Product.jsx';
 import Sold from './Sold/Sold.jsx';
 import Link from 'react-router-dom';
