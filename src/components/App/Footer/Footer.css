@@ -28,6 +28,7 @@ footer {
   margin: 3px 0;
   font-size: .75em;
   font-weight: lighter;
+  color: grey;
 }
 
 .footer-section a {
@@ -36,4 +37,5 @@ footer {
   margin: 3px 0;
   font-size: .75em;
   font-weight: lighter;
+  color: grey;
 }
