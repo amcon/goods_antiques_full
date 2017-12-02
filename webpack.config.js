@@ -44,7 +44,7 @@ const config = {
   resolve: {
     modules: [
       path.join(__dirname, '/node_modules'),
-      path.resolve(__dirname, '/src')
+      path.resolve(__dirname, '/')
     ],
     extensions: ['.js', '.jsx', ".es6", ".json"]
   },

@@ -1,17 +1,17 @@
 require('dotenv').config({ silent: true });
-var express = require('express');
-var webpackDevMiddleware = require('webpack-dev-middleware');
-var webpack = require('webpack');
-var webpackConfig = require('./webpack.config.js');
-var logger = require('morgan');
-var path = require('path');
-var _Promise = require('babel-runtime/core-js/promise')['default'];
-var bodyParser = require('body-parser');
-var history = require('connect-history-api-fallback');
-var apiRoute = require('./routes/api.js');
-var development = process.env.NODE_ENV !== "production";
-var DIST = path.join(__dirname, "/dist"),
-var app = express();
+const express = require('express');
+const webpackDevMiddleware = require('webpack-dev-middleware');
+const webpack = require('webpack');
+const webpackConfig = require('./webpack.config.js');
+const logger = require('morgan');
+const path = require('path');
+const _Promise = require('babel-runtime/core-js/promise')['default'];
+const bodyParser = require('body-parser');
+const history = require('connect-history-api-fallback');
+const apiRoute = require('./routes/api.js');
+const development = process.env.NODE_ENV !== "production";
+const DIST = path.join(__dirname, "/dist"),
+const app = express();
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -25,7 +25,7 @@ app.use(history({ logger: logger }));
 
 // app.use('/dist', express.static(DIST));
 
-var compiler = webpack(webpackConfig);
+const compiler = webpack(webpackConfig);
 
 if (development) {
   app.use(webpackDevMiddleware(compiler, {
@@ -44,8 +44,8 @@ if (development) {
 }
 
 
-var server = app.listen(3000, function() {
-  var host = server.address().address;
-  var port = server.address().port;
+const server = app.listen(3000, function() {
+  const host = server.address().address;
+  const port = server.address().port;
   console.log('Goods Antiques App listening at http://%s:%s', host, port);
 });
