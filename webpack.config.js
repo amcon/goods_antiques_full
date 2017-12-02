@@ -81,25 +81,25 @@ const config = {
   },
 };
 
-if (process.env &&
-  process.env.NODE_ENV &&
-  process.env.NODE_ENV === 'production') {
-  const prodPlugins = [
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        warnings: true,
-      },
-      output: {
-        comments: false,
-      },
-    }),
-    new webpack.optimize.CommonsChunkPlugin('/common.js'),
-  ];
+// if (process.env &&
+//   process.env.NODE_ENV &&
+//   process.env.NODE_ENV === 'production') {
+//   const prodPlugins = [
+//     new webpack.optimize.UglifyJsPlugin({
+//       compress: {
+//         warnings: true,
+//       },
+//       output: {
+//         comments: false,
+//       },
+//     }),
+//     new webpack.optimize.CommonsChunkPlugin('/common'),
+//   ];
 
-  config.plugins = config.plugins.concat(prodPlugins);
+//   config.plugins = config.plugins.concat(prodPlugins);
 
-  config.cache = false;
-  config.devtool = undefined;
-}
+//   config.cache = false;
+//   config.devtool = undefined;
+// }
 
 module.exports = config;
