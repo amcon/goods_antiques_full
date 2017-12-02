@@ -39,3 +39,7 @@ footer {
   font-weight: lighter;
   color: grey;
 }
+
+.footer-section a:hover {
+  color: black;
+}
