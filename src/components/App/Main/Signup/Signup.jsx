@@ -55,7 +55,7 @@ class Signup extends React.Component {
 
     return(
       <div className="border-component">
-        <div className="signup">
+        <div className="signup" id="signup">
           <h1>Sign Up:</h1>
           <input
             type="text"

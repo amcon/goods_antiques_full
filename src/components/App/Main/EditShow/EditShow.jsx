@@ -34,7 +34,7 @@ class EditShow extends React.Component {
 
     return(
       <div className="border-component">
-        <div className="edit-show">
+        <div className="edit-show" id="edit-show">
           <h1>Reference:</h1>
           <div className="edit-ref">
             <h1>{this.props.showDate}</h1>

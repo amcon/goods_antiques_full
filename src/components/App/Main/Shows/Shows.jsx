@@ -127,7 +127,7 @@ class Shows extends React.Component {
   render() {
     return (
       <div className="border-component">
-        <div className="shows">
+        <div className="shows" id="shows">
           <h2 className="serif">Upcoming Shows:</h2>
           <div className="upcoming">
             {this.renderAllUpcomingShows()}

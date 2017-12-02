@@ -17,7 +17,7 @@ class Store extends React.Component {
 
     return(
       <div className="border-component">
-        <div className="store">
+        <div className="store" id="store">
           <nav>
             <div className="store-nav-section">
               <Link to={`${this.props.match.url}/primitive`}>Primitive</Link>

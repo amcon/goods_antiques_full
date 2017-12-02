@@ -14,3 +14,174 @@ main div {
   border-bottom: 1px solid grey;
   border-top: 1px solid grey;
 }
+
+
+
+/* ------------    MEDIA QUERIES    -------------- */
+
+
+/* Large screens */
+@media only screen
+and (min-device-width : 1500px)
+and (max-device-width : 1700px) {
+
+main {
+  min-width: 1450px;
+}
+
+#store, #admin, #edit-show, #login, #shows, #signup, .header, .footer {
+  width: 1400px;
+}
+
+.home, .map {
+  min-height: 600px;
+}
+
+}
+
+@media only screen
+and (min-device-width : 1701px)
+and (max-device-width : 2000px) {
+
+main {
+  min-width: 1650px;
+}
+
+#store, #admin, #edit-show, #login, #shows, #signup, .header, .footer {
+  width: 1600px;
+}
+
+.home, .map {
+  min-height: 700px;
+}
+
+}
+
+@media only screen
+and (min-device-width : 2001px) {
+
+main {
+  min-width: 1950px;
+}
+
+#store, #admin, #edit-show, #login, #shows, #signup, .header, .footer {
+  width: 1900px;
+}
+
+.home, .map {
+  min-height: 800px;
+}
+
+}
+
+
+/* iPhone 6+, 7+, 8+ */
+/* Portrait */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+
+main {
+  min-width: 736px;
+}
+
+#store, #admin, #edit-show, #login, #one-product, #shows, #signup, .header, .footer {
+  width: 686px;
+}
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+
+}
+
+
+/* iPhone 6, 7, 8 */
+/* Portrait */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+main {
+  min-width: 667px;
+}
+
+#store, #admin, #edit-show, #login, #one-product, #shows, #signup, .header, .footer {
+  width: 617px;
+}
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+
+/* iPhone 5 */
+/* Portrait */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+main {
+  min-width: 568px;
+}
+
+#store, #admin, #edit-show, #login, #one-product, #shows, #signup, .header, .footer {
+  width: 518px;
+}
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+
+/* iPhone 4 */
+/* Portrait */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+main {
+  min-width: 480px;
+}
+
+#store, #admin, #edit-show, #login, #one-product, #shows, #signup, .header, .footer {
+  width: 430px;
+}
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}

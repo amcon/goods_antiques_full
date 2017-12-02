@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Footer.css';
 
 const Footer = () => (
-  <footer>
+  <footer className="footer">
     <div className="footer-section">
       <h3>STORE HOURS</h3>
       <p>Mon: 10am-4pm</p>

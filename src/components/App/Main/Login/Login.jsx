@@ -75,7 +75,7 @@ class Login extends React.Component {
 
     return (
       <div className="border-component">
-        <div className="login">
+        <div className="login" id="login">
           <h1>Log In</h1>
           <div className="login-form">
             <input

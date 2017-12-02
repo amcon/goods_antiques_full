@@ -194,7 +194,7 @@ class OneProduct extends React.Component {
 
     return(
       <div className="border-component">
-        <div className="one-product">
+        <div className="one-product" id="one-product">
           <div className="product-box">
             <div className="one-product-images">
               <img className="main-img" src={this.props.chosenImage} alt='' />

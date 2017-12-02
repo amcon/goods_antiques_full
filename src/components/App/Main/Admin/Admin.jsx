@@ -32,7 +32,7 @@ class Admin extends React.Component {
 
     return (
       <div className="border-component">
-        <div className="admin">
+        <div className="admin" id="admin">
           <h1>Create a new item:</h1>
           <div className="create-product">
             <p>*name:</p>
