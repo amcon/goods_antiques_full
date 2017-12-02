@@ -1,15 +1,14 @@
 require('dotenv').config({ silent: true });
 const express = require('express');
-const webpackDevMiddleware = require('webpack-dev-middleware');
-const webpack = require('webpack');
-const webpackConfig = require('./webpack.config.js');
 const logger = require('morgan');
 const path = require('path');
-const _Promise = require('babel-runtime/core-js/promise')['default'];
 const bodyParser = require('body-parser');
 const history = require('connect-history-api-fallback');
 const apiRoute = require('./routes/api.js');
-const development = process.env.NODE_ENV !== "production";
+const webpackDevMiddleware = require('webpack-dev-middleware');
+const webpack = require('webpack');
+const webpackConfig = require('./webpack.config.js');
+const _Promise = require('babel-runtime/core-js/promise')['default'];
 const app = express();
 
 app.use(logger('dev'));
@@ -22,7 +21,7 @@ app.use(history({ logger: logger }));
 
 
 
-app.use(express.static(path.join(__dirname, 'dist')));
+app.use('/dist', express.static(path.join(__dirname, 'dist')));
 
 const compiler = webpack(webpackConfig);
 
