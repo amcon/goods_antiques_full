@@ -25,7 +25,7 @@ export class MapPage extends React.Component {
       return (
         <div className="map-container">
           <Map google={this.props.google}
-          style={{width: '600px', height: '400px', position: 'relative'}}
+          style={{width: '100%', height: '100%', position: 'relative'}}
           initialCenter={{
             lat: 42.784743,
             lng: -88.414086
@@ -43,7 +43,7 @@ export class MapPage extends React.Component {
 
   render() {
     return (
-      <div className="map">
+      <div className="map" id="map">
         <div className="map-info">
           <div className="store-info">
             <h1>Address:</h1>

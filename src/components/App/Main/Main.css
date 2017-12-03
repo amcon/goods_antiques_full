@@ -29,7 +29,7 @@ main {
   min-width: 1450px;
 }
 
-#store, #admin, #edit-show, #login, #shows, #signup, .header, .footer {
+#store, #admin, #edit-show, #login, #shows, #signup, .header, .footer, #one-product {
   width: 1400px;
 }
 
@@ -47,7 +47,7 @@ main {
   min-width: 1650px;
 }
 
-#store, #admin, #edit-show, #login, #shows, #signup, .header, .footer {
+#store, #admin, #edit-show, #login, #shows, #signup, .header, .footer, #one-product {
   width: 1600px;
 }
 
@@ -64,7 +64,7 @@ main {
   min-width: 1950px;
 }
 
-#store, #admin, #edit-show, #login, #shows, #signup, .header, .footer {
+#store, #admin, #edit-show, #login, #shows, #signup, .header, .footer, #one-product {
   width: 1900px;
 }
 

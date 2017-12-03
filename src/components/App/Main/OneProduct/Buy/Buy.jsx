@@ -8,7 +8,7 @@ class Buy extends React.Component {
         <div className="buy-page">
           <h1>MAKING A PURCHASE</h1>
           <p id="disclaimer">Thanks for your interest! Until Good's Antiques incorporates its e-commerce store (coming soon!), please simply:</p>
-          <h2>Email Us</h2>
+          <h2 className="serif">Email Us</h2>
           <p>Click <a target="_blank" href="mailto:goodsantiqueswisconsin@gmail.com?subject=I would like to purchase an item I viewed in your online gallery&body=Hello Good's Antiques,%0D%0A %0D%0AI'm interested in purchasing an item I viewed in your online gallery. %0D%0APlease get back to me as soon as possible.%0D%0A %0D%0A %0D%0A*My name: %0D%0A %0D%0A*My address is: %0D%0A %0D%0A*My phone number is: %0D%0A %0D%0A*Item name: %0D%0A %0D%0AAny questions/comments: %0D%0A %0D%0A %0D%0A %0D%0AThank you very much%0D%0ASigned,%0D%0A*">here </a>
           and fill out the generated email form.<br />Refer to the item in the previous tab for product information.
           Fill out the form as accurately as you can, and feel free to leave any additional questions or comments.</p>
