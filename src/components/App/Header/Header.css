@@ -109,6 +109,20 @@ nav a {
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) {
 
+.logo {
+  width: 600px;
+  height: 200px;
+  margin: 0 160px;
+}
+
+.header nav {
+  width: 100%;
+  padding: 0 125px 50px;
+}
+
+.header nav a {
+  font-size: 1.5em;
+}
 
 }
 
@@ -130,6 +144,20 @@ nav a {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
 
+.logo {
+  width: 600px;
+  height: 200px;
+  margin: 0 160px;
+}
+
+.header nav {
+  width: 100%;
+  padding: 0 125px 50px;
+}
+
+.header nav a {
+  font-size: 1.5em;
+}
 
 }
 
@@ -151,6 +179,20 @@ nav a {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
 
+.logo {
+  width: 600px;
+  height: 200px;
+  margin: 0 160px;
+}
+
+.header nav {
+  width: 100%;
+  padding: 0 125px 50px;
+}
+
+.header nav a {
+  font-size: 1.5em;
+}
 
 }
 
@@ -172,6 +214,20 @@ nav a {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
 
+.logo {
+  width: 600px;
+  height: 200px;
+  margin: 0 160px;
+}
+
+.header nav {
+  width: 100%;
+  padding: 0 125px 50px;
+}
+
+.header nav a {
+  font-size: 1.5em;
+}
 
 }
 

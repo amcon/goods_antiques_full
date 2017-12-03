@@ -119,6 +119,28 @@ and (min-device-width : 2001px) {
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) {
 
+.home {
+  min-height: 900px;
+  background-attachment: none;
+}
+
+.home-info {
+  height: 800px;
+  width: 700px;
+}
+
+.home-info h1 {
+  font-size: 4em;
+}
+
+.home-info p, .home-info a {
+  font-size: 3em;
+}
+
+.home-info a {
+  padding: .5em;
+  width: 8em;
+}
 
 }
 
@@ -140,6 +162,28 @@ and (min-device-width : 2001px) {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
 
+.home {
+  min-height: 900px;
+  background-attachment: none;
+}
+
+.home-info {
+  height: 800px;
+  width: 700px;
+}
+
+.home-info h1 {
+  font-size: 4em;
+}
+
+.home-info p, .home-info a {
+  font-size: 3em;
+}
+
+.home-info a {
+  padding: .5em;
+  width: 8em;
+}
 
 }
 
@@ -161,6 +205,28 @@ and (min-device-width : 2001px) {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
 
+.home {
+  min-height: 900px;
+  background-attachment: none;
+}
+
+.home-info {
+  height: 800px;
+  width: 700px;
+}
+
+.home-info h1 {
+  font-size: 4em;
+}
+
+.home-info p, .home-info a {
+  font-size: 3em;
+}
+
+.home-info a {
+  padding: .5em;
+  width: 8em;
+}
 
 }
 
@@ -182,6 +248,28 @@ and (min-device-width : 2001px) {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
 
+.home {
+  min-height: 900px;
+  background-attachment: none;
+}
+
+.home-info {
+  height: 800px;
+  width: 700px;
+}
+
+.home-info h1 {
+  font-size: 4em;
+}
+
+.home-info p, .home-info a {
+  font-size: 3em;
+}
+
+.home-info a {
+  padding: .5em;
+  width: 8em;
+}
 
 }
 

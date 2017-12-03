@@ -162,6 +162,42 @@ and (min-device-width : 2001px) {
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) {
 
+.about {
+  background-image: none;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+.about-text {
+  background-color: transparent;
+  width: 90%;
+}
+
+.about-text h1 {
+  color: black;
+}
+
+.about-text p {
+  color: grey;
+}
+
+.family-text {
+  width: 100%;
+}
+
+.family-text h2 {
+  color: black;
+  font-size: 1.5em;
+}
+
+.family-text p {
+  font-size: 1em;
+}
+
+.family-photo {
+  width: 0;
+  height: 0;
+}
 
 }
 
@@ -183,6 +219,42 @@ and (min-device-width : 2001px) {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
 
+.about {
+  background-image: none;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+.about-text {
+  background-color: transparent;
+  width: 90%;
+}
+
+.about-text h1 {
+  color: black;
+}
+
+.about-text p {
+  color: grey;
+}
+
+.family-text {
+  width: 100%;
+}
+
+.family-text h2 {
+  color: black;
+  font-size: 1.5em;
+}
+
+.family-text p {
+  font-size: 1em;
+}
+
+.family-photo {
+  width: 0;
+  height: 0;
+}
 
 }
 
@@ -204,6 +276,42 @@ and (min-device-width : 2001px) {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
 
+.about {
+  background-image: none;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+.about-text {
+  background-color: transparent;
+  width: 90%;
+}
+
+.about-text h1 {
+  color: black;
+}
+
+.about-text p {
+  color: grey;
+}
+
+.family-text {
+  width: 100%;
+}
+
+.family-text h2 {
+  color: black;
+  font-size: 1.5em;
+}
+
+.family-text p {
+  font-size: 1em;
+}
+
+.family-photo {
+  width: 0;
+  height: 0;
+}
 
 }
 
@@ -225,6 +333,42 @@ and (min-device-width : 2001px) {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
 
+.about {
+  background-image: none;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+.about-text {
+  background-color: transparent;
+  width: 90%;
+}
+
+.about-text h1 {
+  color: black;
+}
+
+.about-text p {
+  color: grey;
+}
+
+.family-text {
+  width: 100%;
+}
+
+.family-text h2 {
+  color: black;
+  font-size: 1.5em;
+}
+
+.family-text p {
+  font-size: 1em;
+}
+
+.family-photo {
+  width: 0;
+  height: 0;
+}
 
 }
 
