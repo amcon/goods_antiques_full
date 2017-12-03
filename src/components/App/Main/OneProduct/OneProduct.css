@@ -292,6 +292,7 @@ and (min-device-width : 2001px) {
 
 #one-product .one-product-text {
   height: 875px;
+  width: 550px;
 }
 
 #one-product .one-product-text h1 {
