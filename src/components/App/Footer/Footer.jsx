@@ -22,8 +22,8 @@ const Footer = () => (
       <p>East Troy, WI 53155</p>
     </div>
     <div className="footer-section-social">
-      <a href="https://facebook.com/goodsantiques" target="blank">facebook</a>
-      <a href="https://instagram.com/goodsantiques" target="blank">instagram</a>
+      <a href="https://facebook.com/goodsantiques" target="_blank">facebook</a>
+      <a href="https://instagram.com/goodsantiques" target="_blank">instagram</a>
     </div>
   </footer>
 )

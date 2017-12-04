@@ -45,7 +45,7 @@ class Show extends React.Component {
         <h3 className="serif">{this.props.location}</h3>
         <h3 className="serif">{this.props.name}</h3>
         <p>to learn more about the event click
-          <a href={this.props.website}>here</a>
+          <a href={this.props.website} target="_blank">here</a>
         </p>
         {this.renderShowEdit()}
       </div>
