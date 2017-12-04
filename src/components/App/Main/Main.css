@@ -15,6 +15,10 @@ main div {
   border-top: 1px solid grey;
 }
 
+button, a {
+  display: inline-flex;
+}
+
 
 
 /* ------------    MEDIA QUERIES    -------------- */
