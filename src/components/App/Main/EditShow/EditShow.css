@@ -64,6 +64,7 @@
   padding: 15px 25px;
   margin: 25px 0;
   font-size: 1em;
+  height: 4em;
 }
 
 .edit-show button:hover {
@@ -127,4 +128,251 @@
 
 .delete-buttons button:last-of-type:hover {
   background-color: rgb(212,175,55);
+}
+
+
+
+
+/* ------------    MEDIA QUERIES    -------------- */
+
+
+/* Large screens */
+@media only screen
+and (min-device-width : 1500px)
+and (max-device-width : 1700px) {
+
+
+}
+
+@media only screen
+and (min-device-width : 1701px)
+and (max-device-width : 2000px) {
+
+
+}
+
+@media only screen
+and (min-device-width : 2001px) {
+
+
+}
+
+
+/* iPhone 6+, 7+, 8+ */
+/* Portrait */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+
+.edit-ref {
+  width: 80%;
+  text-align: center;
+}
+
+#edit-show h1 {
+  font-size: 4em;
+}
+
+#edit-show h3 {
+  font-size: 3em;
+}
+
+#edit-show p {
+  font-size: 2em;
+}
+
+#edit-show #delete {
+  margin-right: 0;
+}
+
+#edit-show input, #edit-show select {
+  width: 80%;
+  height: 5em;
+}
+
+#edit-show button, #edit-show a {
+  font-size: 2em;
+  padding: 1em 2em;
+}
+
+#edit-show button:first-of-type {
+  margin-top: 2em;
+}
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+
+}
+
+
+/* iPhone 6, 7, 8 */
+/* Portrait */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+.edit-ref {
+  width: 80%;
+  text-align: center;
+}
+
+#edit-show h1 {
+  font-size: 4em;
+}
+
+#edit-show h3 {
+  font-size: 3em;
+}
+
+#edit-show p {
+  font-size: 2em;
+}
+
+#edit-show #delete {
+  margin-right: 0;
+}
+
+#edit-show input, #edit-show select {
+  width: 80%;
+  height: 5em;
+}
+
+#edit-show button, #edit-show a {
+  font-size: 2em;
+  padding: 1em 2em;
+}
+
+#edit-show button:first-of-type {
+  margin-top: 2em;
+}
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+
+/* iPhone 5 */
+/* Portrait */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+.edit-ref {
+  width: 80%;
+  text-align: center;
+}
+
+#edit-show h1 {
+  font-size: 4em;
+}
+
+#edit-show h3 {
+  font-size: 3em;
+}
+
+#edit-show p {
+  font-size: 2em;
+}
+
+#edit-show #delete {
+  margin-right: 0;
+}
+
+#edit-show input, #edit-show select {
+  width: 80%;
+  height: 5em;
+}
+
+#edit-show button, #edit-show a {
+  font-size: 2em;
+  padding: 1em 2em;
+}
+
+#edit-show button:first-of-type {
+  margin-top: 2em;
+}
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+
+/* iPhone 4 */
+/* Portrait */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+.edit-ref {
+  width: 80%;
+  text-align: center;
+}
+
+#edit-show h1 {
+  font-size: 4em;
+}
+
+#edit-show h3 {
+  font-size: 3em;
+}
+
+#edit-show p {
+  font-size: 2em;
+}
+
+#edit-show #delete {
+  margin-right: 0;
+}
+
+#edit-show input, #edit-show select {
+  width: 80%;
+  height: 5em;
+}
+
+#edit-show button, #edit-show a {
+  font-size: 2em;
+  padding: 1em 2em;
+}
+
+#edit-show button:first-of-type {
+  margin-top: 2em;
+}
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
 }

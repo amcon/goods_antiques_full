@@ -18,6 +18,7 @@ main div {
 button, a {
   -webkit-appearance: none;
   display: block;
+  text-decoration: none;
 }
 
 a:hover {
