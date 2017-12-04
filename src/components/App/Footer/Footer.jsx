@@ -13,7 +13,7 @@ const Footer = () => (
     <div className="footer-section">
       <h3>CONTACT US</h3>
       <p>(262) 642-2277</p>
-      <a href="mailto:goodsantiqueswisconsin@gmail.com?Subject=After%20Visiting%20Your%20Website..." target="_blank">goodsantiques<br />wisconsin@gmail.com</a>
+      <a href="mailto:goodsantiqueswisconsin@gmail.com?Subject=After%20Visiting%20Your%20Website..." target="_blank">goodsantiqueswisconsin@gmail.com</a>
     </div>
     <div className="footer-section">
       <h3>LOCATION</h3>
@@ -21,10 +21,9 @@ const Footer = () => (
       <p>3066 Main Street</p>
       <p>East Troy, WI 53155</p>
     </div>
-    <div className="footer-section">
-      <h3>FOLLOW US @</h3>
-      <a href="https://facebook.com/goodsantiques" target="blank">facebook.com/goodsantiques</a>
-      <a href="https://instagram.com/goodsantiques" target="blank">instagram.com/goodsantiques</a>
+    <div className="footer-section-social">
+      <a href="https://facebook.com/goodsantiques" target="blank">facebook</a>
+      <a href="https://instagram.com/goodsantiques" target="blank">instagram</a>
     </div>
   </footer>
 )

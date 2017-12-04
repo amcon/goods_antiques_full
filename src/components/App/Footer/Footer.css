@@ -1,10 +1,11 @@
 footer {
   display: flex;
-  padding: 50px 25px 75px 25px;
+  padding: 75px 25px 25px 25px;
   width: 1200px;
   margin: 0 auto;
   box-sizing: border-box;
   font-family: arial;
+  flex-wrap: wrap;
 }
 
 .footer-section {
@@ -12,35 +13,57 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  width: 33%;
 }
 
-.footer-section h3 {
+.footer-section:nth-child(3) {
+  margin-top: 50px;
+}
+
+.footer-section-social {
+  width: 100%;
+  border-top: 1px solid grey;
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-section-social a {
+  margin-right: 50px;
+  margin-top: 25px;
+}
+
+
+footer h3 {
   font-size: .8em;
   margin: 0;
   margin-bottom: 10px;
-  border-bottom: 1px solid rgb(50, 50, 50);
-  padding-bottom: 5px;
-  font-weight: normal;
+  border-bottom: 1px solid grey;
+  padding-bottom: 20px;
+  font-weight: bold;
   color: rgb(50, 50, 50);
+  letter-spacing: 2px;
 }
 
-.footer-section p {
-  margin: 3px 0;
+footer p {
+  margin: 7px 0;
   font-size: .75em;
   font-weight: lighter;
   color: grey;
+  letter-spacing: 2px;
 }
 
-.footer-section a {
+footer a {
   text-decoration: none;
   color: black;
   margin: 3px 0;
   font-size: .75em;
   font-weight: lighter;
   color: grey;
+  letter-spacing: 2px;
 }
 
-.footer-section a:hover {
+footer a:hover {
   color: black;
 }
 
@@ -59,11 +82,11 @@ and (max-device-width : 1700px) {
   margin-right: 100px;
 }
 
-.footer-section h3 {
+footer h3 {
   font-size: 1em;
 }
 
-.footer-section p, .footer-section a {
+footer p, footer a {
   font-size: .95em;
 }
 
@@ -77,11 +100,11 @@ and (max-device-width : 2000px) {
   margin-right: 125px;
 }
 
-.footer-section h3 {
+footer h3 {
   font-size: 1.25em;
 }
 
-.footer-section p, .footer-section a {
+footer p, footer a {
   font-size: 1.15em;
 }
 
@@ -94,11 +117,11 @@ and (min-device-width : 2001px) {
   margin-right: 175px;
 }
 
-.footer-section h3 {
+footer h3 {
   font-size: 1.5em;
 }
 
-.footer-section p, .footer-section a {
+footer p, footer a {
   font-size: 1.25em;
 }
 
@@ -113,6 +136,12 @@ and (min-device-width : 2001px) {
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) {
 
+.footer-section-social a {
+  font-size: 1.75em;
+  margin-right: 0;
+  margin-left: 4em;
+}
+
 .footer {
   padding: 100px;
   flex-wrap: wrap;
@@ -124,11 +153,11 @@ and (min-device-width : 2001px) {
   margin-right: 0;
 }
 
-.footer-section h3 {
+footer h3 {
   font-size: 2em;
 }
 
-.footer-section p, .footer-section a {
+footer p, footer a {
   font-size: 1.75em;
 }
 
@@ -152,6 +181,12 @@ and (min-device-width : 2001px) {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
 
+.footer-section-social a {
+  font-size: 1.75em;
+  margin-right: 0;
+  margin-left: 4em;
+}
+
 .footer {
   padding: 100px;
   flex-wrap: wrap;
@@ -163,11 +198,11 @@ and (min-device-width : 2001px) {
   margin-right: 0;
 }
 
-.footer-section h3 {
+footer h3 {
   font-size: 2em;
 }
 
-.footer-section p, .footer-section a {
+footer p, footer a {
   font-size: 1.75em;
 }
 
@@ -191,6 +226,12 @@ and (min-device-width : 2001px) {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
 
+.footer-section-social a {
+  font-size: 1.75em;
+  margin-right: 0;
+  margin-left: 4em;
+}
+
 .footer {
   padding: 100px;
   flex-wrap: wrap;
@@ -202,11 +243,11 @@ and (min-device-width : 2001px) {
   margin-right: 0;
 }
 
-.footer-section h3 {
+footer h3 {
   font-size: 2em;
 }
 
-.footer-section p, .footer-section a {
+footer p, footer a {
   font-size: 1.75em;
 }
 
@@ -230,6 +271,12 @@ and (min-device-width : 2001px) {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
 
+.footer-section-social a {
+  font-size: 1.75em;
+  margin-right: 0;
+  margin-left: 4em;
+}
+
 .footer {
   padding: 100px;
   flex-wrap: wrap;
@@ -241,11 +288,11 @@ and (min-device-width : 2001px) {
   margin-right: 0;
 }
 
-.footer-section h3 {
+footer h3 {
   font-size: 2em;
 }
 
-.footer-section p, .footer-section a {
+footer p, footer a {
   font-size: 1.75em;
 }
 
