@@ -209,8 +209,8 @@ and (min-device-width : 2001px) {
   font-size: 2em;
 }
 
-.gmnoprint {
-  width: 96%;
+.gmnoprint div {
+  width: 98%;
 }
 
 #map {
@@ -287,8 +287,8 @@ and (min-device-width : 2001px) {
   font-size: 2em;
 }
 
-.gmnoprint {
-  width: 96%;
+.gmnoprint div {
+  width: 98%;
 }
 
 #map {
@@ -365,8 +365,8 @@ and (min-device-width : 2001px) {
   font-size: 2em;
 }
 
-.gmnoprint {
-  width: 96%;
+.gmnoprint div {
+  width: 98%;
 }
 
 #map {
@@ -443,8 +443,8 @@ and (min-device-width : 2001px) {
   font-size: 2em;
 }
 
-.gmnoprint {
-  width: 96%;
+.gmnoprint div {
+  width: 98%;
 }
 
 #map {
