@@ -105,3 +105,238 @@
 .dropzone:hover {
   cursor: pointer;
 }
+
+
+
+
+/* ------------    MEDIA QUERIES    -------------- */
+
+
+/* Large screens */
+@media only screen
+and (min-device-width : 1500px)
+and (max-device-width : 1700px) {
+
+
+}
+
+@media only screen
+and (min-device-width : 1701px)
+and (max-device-width : 2000px) {
+
+
+}
+
+@media only screen
+and (min-device-width : 2001px) {
+
+
+}
+
+
+/* iPhone 6+, 7+, 8+ */
+/* Portrait */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+
+.create-product, .create-show {
+  width: 80%;
+}
+
+.admin h1 {
+  font-size: 3em;
+}
+
+.admin p {
+  font-size: 2em;
+  margin-top: 1em;
+  margin-bottom: .5em;
+}
+
+.admin input, .admin select {
+  height: 5em;
+}
+
+.admin button {
+  font-size: 2em;
+  padding: 1em 3em;
+}
+
+.admin .dropzone, .admin .image-preview {
+  height: 350px;
+  width: 350px;
+}
+
+.admin .dropzone {
+  margin-right: 50px;
+}
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+
+}
+
+
+/* iPhone 6, 7, 8 */
+/* Portrait */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+.create-product, .create-show {
+  width: 80%;
+}
+
+.admin h1 {
+  font-size: 3em;
+}
+
+.admin p {
+  font-size: 2em;
+  margin-top: 1em;
+  margin-bottom: .5em;
+}
+
+.admin input, .admin select {
+  height: 5em;
+}
+
+.admin button {
+  font-size: 2em;
+  padding: 1em 3em;
+}
+
+.admin .dropzone, .admin .image-preview {
+  height: 350px;
+  width: 350px;
+}
+
+.admin .dropzone {
+  margin-right: 50px;
+}
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+
+/* iPhone 5 */
+/* Portrait */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+.create-product, .create-show {
+  width: 80%;
+}
+
+.admin h1 {
+  font-size: 3em;
+}
+
+.admin p {
+  font-size: 2em;
+  margin-top: 1em;
+  margin-bottom: .5em;
+}
+
+.admin input, .admin select {
+  height: 5em;
+}
+
+.admin button {
+  font-size: 2em;
+  padding: 1em 3em;
+}
+
+.admin .dropzone, .admin .image-preview {
+  height: 350px;
+  width: 350px;
+}
+
+.admin .dropzone {
+  margin-right: 50px;
+}
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+
+/* iPhone 4 */
+/* Portrait */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+.create-product, .create-show {
+  width: 80%;
+}
+
+.admin h1 {
+  font-size: 3em;
+}
+
+.admin p {
+  font-size: 2em;
+  margin-top: 1em;
+  margin-bottom: .5em;
+}
+
+.admin input, .admin select {
+  height: 5em;
+}
+
+.admin button {
+  font-size: 2em;
+  padding: 1em 3em;
+}
+
+.admin .dropzone, .admin .image-preview {
+  height: 350px;
+  width: 350px;
+}
+
+.admin .dropzone {
+  margin-right: 50px;
+}
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
