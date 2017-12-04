@@ -187,13 +187,14 @@ and (min-device-width : 2001px) {
   background-color: transparent;
   color: black;
   flex-direction: column;
+  padding: 0;
 }
 
 .map-container {
   order: -1;
-  width: 80%;
+  width: 100%;
   margin-bottom: 10em;
-  height: 600px;
+  height: 900px;
 }
 
 #google-maps {
@@ -201,12 +202,16 @@ and (min-device-width : 2001px) {
   color: black;
   width: 50%;
   padding: 1em 3em;
-  margin: 2em auto 4em;
+  margin: 2em auto 3em;
   font-size: 2em;
 }
 
 .gmnoprint {
-  width: 90%;
+  width: 96%;
+}
+
+#map {
+  padding-top: 0;
 }
 
 .store-info {
@@ -218,7 +223,7 @@ and (min-device-width : 2001px) {
 }
 
 .store-info p {
-  margin-bottom: 3em;
+  margin-bottom: 2em;
   color: grey;
   font-size: 2em;
 }
@@ -260,13 +265,14 @@ and (min-device-width : 2001px) {
   background-color: transparent;
   color: black;
   flex-direction: column;
+  padding: 0;
 }
 
 .map-container {
   order: -1;
-  width: 80%;
+  width: 100%;
   margin-bottom: 10em;
-  height: 600px;
+  height: 900px;
 }
 
 #google-maps {
@@ -274,12 +280,16 @@ and (min-device-width : 2001px) {
   color: black;
   width: 50%;
   padding: 1em 3em;
-  margin: 2em auto 4em;
+  margin: 2em auto 3em;
   font-size: 2em;
 }
 
 .gmnoprint {
-  width: 90%;
+  width: 96%;
+}
+
+#map {
+  padding-top: 0;
 }
 
 .store-info {
@@ -291,7 +301,7 @@ and (min-device-width : 2001px) {
 }
 
 .store-info p {
-  margin-bottom: 3em;
+  margin-bottom: 2em;
   color: grey;
   font-size: 2em;
 }
@@ -333,13 +343,14 @@ and (min-device-width : 2001px) {
   background-color: transparent;
   color: black;
   flex-direction: column;
+  padding: 0;
 }
 
 .map-container {
   order: -1;
-  width: 80%;
+  width: 100%;
   margin-bottom: 10em;
-  height: 600px;
+  height: 900px;
 }
 
 #google-maps {
@@ -347,12 +358,16 @@ and (min-device-width : 2001px) {
   color: black;
   width: 50%;
   padding: 1em 3em;
-  margin: 2em auto 4em;
+  margin: 2em auto 3em;
   font-size: 2em;
 }
 
 .gmnoprint {
-  width: 90%;
+  width: 96%;
+}
+
+#map {
+  padding-top: 0;
 }
 
 .store-info {
@@ -364,7 +379,7 @@ and (min-device-width : 2001px) {
 }
 
 .store-info p {
-  margin-bottom: 3em;
+  margin-bottom: 2em;
   color: grey;
   font-size: 2em;
 }
@@ -406,13 +421,14 @@ and (min-device-width : 2001px) {
   background-color: transparent;
   color: black;
   flex-direction: column;
+  padding: 0;
 }
 
 .map-container {
   order: -1;
-  width: 80%;
+  width: 100%;
   margin-bottom: 10em;
-  height: 600px;
+  height: 900px;
 }
 
 #google-maps {
@@ -420,12 +436,16 @@ and (min-device-width : 2001px) {
   color: black;
   width: 50%;
   padding: 1em 3em;
-  margin: 2em auto 4em;
+  margin: 2em auto 3em;
   font-size: 2em;
 }
 
 .gmnoprint {
-  width: 90%;
+  width: 96%;
+}
+
+#map {
+  padding-top: 0;
 }
 
 .store-info {
@@ -437,7 +457,7 @@ and (min-device-width : 2001px) {
 }
 
 .store-info p {
-  margin-bottom: 3em;
+  margin-bottom: 2em;
   color: grey;
   font-size: 2em;
 }
