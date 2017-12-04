@@ -60,6 +60,9 @@
   position: relative !important;
 }
 
+.gmnoprint div {
+  width: 97%;
+}
 
 #google-maps {
   background-color: transparent;
