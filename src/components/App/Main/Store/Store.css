@@ -143,17 +143,32 @@ and (min-device-width : 2001px) {
   and (orientation: portrait) {
 
 .store nav a {
-  font-size: 1.05em;
+  font-size: 1.65em;
+  line-height: 2.5em;
+}
+
+.store nav p:nth-of-type(2) {
+  font-size: 0;
+}
+
+.store-nav-section {
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+#store h1 {
+  font-size: 3.5em;
+  margin-top: 2em;
 }
 
 #store h2 {
-  margin-left: 2.35em;
+  margin-left: 2em;
   font-size: 3em;
   margin-bottom: 1em;
 }
 
 #store .product, #store .sold {
-  width: 75%;
+  width: 80%;
   margin: 0 auto;
   margin-bottom: 6em;
 }
@@ -188,17 +203,32 @@ and (min-device-width : 2001px) {
   and (orientation: portrait) {
 
 .store nav a {
-  font-size: 1.05em;
+  font-size: 1.65em;
+  line-height: 2.5em;
+}
+
+.store nav p:nth-of-type(2) {
+  font-size: 0;
+}
+
+.store-nav-section {
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+#store h1 {
+  font-size: 3.5em;
+  margin-top: 2em;
 }
 
 #store h2 {
-  margin-left: 2.35em;
+  margin-left: 2em;
   font-size: 3em;
   margin-bottom: 1em;
 }
 
 #store .product, #store .sold {
-  width: 75%;
+  width: 80%;
   margin: 0 auto;
   margin-bottom: 6em;
 }
@@ -233,17 +263,32 @@ and (min-device-width : 2001px) {
   and (orientation: portrait) {
 
 .store nav a {
-  font-size: 1.05em;
+  font-size: 1.65em;
+  line-height: 2.5em;
+}
+
+.store nav p:nth-of-type(2) {
+  font-size: 0;
+}
+
+.store-nav-section {
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+#store h1 {
+  font-size: 3.5em;
+  margin-top: 2em;
 }
 
 #store h2 {
-  margin-left: 2.35em;
+  margin-left: 2em;
   font-size: 3em;
   margin-bottom: 1em;
 }
 
 #store .product, #store .sold {
-  width: 75%;
+  width: 80%;
   margin: 0 auto;
   margin-bottom: 6em;
 }
@@ -278,17 +323,32 @@ and (min-device-width : 2001px) {
   and (orientation: portrait) {
 
 .store nav a {
-  font-size: 1.05em;
+  font-size: 1.65em;
+  line-height: 2.5em;
+}
+
+.store nav p:nth-of-type(2) {
+  font-size: 0;
+}
+
+.store-nav-section {
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+#store h1 {
+  font-size: 3.5em;
+  margin-top: 2em;
 }
 
 #store h2 {
-  margin-left: 2.35em;
+  margin-left: 2em;
   font-size: 3em;
   margin-bottom: 1em;
 }
 
 #store .product, #store .sold {
-  width: 75%;
+  width: 80%;
   margin: 0 auto;
   margin-bottom: 6em;
 }

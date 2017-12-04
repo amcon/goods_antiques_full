@@ -170,15 +170,17 @@ and (min-device-width : 2001px) {
 
 .about-text {
   background-color: transparent;
-  width: 90%;
+  width: 80%;
 }
 
 .about-text h1 {
   color: black;
+  font-size: 3em;
 }
 
 .about-text p {
   color: grey;
+  font-size: 1.5em;
 }
 
 .family-text {
@@ -187,11 +189,11 @@ and (min-device-width : 2001px) {
 
 .family-text h2 {
   color: black;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 .family-text p {
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 .family-photo {
@@ -227,15 +229,17 @@ and (min-device-width : 2001px) {
 
 .about-text {
   background-color: transparent;
-  width: 90%;
+  width: 80%;
 }
 
 .about-text h1 {
   color: black;
+  font-size: 3em;
 }
 
 .about-text p {
   color: grey;
+  font-size: 1.5em;
 }
 
 .family-text {
@@ -244,11 +248,11 @@ and (min-device-width : 2001px) {
 
 .family-text h2 {
   color: black;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 .family-text p {
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 .family-photo {
@@ -284,15 +288,17 @@ and (min-device-width : 2001px) {
 
 .about-text {
   background-color: transparent;
-  width: 90%;
+  width: 80%;
 }
 
 .about-text h1 {
   color: black;
+  font-size: 3em;
 }
 
 .about-text p {
   color: grey;
+  font-size: 1.5em;
 }
 
 .family-text {
@@ -301,11 +307,11 @@ and (min-device-width : 2001px) {
 
 .family-text h2 {
   color: black;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 .family-text p {
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 .family-photo {
@@ -341,15 +347,17 @@ and (min-device-width : 2001px) {
 
 .about-text {
   background-color: transparent;
-  width: 90%;
+  width: 80%;
 }
 
 .about-text h1 {
   color: black;
+  font-size: 3em;
 }
 
 .about-text p {
   color: grey;
+  font-size: 1.5em;
 }
 
 .family-text {
@@ -358,11 +366,11 @@ and (min-device-width : 2001px) {
 
 .family-text h2 {
   color: black;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 .family-text p {
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 .family-photo {

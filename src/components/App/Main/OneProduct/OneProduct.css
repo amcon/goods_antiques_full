@@ -383,6 +383,49 @@ and (min-device-width : 2001px) {
   margin-right: 2em;
 }
 
+.edit-selected {
+  margin-top: 5em;
+  height: 3400px;
+}
+
+.product-edit h1 {
+  font-size: 4em;
+}
+
+.product-edit p {
+  font-size: 2em;
+  margin: 1em 0;
+}
+
+.product-edit input, .product-edit select, .drop-section {
+  width: 100%;
+}
+
+.product-edit input, .product-edit select {
+  height: 5em;
+}
+
+.product-edit button {
+  font-size: 2em;
+  padding: 1.5em 3em;
+  margin-top: 2em;
+}
+
+.dropzone, .drop-section .image-preview {
+  height: 350px;
+  width: 350px;
+}
+
+.delete-message {
+  height: 400px;
+  width: 80%;
+  font-size: 2em;
+}
+
+.delete-message p {
+  margin-bottom: 2em;
+}
+
 }
 
 /* Landscape */
@@ -460,6 +503,49 @@ and (min-device-width : 2001px) {
   padding: 1em 2em;
   margin-top: 2em;
   margin-right: 2em;
+}
+
+.edit-selected {
+  margin-top: 5em;
+  height: 3400px;
+}
+
+.product-edit h1 {
+  font-size: 4em;
+}
+
+.product-edit p {
+  font-size: 2em;
+  margin: 1em 0;
+}
+
+.product-edit input, .product-edit select, .drop-section {
+  width: 100%;
+}
+
+.product-edit input, .product-edit select {
+  height: 5em;
+}
+
+.product-edit button {
+  font-size: 2em;
+  padding: 1.5em 3em;
+  margin-top: 2em;
+}
+
+.dropzone, .drop-section .image-preview {
+  height: 350px;
+  width: 350px;
+}
+
+.delete-message {
+  height: 400px;
+  width: 80%;
+  font-size: 2em;
+}
+
+.delete-message p {
+  margin-bottom: 2em;
 }
 
 }
@@ -541,6 +627,49 @@ and (min-device-width : 2001px) {
   margin-right: 2em;
 }
 
+.edit-selected {
+  margin-top: 5em;
+  height: 3400px;
+}
+
+.product-edit h1 {
+  font-size: 4em;
+}
+
+.product-edit p {
+  font-size: 2em;
+  margin: 1em 0;
+}
+
+.product-edit input, .product-edit select, .drop-section {
+  width: 100%;
+}
+
+.product-edit input, .product-edit select {
+  height: 5em;
+}
+
+.product-edit button {
+  font-size: 2em;
+  padding: 1.5em 3em;
+  margin-top: 2em;
+}
+
+.dropzone, .drop-section .image-preview {
+  height: 350px;
+  width: 350px;
+}
+
+.delete-message {
+  height: 400px;
+  width: 80%;
+  font-size: 2em;
+}
+
+.delete-message p {
+  margin-bottom: 2em;
+}
+
 }
 
 /* Landscape */
@@ -618,6 +747,49 @@ and (min-device-width : 2001px) {
   padding: 1em 2em;
   margin-top: 2em;
   margin-right: 2em;
+}
+
+.edit-selected {
+  margin-top: 5em;
+  height: 3400px;
+}
+
+.product-edit h1 {
+  font-size: 4em;
+}
+
+.product-edit p {
+  font-size: 2em;
+  margin: 1em 0;
+}
+
+.product-edit input, .product-edit select, .drop-section {
+  width: 100%;
+}
+
+.product-edit input, .product-edit select {
+  height: 5em;
+}
+
+.product-edit button {
+  font-size: 2em;
+  padding: 1.5em 3em;
+  margin-top: 2em;
+}
+
+.dropzone, .drop-section .image-preview {
+  height: 350px;
+  width: 350px;
+}
+
+.delete-message {
+  height: 400px;
+  width: 80%;
+  font-size: 2em;
+}
+
+.delete-message p {
+  margin-bottom: 2em;
 }
 
 }
