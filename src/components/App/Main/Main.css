@@ -16,7 +16,12 @@ main div {
 }
 
 button, a {
-  display: inline-flex;
+  -webkit-appearance: none;
+  display: block;
+}
+
+a:hover {
+  cursor: pointer;
 }
 
 
