@@ -145,6 +145,12 @@ and (min-device-width : 2001px) {
 .store nav a {
   font-size: 1.65em;
   line-height: 2.5em;
+  letter-spacing: 2px;
+  margin: .5em 1em;
+}
+
+.large-nav p {
+  font-size: 0;
 }
 
 .store nav p:nth-of-type(2) {
@@ -154,6 +160,7 @@ and (min-device-width : 2001px) {
 .store-nav-section {
   flex-wrap: wrap;
   margin: 0;
+  width: 80%;
 }
 
 #store h1 {
@@ -205,6 +212,12 @@ and (min-device-width : 2001px) {
 .store nav a {
   font-size: 1.65em;
   line-height: 2.5em;
+  letter-spacing: 2px;
+  margin: .5em 1em;
+}
+
+.large-nav p {
+  font-size: 0;
 }
 
 .store nav p:nth-of-type(2) {
@@ -214,6 +227,7 @@ and (min-device-width : 2001px) {
 .store-nav-section {
   flex-wrap: wrap;
   margin: 0;
+  width: 80%;
 }
 
 #store h1 {
@@ -265,6 +279,12 @@ and (min-device-width : 2001px) {
 .store nav a {
   font-size: 1.65em;
   line-height: 2.5em;
+  letter-spacing: 2px;
+  margin: .5em 1em;
+}
+
+.large-nav p {
+  font-size: 0;
 }
 
 .store nav p:nth-of-type(2) {
@@ -274,6 +294,7 @@ and (min-device-width : 2001px) {
 .store-nav-section {
   flex-wrap: wrap;
   margin: 0;
+  width: 80%;
 }
 
 #store h1 {
@@ -325,6 +346,12 @@ and (min-device-width : 2001px) {
 .store nav a {
   font-size: 1.65em;
   line-height: 2.5em;
+  letter-spacing: 2px;
+  margin: .5em 1em;
+}
+
+.large-nav p {
+  font-size: 0;
 }
 
 .store nav p:nth-of-type(2) {
@@ -334,6 +361,7 @@ and (min-device-width : 2001px) {
 .store-nav-section {
   flex-wrap: wrap;
   margin: 0;
+  width: 80%;
 }
 
 #store h1 {
