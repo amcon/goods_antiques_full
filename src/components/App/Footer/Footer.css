@@ -85,7 +85,7 @@ and (max-device-width : 1700px) {
 footer h3 {
   font-size: 1em;
   font-weight: normal;
-  width: 13em;
+  width: 100%;
   padding-bottom: 1em;
   margin-bottom: 1em;
 }
@@ -107,7 +107,7 @@ and (max-device-width : 2000px) {
 footer h3 {
   font-size: 1.25em;
   font-weight: normal;
-  width: 13em;
+  width: 100%;
   padding-bottom: 1em;
   margin-bottom: 1em;
 }
@@ -128,7 +128,7 @@ and (min-device-width : 2001px) {
 footer h3 {
   font-size: 1.5em;
   font-weight: normal;
-  width: 13em;
+  width: 100%;
   padding-bottom: 1em;
   margin-bottom: 1em;
 }
