@@ -425,6 +425,8 @@ and (min-device-width : 2001px) {
   height: 400px;
   width: 80%;
   font-size: 2em;
+  padding: 1em;
+  text-align: center;
 }
 
 .delete-message p {
@@ -559,6 +561,8 @@ and (min-device-width : 2001px) {
   height: 400px;
   width: 80%;
   font-size: 2em;
+  padding: 1em;
+  text-align: center;
 }
 
 .delete-message p {
@@ -693,6 +697,8 @@ and (min-device-width : 2001px) {
   height: 400px;
   width: 80%;
   font-size: 2em;
+  padding: 1em;
+  text-align: center;
 }
 
 .delete-message p {
@@ -827,6 +833,8 @@ and (min-device-width : 2001px) {
   height: 400px;
   width: 80%;
   font-size: 2em;
+  padding: 1em;
+  text-align: center;
 }
 
 .delete-message p {
