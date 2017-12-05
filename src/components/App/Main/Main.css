@@ -3,7 +3,6 @@ main {
   min-width: 1250px;
   display: flex;
   justify-content: center;
-
 }
 
 main div {
@@ -13,6 +12,9 @@ main div {
 .border-component {
   width: 100%;
   background-color: rgb(252, 252, 252);
+  box-shadow:
+    inset 0px 11px 10px -10px #CCC,
+    inset 0px -11px 10px -10px #CCC;
 }
 
 button, a {
