@@ -28,7 +28,12 @@
 
 .store nav a{
   margin: 0 25px;
-  font-size: 1em;
+  font-size: .8em;
+  letter-spacing: 3px;
+}
+
+.store nav p {
+  color: palegoldenrod;
 }
 
 .store button {
