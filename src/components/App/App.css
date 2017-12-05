@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  width: inherit;
+  min-width: 1250px;
 }
 
 h1 {
