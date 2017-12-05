@@ -36,7 +36,7 @@ a:hover {
 and (min-device-width : 1500px)
 and (max-device-width : 1700px) {
 
-main {
+body {
   min-width: 1450px;
 }
 
@@ -54,7 +54,7 @@ main {
 and (min-device-width : 1701px)
 and (max-device-width : 2000px) {
 
-main {
+body {
   min-width: 1650px;
 }
 
@@ -71,7 +71,7 @@ main {
 @media only screen
 and (min-device-width : 2001px) {
 
-main {
+body {
   min-width: 1950px;
 }
 
@@ -94,7 +94,7 @@ main {
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) {
 
-main {
+body {
   min-width: 736px;
 }
 
@@ -122,7 +122,7 @@ main {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
 
-main {
+body {
   min-width: 667px;
 }
 
@@ -150,7 +150,7 @@ main {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
 
-main {
+body {
   min-width: 568px;
 }
 
@@ -178,7 +178,7 @@ main {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
 
-main {
+body {
   min-width: 480px;
 }
 
