@@ -153,12 +153,17 @@ and (min-device-width : 2001px) {
   margin: .5em 1em;
 }
 
+.store nav p {
+  font-weight: bolder;
+  font-size: 2em;
+}
+
 .large-nav #mq-nav {
   font-size: 0;
 }
 
 .large-nav p:first-of-type {
-  font-size: 1em;
+  font-size: 2em;
   order: -1;
 }
 
@@ -233,12 +238,17 @@ and (min-device-width : 2001px) {
   margin: .5em 1em;
 }
 
+.store nav p {
+  font-weight: bolder;
+  font-size: 2em;
+}
+
 .large-nav #mq-nav {
   font-size: 0;
 }
 
 .large-nav p:first-of-type {
-  font-size: 1em;
+  font-size: 2em;
   order: -1;
 }
 
@@ -313,12 +323,17 @@ and (min-device-width : 2001px) {
   margin: .5em 1em;
 }
 
+.store nav p {
+  font-weight: bolder;
+  font-size: 2em;
+}
+
 .large-nav #mq-nav {
   font-size: 0;
 }
 
 .large-nav p:first-of-type {
-  font-size: 1em;
+  font-size: 2em;
   order: -1;
 }
 
@@ -393,12 +408,17 @@ and (min-device-width : 2001px) {
   margin: .5em 1em;
 }
 
+.store nav p {
+  font-weight: bolder;
+  font-size: 2em;
+}
+
 .large-nav #mq-nav {
   font-size: 0;
 }
 
 .large-nav p:first-of-type {
-  font-size: 1em;
+  font-size: 2em;
   order: -1;
 }
 
