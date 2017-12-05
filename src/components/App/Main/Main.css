@@ -12,6 +12,7 @@ main div {
 
 .border-component {
   width: 100%;
+  background-color: rgb(252, 252, 252);
 }
 
 button, a {
