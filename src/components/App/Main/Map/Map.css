@@ -231,6 +231,10 @@ and (min-device-width : 2001px) {
   font-size: 2em;
 }
 
+.store-info p:last-of-type {
+  margin-bottom: 4em;
+}
+
 #map-line {
   height: 0;
 }
@@ -307,6 +311,10 @@ and (min-device-width : 2001px) {
   margin-bottom: 2em;
   color: grey;
   font-size: 2em;
+}
+
+.store-info p:last-of-type {
+  margin-bottom: 4em;
 }
 
 #map-line {
@@ -387,6 +395,10 @@ and (min-device-width : 2001px) {
   font-size: 2em;
 }
 
+.store-info p:last-of-type {
+  margin-bottom: 4em;
+}
+
 #map-line {
   height: 0;
 }
@@ -463,6 +475,10 @@ and (min-device-width : 2001px) {
   margin-bottom: 2em;
   color: grey;
   font-size: 2em;
+}
+
+.store-info p:last-of-type {
+  margin-bottom: 4em;
 }
 
 #map-line {
