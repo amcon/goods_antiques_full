@@ -149,8 +149,21 @@ and (min-device-width : 2001px) {
   margin: .5em 1em;
 }
 
-.large-nav p {
+.large-nav #mq-nav {
   font-size: 0;
+}
+
+.large-nav p:first-of-type {
+  font-size: 1em;
+  order: -1;
+}
+
+#mq-move-1 {
+  order: -2;
+}
+
+#mq-move-2 {
+  order: -1;
 }
 
 .store nav p:nth-of-type(2) {
@@ -160,7 +173,7 @@ and (min-device-width : 2001px) {
 .store-nav-section {
   flex-wrap: wrap;
   margin: 0;
-  width: 80%;
+  width: 95%;
 }
 
 #store h1 {
@@ -216,8 +229,21 @@ and (min-device-width : 2001px) {
   margin: .5em 1em;
 }
 
-.large-nav p {
+.large-nav #mq-nav {
   font-size: 0;
+}
+
+.large-nav p:first-of-type {
+  font-size: 1em;
+  order: -1;
+}
+
+#mq-move-1 {
+  order: -2;
+}
+
+#mq-move-2 {
+  order: -1;
 }
 
 .store nav p:nth-of-type(2) {
@@ -227,7 +253,7 @@ and (min-device-width : 2001px) {
 .store-nav-section {
   flex-wrap: wrap;
   margin: 0;
-  width: 80%;
+  width: 95%;
 }
 
 #store h1 {
@@ -283,8 +309,21 @@ and (min-device-width : 2001px) {
   margin: .5em 1em;
 }
 
-.large-nav p {
+.large-nav #mq-nav {
   font-size: 0;
+}
+
+.large-nav p:first-of-type {
+  font-size: 1em;
+  order: -1;
+}
+
+#mq-move-1 {
+  order: -2;
+}
+
+#mq-move-2 {
+  order: -1;
 }
 
 .store nav p:nth-of-type(2) {
@@ -294,7 +333,7 @@ and (min-device-width : 2001px) {
 .store-nav-section {
   flex-wrap: wrap;
   margin: 0;
-  width: 80%;
+  width: 95%;
 }
 
 #store h1 {
@@ -350,8 +389,21 @@ and (min-device-width : 2001px) {
   margin: .5em 1em;
 }
 
-.large-nav p {
+.large-nav #mq-nav {
   font-size: 0;
+}
+
+.large-nav p:first-of-type {
+  font-size: 1em;
+  order: -1;
+}
+
+#mq-move-1 {
+  order: -2;
+}
+
+#mq-move-2 {
+  order: -1;
 }
 
 .store nav p:nth-of-type(2) {
@@ -361,7 +413,7 @@ and (min-device-width : 2001px) {
 .store-nav-section {
   flex-wrap: wrap;
   margin: 0;
-  width: 80%;
+  width: 95%;
 }
 
 #store h1 {

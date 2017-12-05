@@ -29,9 +29,9 @@ class Store extends React.Component {
             <div className="store-nav-section large-nav">
               <Link to={`${this.props.match.url}/stoneware`}>Stoneware, Pottery &amp; Dishes</Link>
               <p>|</p>
-              <Link to={`${this.props.match.url}/victorian`}>Victorian &amp; East Lake</Link>
-              <p>|</p>
-              <Link to={`${this.props.match.url}/folk`}>Folk Art &amp; Paintings</Link>
+              <Link id="mq-move-1" to={`${this.props.match.url}/victorian`}>Victorian &amp; East Lake</Link>
+              <p id="mq-nav">|</p>
+              <Link id="mq-move-2" to={`${this.props.match.url}/folk`}>Folk Art &amp; Paintings</Link>
             </div>
             <div className="store-nav-section">
               <Link to={`${this.props.match.url}/liveedge`}>Live-Edge, Industrial & Painted</Link>
