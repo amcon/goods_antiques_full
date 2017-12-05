@@ -5,9 +5,9 @@ const Footer = () => (
   <footer className="footer">
     <div className="footer-section">
       <h3>STORE HOURS</h3>
-      <p>Mon: 10am-4pm</p>
-      <p>Tues & Wed: closed</p>
-      <p>Thur-Sun: 10am-4pm</p>
+      <p>Mon - Wed: closed</p>
+      <p>Thur - Sat: 10am - 4pm</p>
+      <p>Sunday: 10am - 2pm</p>
       <p>or by appointment</p>
     </div>
     <div className="footer-section">
