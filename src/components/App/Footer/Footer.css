@@ -22,14 +22,14 @@ footer {
 
 .footer-section-social {
   width: 100%;
-  border-top: 1px solid grey;
+  border-top: 1px solid palegoldenrod;
   margin-top: 50px;
   display: flex;
   justify-content: flex-end;
 }
 
 .footer-section-social a {
-  margin-right: 50px;
+  margin-left: 50px;
   margin-top: 25px;
 }
 
@@ -38,7 +38,7 @@ footer h3 {
   font-size: .8em;
   margin: 0;
   margin-bottom: 10px;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid palegoldenrod;
   padding-bottom: 20px;
   font-weight: bold;
   color: rgb(50, 50, 50);
