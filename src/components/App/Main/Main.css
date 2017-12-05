@@ -3,6 +3,7 @@ main {
   min-width: 1250px;
   display: flex;
   justify-content: center;
+
 }
 
 main div {
@@ -11,8 +12,6 @@ main div {
 
 .border-component {
   width: 100%;
-  border-bottom: 1px solid grey;
-  border-top: 1px solid grey;
 }
 
 button, a {

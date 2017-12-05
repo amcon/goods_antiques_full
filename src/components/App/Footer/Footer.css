@@ -1,3 +1,7 @@
+.footer-container {
+  box-shadow: inset 0px 11px 10px -10px #CCC;
+}
+
 footer {
   display: flex;
   padding: 75px 25px 25px 25px;
