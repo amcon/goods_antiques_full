@@ -9,7 +9,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -51,8 +51,8 @@
 }
 
 .map-container {
-  height: 400px;
-  width: 600px;
+  height: 550px;
+  width: 100%;
   border: 1px solid white;
 }
 
@@ -61,7 +61,7 @@
 }
 
 .gmnoprint div {
-  width: 97%;
+  width: 100%;
 }
 
 #google-maps {
