@@ -121,7 +121,7 @@ and (min-device-width : 2001px) {
 
 .home {
   min-height: 900px;
-  background-attachment: none;
+  background-attachment: initial;
 }
 
 .home-info {
@@ -164,7 +164,7 @@ and (min-device-width : 2001px) {
 
 .home {
   min-height: 900px;
-  background-attachment: none;
+  background-attachment: initial;
 }
 
 .home-info {
@@ -207,7 +207,7 @@ and (min-device-width : 2001px) {
 
 .home {
   min-height: 900px;
-  background-attachment: none;
+  background-attachment: initial;
 }
 
 .home-info {
@@ -250,7 +250,7 @@ and (min-device-width : 2001px) {
 
 .home {
   min-height: 900px;
-  background-attachment: none;
+  background-attachment: initial;
 }
 
 .home-info {
