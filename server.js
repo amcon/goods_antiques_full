@@ -1,4 +1,5 @@
 require('dotenv').config({ silent: true });
+require('core-js/modules/es6.symbol');
 const express = require('express');
 const logger = require('morgan');
 const path = require('path');
