@@ -60,8 +60,9 @@
   position: relative !important;
 }
 
-.gmnoprint div {
-  width: 100%;
+.gmnoprint {
+  width: 10%;
+  height: 10%;
 }
 
 #google-maps {
@@ -94,8 +95,9 @@
 and (min-device-width : 1500px)
 and (max-device-width : 1700px) {
 
-#map {
-  padding: 100px 0;
+.map-container {
+  height: 600px;
+  width: 100%;
 }
 
 }
@@ -103,10 +105,6 @@ and (max-device-width : 1700px) {
 @media only screen
 and (min-device-width : 1701px)
 and (max-device-width : 2000px) {
-
-#map {
-  padding: 100px 0;
-}
 
 .map-info {
   width: 1300px;
@@ -118,8 +116,8 @@ and (max-device-width : 2000px) {
 }
 
 .map-container {
-  height: 600px;
-  width: 800px;
+  height: 700px;
+  width: 100%;
 }
 
 .store-info p {
@@ -135,10 +133,6 @@ and (max-device-width : 2000px) {
 @media only screen
 and (min-device-width : 2001px) {
 
-#map {
-  padding: 150px 0;
-}
-
 .map-info {
   width: 1500px;
   padding: 100px;
@@ -149,8 +143,8 @@ and (min-device-width : 2001px) {
 }
 
 .map-container {
-  height: 750px;
-  width: 900px;
+  height: 800px;
+  width: 100%;
 }
 
 .store-info h1 {
@@ -196,7 +190,6 @@ and (min-device-width : 2001px) {
 .map-container {
   order: -1;
   width: 100%;
-  margin-bottom: 10em;
   height: 900px;
 }
 
@@ -209,8 +202,10 @@ and (min-device-width : 2001px) {
   font-size: 2em;
 }
 
-.gmnoprint div {
-  width: 98%;
+.gmnoprint {
+  width: 0;
+  height: 0;
+  opacity: 0;
 }
 
 #map {
@@ -278,7 +273,6 @@ and (min-device-width : 2001px) {
 .map-container {
   order: -1;
   width: 100%;
-  margin-bottom: 10em;
   height: 900px;
 }
 
@@ -291,8 +285,10 @@ and (min-device-width : 2001px) {
   font-size: 2em;
 }
 
-.gmnoprint div {
-  width: 98%;
+.gmnoprint {
+  width: 0;
+  height: 0;
+  opacity: 0;
 }
 
 #map {
@@ -360,7 +356,6 @@ and (min-device-width : 2001px) {
 .map-container {
   order: -1;
   width: 100%;
-  margin-bottom: 10em;
   height: 900px;
 }
 
@@ -373,8 +368,10 @@ and (min-device-width : 2001px) {
   font-size: 2em;
 }
 
-.gmnoprint div {
-  width: 98%;
+.gmnoprint {
+  width: 0;
+  height: 0;
+  opacity: 0;
 }
 
 #map {
@@ -442,7 +439,6 @@ and (min-device-width : 2001px) {
 .map-container {
   order: -1;
   width: 100%;
-  margin-bottom: 10em;
   height: 900px;
 }
 
@@ -455,8 +451,10 @@ and (min-device-width : 2001px) {
   font-size: 2em;
 }
 
-.gmnoprint div {
-  width: 98%;
+.gmnoprint {
+  width: 0;
+  height: 0;
+  opacity: 0;
 }
 
 #map {
