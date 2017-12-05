@@ -38,7 +38,8 @@ const config = {
       xhtml: true,
       inject: false,
       template: require('html-webpack-template'),
-      appMountId: 'root-container'
+      appMountId: 'root-container',
+      favicon: 'public/images/favicon.ico'
     }),
   ],
   resolve: {
@@ -71,6 +72,10 @@ const config = {
         loader: 'file-loader'
       },
       { test: /\.png$/,
+        loader: 'file-loader'
+      },
+      {
+        test: /\.ico$/,
         loader: 'file-loader'
       },
       {
