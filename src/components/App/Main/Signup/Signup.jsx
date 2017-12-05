@@ -69,7 +69,7 @@ class Signup extends React.Component {
             value={this.props.password}
             onChange={this.props.updateFormPassword}
           />
-          <button onClick={this.props.handleCreateUser}>Sign Up</button>
+          <button onClick={this.props.handleCreateUser} onTouchStart={this.props.handleCreateUser}>Sign Up</button>
         </div>
       </div>
     );

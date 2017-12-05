@@ -31,8 +31,8 @@ class OneProduct extends React.Component {
     if (loggedIn) {
       return(
         <div className="edit-delete">
-          <button onClick={() => this.activateEditForm()} id="edit">Edit</button>
-          <button onClick={() => this.activateDeleteWarning()} id="delete">Delete</button>
+          <button onClick={() => this.activateEditForm()} onTouchStart={() => this.activateEditForm()} id="edit">Edit</button>
+          <button onClick={() => this.activateDeleteWarning()} onTouchStart={() => this.activateDeleteWarning()} id="delete">Delete</button>
         </div>
       );
     }
@@ -177,7 +177,7 @@ class OneProduct extends React.Component {
           value={this.props.productPosition}
           onChange={this.props.updateProductPosition}
         />
-        <button onClick={this.props.handleProductEditSubmit}>Edit Product</button>
+        <button onClick={this.props.handleProductEditSubmit} onTouchStart={this.props.handleProductEditSubmit}>Edit Product</button>
       </div>
     );
   }

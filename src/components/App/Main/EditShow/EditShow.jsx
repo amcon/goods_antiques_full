@@ -92,15 +92,15 @@ class EditShow extends React.Component {
             <option value="true">Upcoming</option>
             <option value="false">Past</option>
           </select>
-          <button onClick={this.props.handleShowEditSubmit}>Edit Show</button>
-          <button onClick={() => this.activateDeleteWarning()} id="delete">Delete</button>
+          <button onClick={this.props.handleShowEditSubmit} onTouchStart={this.props.handleShowEditSubmit}>Edit Show</button>
+          <button onClick={() => this.activateDeleteWarning()} onTouchStart={() => this.activateDeleteWarning()} id="delete">Delete</button>
           {this.state.renderDeleteWarning ?
             <div className="delete-warning">
               <div className="delete-message">
                 <p>Are you sure you want to delete {this.props.showName}?</p>
                 <div className="delete-buttons">
-                  <button onClick={this.props.handleShowDeleteSubmit}>Yes</button>
-                  <button onClick={() => this.removeDeleteWarning()}>Cancel</button>
+                  <button onClick={this.props.handleShowDeleteSubmit} onTouchStart={this.props.handleShowDeleteSubmit}>Yes</button>
+                  <button onClick={() => this.removeDeleteWarning()} onTouchStart={() => this.removeDeleteWarning()}>Cancel</button>
                 </div>
               </div>
             </div> :

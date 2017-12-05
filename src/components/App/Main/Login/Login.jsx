@@ -90,7 +90,7 @@ class Login extends React.Component {
               value={this.props.password}
               onChange={this.props.updateFormPassword}
             />
-            <button onClick={this.props.handleLoginSubmit} >SUBMIT</button>
+            <button onClick={this.props.handleLoginSubmit} onTouchStart={this.props.handleLoginSubmit}>SUBMIT</button>
             {this.checkForAdmin()}
           </div>
         </div>
