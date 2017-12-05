@@ -27,10 +27,6 @@
   font-weight: lighter;
 }
 
-.about-text p, .about-text h2 {
-  font-family: arial;
-}
-
 .about-text p {
   font-size: 1em;
   line-height: 1.75em;

@@ -40,7 +40,7 @@ const About = () => (
         <div className="family-member">
           <div className="family-photo" id="christine"></div>
           <div className="family-text">
-            <h2>Christine Good</h2>
+            <h2 className="serif">Christine Good</h2>
             <p>I love the look and feel of antiques. The designs are unique
             and one-of-a-kind. I love that they provide this special sense
             of character to a home. They are inviting and give warmth to any
@@ -50,7 +50,7 @@ const About = () => (
         </div>
         <div className="family-member">
           <div className="family-text">
-            <h2>Tim Good</h2>
+            <h2 className="serif">Tim Good</h2>
             <p>I love finding the antiques and preserving their history.
             Over the years, I've learned about the pieces, the people who
             owned them, and how they were built. I enjoy reading about
@@ -63,7 +63,7 @@ const About = () => (
         <div className="family-member">
           <div className="family-photo" id="tom"></div>
           <div className="family-text">
-            <h2>Tom Good</h2>
+            <h2 className="serif">Tom Good</h2>
             <p>I love the thrill of the find. I get to save a piece of
             our history from getting destroyed while traveling and meeting
             new people. The freedom to find antiques and not be on a
@@ -75,7 +75,7 @@ const About = () => (
         </div>
         <div className="family-member">
           <div className="family-text">
-            <h2>Steven Good</h2>
+            <h2 className="serif">Steven Good</h2>
             <p>I love that you can learn so much about American furniture
             through antiques. They tell a story of the people and place.
             They share where people settled, when they migrated and how
@@ -88,7 +88,7 @@ const About = () => (
         <div className="family-member">
           <div className="family-photo" id="kathy"></div>
           <div className="family-text">
-            <h2>Kathy (Good) Ritter</h2>
+            <h2 className="serif">Kathy (Good) Ritter</h2>
             <p>I loved growing up watching dad in the shop working on an
             antique he or mom found. He would share with me the history
             and details of the craftsmanship. Each piece had a story and
@@ -103,7 +103,7 @@ const About = () => (
         </div>
         <div className="family-member">
           <div className="family-text">
-            <h2>Kristie Conklin</h2>
+            <h2 className="serif">Kristie Conklin</h2>
             <p>I love antiques because they tell a story, are made with
             quality, and were built for function. I found my very first
             antique with my uncle while digging holes in my grandparent's
