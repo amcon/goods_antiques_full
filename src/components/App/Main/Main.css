@@ -16,6 +16,10 @@ main div {
     inset 0px -11px 10px -10px #CCC;
 }
 
+h1 {
+  width: 100%;
+}
+
 button, a {
   -webkit-appearance: none;
   display: block;
