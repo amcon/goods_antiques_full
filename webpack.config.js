@@ -9,7 +9,7 @@ const APP_DIR = path.resolve(__dirname, 'src');
 
 const config = {
   entry: {
-  'commons': ['react', 'react-dom', 'babel-polyfill'],
+  'commons': ['babel-polyfill', 'react', 'react-dom', 'react-router-dom'],
   'app': `${__dirname}/src/index.js`
   },
   output: {
