@@ -15,13 +15,13 @@ const About = () => (
         becomes a focal point of a story in your home.
         <br/>
         <br/>
-        Our story began when Christine Good brought home here very first
+        Our story began when Christine Good brought home her very first
         antique trunk, purchased from Antiques on Main in East Troy. Her
         love for antiques inspired Tim Good, her husband, to find pieces
         and refurbish them. They decorated their home, trading and upgrading
         pieces. Antique-ing became a hobby of theirs and they began selling
         at local shows. Soon, they were teaching their kids, and later
-        grandkids, the trick of the trade, passing an appreciation for the
+        grandkids, the tricks of the trade, passing an appreciation for the
         furniture. We all love antiques for reasons that are personal,
         but the common thread is that they remind us of moments shared
         together.
