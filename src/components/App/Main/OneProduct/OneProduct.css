@@ -200,6 +200,7 @@
   width: 42%;
   justify-content: space-between;
   margin: 10px 0;
+  height: 205px;
 }
 
 .drop-section .image-preview {
@@ -422,6 +423,10 @@ and (min-device-width : 2001px) {
   width: 350px;
 }
 
+.drop-section {
+  height: 500px;
+}
+
 .delete-message {
   height: 400px;
   width: 80%;
@@ -556,6 +561,10 @@ and (min-device-width : 2001px) {
 .dropzone, .drop-section .image-preview {
   height: 350px;
   width: 350px;
+}
+
+.drop-section {
+  height: 500px;
 }
 
 .delete-message {
@@ -694,6 +703,10 @@ and (min-device-width : 2001px) {
   width: 350px;
 }
 
+.drop-section {
+  height: 500px;
+}
+
 .delete-message {
   height: 400px;
   width: 80%;
@@ -828,6 +841,10 @@ and (min-device-width : 2001px) {
 .dropzone, .drop-section .image-preview {
   height: 350px;
   width: 350px;
+}
+
+.drop-section {
+  height: 500px;
 }
 
 .delete-message {
