@@ -25,6 +25,13 @@ const config = {
         NODE_ENV: JSON.stringify(process.env.NODE_ENV || 'development'),
       },
     }),
+    new webpack.ProvidePlugin({
+      i18n: "i18next",
+      '_': "lodash",
+      'numeral': "numeral",
+      React: "react",
+      ReactDOM: "react-dom"
+    }),
     new webpack.optimize.UglifyJsPlugin(),
     new ExtractTextPlugin({filename: "styles.css", allChunks: true}),
     new GoogleFontsPlugin({
