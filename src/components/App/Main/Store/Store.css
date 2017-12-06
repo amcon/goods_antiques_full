@@ -76,6 +76,10 @@ and (max-device-width : 1700px) {
   font-size: 1.1em;
 }
 
+#store .product img, #store .sold img {
+  height: 418.5px;
+}
+
 }
 
 @media only screen
@@ -106,6 +110,10 @@ and (max-device-width : 2000px) {
   font-size: 1.35em;
 }
 
+#store .product img, #store .sold img {
+  height: 480.5px;
+}
+
 }
 
 @media only screen
@@ -133,6 +141,10 @@ and (min-device-width : 2001px) {
 
 #store .product h1, #store .product p, #store .sold h1, #store .sold p {
   font-size: 1.5em;
+}
+
+#store .product img, #store .sold img {
+  height: 573.5px;
 }
 
 }
@@ -200,6 +212,10 @@ and (min-device-width : 2001px) {
   width: 82%;
   margin: 0 auto;
   margin-bottom: 6em;
+}
+
+#store .product img, #store .sold img {
+  height: 762px;
 }
 
 #store .product h1, #store .sold h1 {
@@ -287,6 +303,10 @@ and (min-device-width : 2001px) {
   margin-bottom: 6em;
 }
 
+#store .product img, #store .sold img {
+  height: 762px;
+}
+
 #store .product h1, #store .sold h1 {
   font-size: 2.5em;
   margin-top: 1em;
@@ -372,6 +392,10 @@ and (min-device-width : 2001px) {
   margin-bottom: 6em;
 }
 
+#store .product img, #store .sold img {
+  height: 762px;
+}
+
 #store .product h1, #store .sold h1 {
   font-size: 2.5em;
   margin-top: 1em;
@@ -455,6 +479,10 @@ and (min-device-width : 2001px) {
   width: 82%;
   margin: 0 auto;
   margin-bottom: 6em;
+}
+
+#store .product img, #store .sold img {
+  height: 762px;
 }
 
 #store .product h1, #store .sold h1 {

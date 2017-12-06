@@ -58,6 +58,7 @@
 
 .one-product-text p {
   line-height: 2em;
+  width: 100%;
 }
 
 .one-product-text button {
