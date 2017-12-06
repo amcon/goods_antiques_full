@@ -8,7 +8,10 @@ const BUILD_DIR = path.resolve(__dirname, 'dist');
 const APP_DIR = path.resolve(__dirname, 'src');
 
 const config = {
-  entry: ['babel-polyfill', `${__dirname}/src/index.js`],
+  entry: {
+  'commons': ['babel-polyfill', 'react', 'react-dom'],
+  'app': `${__dirname}/src/index.js`
+  },
   output: {
     path: BUILD_DIR,
     filename: '[name].js',
