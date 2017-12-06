@@ -8,10 +8,7 @@ const BUILD_DIR = path.resolve(__dirname, 'dist');
 const APP_DIR = path.resolve(__dirname, 'src');
 
 const config = {
-  entry: {
-  'commons': ['babel-polyfill', 'react', 'react-dom', 'react-router-dom'],
-  'app': `${__dirname}/src/index.js`
-  },
+  entry: ['babel-polyfill', `${__dirname}/src/index.js`],
   output: {
     path: BUILD_DIR,
     filename: '[name].js',
@@ -45,13 +42,6 @@ const config = {
       favicon: 'public/images/favicon.ico'
     }),
   ],
-  resolve: {
-    modules: [
-      path.join(__dirname, '/node_modules'),
-      path.resolve(__dirname, '/src')
-    ],
-    extensions: ['.js', '.jsx', ".es6", ".json"]
-  },
   module: {
     rules: [
       {
