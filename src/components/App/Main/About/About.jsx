@@ -79,7 +79,7 @@ const About = () => (
             <p>I love that you can learn so much about American furniture
             through antiques. They tell a story of the people and place.
             They share where people settled, when they migrated and how
-            culture their culture evolved. I enjoy the unique craftsmanship,
+            their culture evolved. I enjoy the unique craftsmanship,
             and I get to travel and explore history through each piece.
             </p>
           </div>

@@ -89,6 +89,115 @@ body {
 
 }
 
+/* ------- iPads ----------  */
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+body {
+  min-width: 980px;
+}
+
+#store, #admin, #edit-show, #login, #shows, #signup, .header, .footer, #one-product {
+  width: 980px;
+}
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+body {
+  min-width: 1024px;
+}
+
+#store, #admin, #edit-show, #login, #shows, #signup, .header, .footer, #one-product {
+  width: 1024px;
+}
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+body {
+  min-width: 980px;
+}
+
+#store, #admin, #edit-show, #login, #shows, #signup, .header, .footer, #one-product {
+  width: 980px;
+}
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+body {
+  min-width: 1024px;
+}
+
+#store, #admin, #edit-show, #login, #shows, #signup, .header, .footer, #one-product {
+  width: 1024px;
+}
+
+}
+
+/* Portrait */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen
+  and (min-device-width: 834px)
+  and (max-device-width: 834px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+body {
+  min-width: 834px;
+}
+
+#store, #admin, #edit-show, #login, #shows, #signup, .header, .footer, #one-product {
+  width: 834px;
+}
+
+}
+
+/* Landscape */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen
+  and (min-device-width: 1112px)
+  and (max-device-width: 1112px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+body {
+  min-width: 1112px;
+}
+
+#store, #admin, #edit-show, #login, #shows, #signup, .header, .footer, #one-product {
+  width: 1112px;
+}
+
+}
+
+
 
 /* iPhone 6+, 7+, 8+ */
 /* Portrait */
