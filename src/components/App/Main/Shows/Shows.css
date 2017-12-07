@@ -111,7 +111,10 @@ and (min-device-width : 2001px) {
 
 #shows .past-show {
   width: 33%;
-  margin-right: 35px;
+}
+
+#shows .past-show:nth-child(3n) {
+  margin-right: 0;
 }
 
 #shows .show h1, #shows .past-show h1 {
@@ -173,7 +176,10 @@ and (min-device-width : 2001px) {
 
 #shows .past-show {
   width: 33%;
-  margin-right: 35px;
+}
+
+#shows .past-show:nth-child(3n) {
+  margin-right: 0;
 }
 
 #shows .show h1, #shows .past-show h1 {
@@ -235,7 +241,10 @@ and (min-device-width : 2001px) {
 
 #shows .past-show {
   width: 33%;
-  margin-right: 35px;
+}
+
+#shows .past-show:nth-child(3n) {
+  margin-right: 0;
 }
 
 #shows .show h1, #shows .past-show h1 {
@@ -297,7 +306,10 @@ and (min-device-width : 2001px) {
 
 #shows .past-show {
   width: 33%;
-  margin-right: 35px;
+}
+
+#shows .past-show:nth-child(3n) {
+  margin-right: 0;
 }
 
 #shows .show h1, #shows .past-show h1 {
