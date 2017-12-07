@@ -253,6 +253,10 @@ and (max-device-width : 1700px) {
   height: 550px;
 }
 
+.drop-section {
+  justify-content: center;
+}
+
 }
 
 @media only screen
@@ -286,6 +290,10 @@ and (max-device-width : 2000px) {
   padding: 20px 35px;
 }
 
+.drop-section {
+  justify-content: center;
+}
+
 }
 
 @media only screen
@@ -317,6 +325,10 @@ and (min-device-width : 2001px) {
   font-size: 2em;
   margin-top: 2.5em;
   padding: 30px 55px;
+}
+
+.drop-section {
+  justify-content: center;
 }
 
 }

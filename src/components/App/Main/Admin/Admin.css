@@ -118,6 +118,9 @@
 and (min-device-width : 1500px)
 and (max-device-width : 1700px) {
 
+.image-uploader {
+  justify-content: center;
+}
 
 }
 
@@ -125,12 +128,18 @@ and (max-device-width : 1700px) {
 and (min-device-width : 1701px)
 and (max-device-width : 2000px) {
 
+.image-uploader {
+  justify-content: center;
+}
 
 }
 
 @media only screen
 and (min-device-width : 2001px) {
 
+.image-uploader {
+  justify-content: center;
+}
 
 }
 
