@@ -12,6 +12,10 @@
   margin-right: 0;
 }
 
+.sold:hover {
+  cursor: pointer;
+}
+
 .sold h1 {
   letter-spacing: 3px;
 }
