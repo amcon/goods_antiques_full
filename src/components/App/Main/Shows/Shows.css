@@ -102,6 +102,7 @@ and (min-device-width : 2001px) {
 
 #shows .upcoming, #shows .past {
   margin: 1em 0;
+  width: 100%;
 }
 
 #shows .show {
@@ -167,6 +168,7 @@ and (min-device-width : 2001px) {
 
 #shows .upcoming, #shows .past {
   margin: 1em 0;
+  width: 100%;
 }
 
 #shows .show {
@@ -232,6 +234,7 @@ and (min-device-width : 2001px) {
 
 #shows .upcoming, #shows .past {
   margin: 1em 0;
+  width: 100%;
 }
 
 #shows .show {
@@ -297,6 +300,7 @@ and (min-device-width : 2001px) {
 
 #shows .upcoming, #shows .past {
   margin: 1em 0;
+  width: 100%;
 }
 
 #shows .show {
