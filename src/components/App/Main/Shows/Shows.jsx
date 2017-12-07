@@ -101,7 +101,7 @@ class Shows extends React.Component {
 
   renderAllPastShows() {
     var sortedPastShows = this.props.allShows.sort(function(a,b) {
-      return new Date(a.date_literal).getTime() - new Date(b.date_literal).getTime()
+      return new Date(b.date_literal).getTime() - new Date(a.date_literal).getTime()
     });
 
     return sortedPastShows.map((show, i) => {
