@@ -181,7 +181,7 @@ class Admin extends React.Component {
             <p>*date:</p>
             <input
               type="text"
-              placeholder="ex. SUNDAY, Aug 13 -or- MON, Sep 25 - SAT, Sep 30"
+              placeholder="ex. Sunday, Aug 13th -or- Mon, Sep 25th - Sat, Sep 30th"
               value={this.props.showDate}
               onChange={this.props.updateShowDate}
             />
