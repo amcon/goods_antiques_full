@@ -22,7 +22,7 @@ class Store extends React.Component {
             <div className="store-nav-section">
               <Link to={`${this.props.match.url}/primitive`}>Primitive</Link>
               <p>|</p>
-              <Link to={`${this.props.match.url}/country`}>Country Store</Link>
+              <Link to={`${this.props.match.url}/country`}>Country</Link>
               <p>|</p>
               <Link to={`${this.props.match.url}/general`}>General Store &amp; Advertising</Link>
             </div>

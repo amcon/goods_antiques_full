@@ -45,7 +45,7 @@ class Category extends React.Component {
     const categoryName = this.props.match.params.categoryId.toString();
     if (categoryName === "country") {
       return(
-        <h1 className="category-title">Country Store</h1>
+        <h1 className="category-title">Country</h1>
       );
     } else if (categoryName === "general") {
       return(
