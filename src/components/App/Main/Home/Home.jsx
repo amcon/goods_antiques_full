@@ -6,7 +6,7 @@ const Home = () => (
   <div className="home">
     <div className="home-info">
       <h1>VISIT OUR SHOWROOM TODAY</h1>
-      <p>3066 Main Street<br />East Troy, WI 53155<br />(262) 642-2277</p>
+      <p>3066 Main Street<br />East Troy, WI 53155<br />(262) 720-1416</p>
       <Link to='/store' className="serif">GALLERY</Link>
     </div>
   </div>

@@ -21,7 +21,7 @@ class Buy extends React.Component {
           <h2 className="serif">Delivery</h2>
           <p>Delivery can be arranged. Depending upon location, we may suggest a small fee for gas and time.
           We deliver all across the country and we may just have a show or pick that will bring us your way!
-          Please give us a call to arrange: 262-740-1416.</p>
+          Please give us a call to arrange: (262) 720-1416.</p>
           <h2 className="serif">Payment</h2>
           <p>We accept all major credit cards, and cash. All payments can be made over the phone or in store<br />
           As a retail business we must charge tax. When we travel to shows, we charge a local tax. Other fees may apply. </p>

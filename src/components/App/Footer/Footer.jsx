@@ -12,7 +12,7 @@ const Footer = () => (
     </div>
     <div className="footer-section">
       <h3>CONTACT US</h3>
-      <p>(262) 642-2277</p>
+      <p>(262) 720-1416</p>
       <a href="mailto:goodsantiqueswisconsin@gmail.com?Subject=After%20Visiting%20Your%20Website..." target="_blank">goodsantiqueswisconsin@gmail.com</a>
     </div>
     <div className="footer-section">
