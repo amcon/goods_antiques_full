@@ -38,29 +38,6 @@ const About = () => (
       <div className="about-meet">
         <h1>Meet the family</h1>
         <div className="family-member">
-          <div className="family-photo" id="christine"></div>
-          <div className="family-text">
-            <h2 className="serif">Christine Good</h2>
-            <p>I love the look and feel of antiques. The designs are unique
-            and one-of-a-kind. I love that they provide this special sense
-            of character to a home. They are inviting and give warmth to any
-            room. It’s why I have loved decorating my home with them.
-            </p>
-          </div>
-        </div>
-        <div className="family-member">
-          <div className="family-text">
-            <h2 className="serif">Tim Good</h2>
-            <p>I love finding the antiques and preserving their history.
-            Over the years, I've learned about the pieces, the people who
-            owned them, and how they were built. I enjoy reading about
-            them and studying their design. I collect hardware, wood,
-            knobs and more so that I can bring them back to their
-            original state.</p>
-          </div>
-          <div className="family-photo" id="tim"></div>
-        </div>
-        <div className="family-member">
           <div className="family-photo" id="tom"></div>
           <div className="family-text">
             <h2 className="serif">Tom Good</h2>
@@ -84,41 +61,6 @@ const About = () => (
             </p>
           </div>
           <div className="family-photo" id="steven"></div>
-        </div>
-        <div className="family-member">
-          <div className="family-photo" id="kathy"></div>
-          <div className="family-text">
-            <h2 className="serif">Kathy (Good) Ritter</h2>
-            <p>I loved growing up watching dad in the shop working on an
-            antique he or mom found. He would share with me the history
-            and details of the craftsmanship. Each piece had a story and
-            I couldn’t wait to hear the next one. There began my love of
-            antiques. The pieces I find and the people I meet make this
-            journey special. I strive to give our salvaged pieces the same
-            story as our antiques. Each reclaimed piece receives a new life.
-            For me, being able to keep that alive in the pieces we work on
-            and sell means the stories never have to end.
-            </p>
-          </div>
-        </div>
-        <div className="family-member">
-          <div className="family-text">
-            <h2 className="serif">Kristie Conklin</h2>
-            <p>I love antiques because they tell a story, are made with
-            quality, and were built for function. I found my very first
-            antique with my uncle while digging holes in my grandparent's
-            lawn in search of buried treasure. (I can’t believe I found
-            something!!) Most of the antiques I own tell a story of time
-            spent with family, an adventure, or a lesson learned. I also
-            love them because they were built with the best wood by craftsmen
-            who designed it with a purpose in mind. I see too many people my
-            age spending money on particle board, which they throw in the
-            garbage the moment it’s out of style. Antiques are unique, and
-            if they no longer fit your life, you can resell them for,
-            generally, more than what you paid.
-            </p>
-          </div>
-          <div className="family-photo" id="kristie"></div>
         </div>
       </div>
     </div>
